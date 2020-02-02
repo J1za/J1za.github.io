@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ModernoGulp</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -31,8 +31,8 @@
                                 Talk to an expert:
                                 <a class="header__phone" href="tel:61383766284">+61 3 8376 6284</a>
                             </div>
-                            <div class="header__box">
-                                <div class="notification__box">
+                            <div class="header__box ">
+                                <div class="notification__box header__btn-login--off">
                                     <a class="notification header__circle icon-bell-o active" href="#"> <span>8</span>
                                     </a>
                                     <div class="circle__menu notification__menu">
@@ -64,7 +64,7 @@
 
                                     </div>
                                 </div>
-                                <div class="massage__box">
+                                <div class="massage__box header__btn-login--off">
                                     <a class="message header__circle icon-envelope-o active" href="#"> <span>5</span>
                                     </a>
                                     <div class="circle__menu massage__menu ">
@@ -126,7 +126,7 @@
                                     </div>
                                 </div>
                                 <div class="user__box">
-                                    <a class="user" href="#">
+                                    <a class="user header__btn-login--off" href="#">
                                         <div class="user__inner">
                                             <div class="user__images">
                                                 <img src="images/Content/user_login.jpg" alt="">
@@ -154,16 +154,23 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="header__btn header__btn-login header__btn-login--off" href="">Login</a>
-                                <a class="header__btn header__btn-logout header__btn-login--on" href="">Logout</a>
-                                <a class="header__btn header__btn-register header__btn-login--off" href="">Register</a>
+                                <a class="header__btn header__btn-login " data-fancybox data-src="#modal"
+                                    href="javascript:;">Login</a>
+                                <a class="header__btn header__btn-logout header__btn-login--off" href="#">Logout</a>
+                                <a class="header__btn header__btn-register " href="#">Register</a>
                             </div>
+                            <div class="header__btn-menu icon-user"></div>
                         </div>
                     </div>
                 </div>
                 <div class="header__menu">
                     <div class="container">
                         <nav class="menu">
+                            <div class="menu__btn">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                             <ul class="menu__list">
                                 <li>
                                     <a href="#">
@@ -221,7 +228,6 @@
                 </div>
 
             </header>
-
             <section class="search" style="background-image: url(images/search-bg.jpg)">
                 <div class="container">
                     <div class="serch__inner">
@@ -242,7 +248,8 @@
                     </div>
                 </div>
             </section>
-            <section class="products">
+            <section class="products ">
+                <div class="products__wrapper">
                 <div class="container-fluid">
                     <div class="products__title title">
                         Let’s Check Out Our Newest Release Prodcuts
@@ -259,7 +266,7 @@
                         <div class="products__inner-box">
                             <div class="products__item mix category-component">
                                 <a class="products__item-img" href="#"
-                                    style="background-image: url(images/Content/product-item.jpg);"></a>
+                                    style="background-image: url(images/content/product-item.jpg);"></a>
                                 <div class="products__item-content">
                                     <div class="products__item-name">
                                         <a class="products__item-title" href="#">
@@ -287,7 +294,7 @@
                             <div class="products__item mix category-plugins category-nr
                     ew">
                                 <a class="products__item-img" href="#"
-                                    style="background-image: url(images/Content/product-item.jpg);"></a>
+                                    style="background-image: url(images/content/product-item.jpg);"></a>
                                 <div class="products__item-content">
                                     <div class="products__item-name">
                                         <a class="products__item-title" href="#">
@@ -303,7 +310,7 @@
                                 </div>
                                 <div class="products__item-info">
                                     <a class="products__item-author">
-                                        <div class="avatar" style="background-image: url(images/Content/user.jpg);">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
                                         </div>
                                         <span>Radiustheme</span>
                                     </a>
@@ -314,7 +321,7 @@
                             </div>
                             <div class="products__item mix category-plugins">
                                 <a class="products__item-img" href="#"
-                                    style="background-image: url(images/Content/product-item.jpg);"></a>
+                                    style="background-image: url(images/content/product-item.jpg);"></a>
                                 <div class="products__item-content">
                                     <div class="products__item-name">
                                         <a class="products__item-title" href="#">
@@ -330,7 +337,7 @@
                                 </div>
                                 <div class="products__item-info">
                                     <a class="products__item-author">
-                                        <div class="avatar" style="background-image: url(images/Content/user.jpg);">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
                                         </div>
                                         <span>Radiustheme</span>
                                     </a>
@@ -341,7 +348,7 @@
                             </div>
                             <div class="products__item mix category-psd category-new">
                                 <a class="products__item-img" href="#"
-                                    style="background-image: url(images/Content/product-item.jpg);"></a>
+                                    style="background-image: url(images/content/product-item.jpg);"></a>
                                 <div class="products__item-content">
                                     <div class="products__item-name">
                                         <a class="products__item-title" href="#">
@@ -357,7 +364,7 @@
                                 </div>
                                 <div class="products__item-info">
                                     <a class="products__item-author">
-                                        <div class="avatar" style="background-image: url(images/Content/user.jpg);">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
                                         </div>
                                         <span>Radiustheme</span>
                                     </a>
@@ -368,7 +375,7 @@
                             </div>
                             <div class="products__item mix category-wordpress">
                                 <a class="products__item-img" href="#"
-                                    style="background-image: url(images/Content/product-item.jpg);"></a>
+                                    style="background-image: url(images/content/product-item.jpg);"></a>
                                 <div class="products__item-content">
                                     <div class="products__item-name">
                                         <a class="products__item-title" href="#">
@@ -384,7 +391,7 @@
                                 </div>
                                 <div class="products__item-info">
                                     <a class="products__item-author">
-                                        <div class="avatar" style="background-image: url(images/Content/user.jpg);">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
                                         </div>
                                         <span>Radiustheme</span>
                                     </a>
@@ -395,7 +402,7 @@
                             </div>
                             <div class="products__item mix category-joomla category-popular">
                                 <a class="products__item-img" href="#"
-                                    style="background-image: url(images/Content/product-item.jpg);"></a>
+                                    style="background-image: url(images/content/product-item.jpg);"></a>
                                 <div class="products__item-content">
                                     <div class="products__item-name">
                                         <a class="products__item-title" href="#">
@@ -411,7 +418,7 @@
                                 </div>
                                 <div class="products__item-info">
                                     <a class="products__item-author">
-                                        <div class="avatar" style="background-image: url(images/Content/user.jpg);">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
                                         </div>
                                         <span>Radiustheme</span>
                                     </a>
@@ -422,7 +429,7 @@
                             </div>
                             <div class="products__item mix category-psd category-popular">
                                 <a class="products__item-img" href="#"
-                                    style="background-image: url(images/Content/product-item.jpg);"></a>
+                                    style="background-image: url(images/content/product-item.jpg);"></a>
                                 <div class="products__item-content">
                                     <div class="products__item-name">
                                         <a class="products__item-title" href="#">
@@ -438,7 +445,7 @@
                                 </div>
                                 <div class="products__item-info">
                                     <a class="products__item-author">
-                                        <div class="avatar" style="background-image: url(images/Content/user.jpg);">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
                                         </div>
                                         <span>Radiustheme</span>
                                     </a>
@@ -449,7 +456,7 @@
                             </div>
                             <div class="products__item mix category-wordpress">
                                 <a class="products__item-img" href="#"
-                                    style="background-image: url(images/Content/product-item.jpg);"></a>
+                                    style="background-image: url(images/content/product-item.jpg);"></a>
                                 <div class="products__item-content">
                                     <div class="products__item-name">
                                         <a class="products__item-title" href="#">
@@ -465,7 +472,7 @@
                                 </div>
                                 <div class="products__item-info">
                                     <a class="products__item-author">
-                                        <div class="avatar" style="background-image: url(images/Content/user.jpg);">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
                                         </div>
                                         <span>Radiustheme</span>
                                     </a>
@@ -481,8 +488,10 @@
                         <button type="button" data-filter=".category-popular">Popular Items</button>
                     </div>
                 </div>
+            </div>
             </section>
             <section class="priduct-slider">
+                <div class="priduct-slider__wrapper">
                 <div class="container-fluid">
                     <div class="priduct-slider__title title">
                         This Week Trending Products
@@ -490,7 +499,7 @@
                     <div class="products-slider__inner">
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -506,7 +515,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -516,7 +525,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -532,7 +541,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -542,7 +551,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -558,7 +567,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -568,7 +577,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -584,7 +593,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -594,7 +603,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -610,7 +619,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -620,7 +629,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -636,7 +645,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -646,7 +655,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -662,7 +671,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -672,7 +681,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -688,7 +697,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -698,7 +707,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -714,7 +723,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -724,7 +733,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -740,7 +749,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -750,7 +759,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -766,7 +775,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -776,7 +785,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -792,7 +801,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -802,7 +811,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -818,7 +827,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -828,7 +837,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -844,7 +853,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -854,7 +863,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -870,7 +879,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -880,7 +889,7 @@
                         </div>
                         <div class="products__item">
                             <a class="products__item-img" href="#"
-                                style="background-image: url(images/Content/product-item.jpg);"></a>
+                                style="background-image: url(images/content/product-item.jpg);"></a>
                             <div class="products__item-content">
                                 <div class="products__item-name">
                                     <a class="products__item-title" href="#">
@@ -896,7 +905,7 @@
                             </div>
                             <div class="products__item-info">
                                 <a class="products__item-author">
-                                    <div class="avatar" style="background-image: url(images/Content/user.jpg);"></div>
+                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
                                     <span>Radiustheme</span>
                                 </a>
                                 <div class="products__item-star">
@@ -906,6 +915,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </section>
             <section class="advantages">
                 <div class="container">
@@ -1056,7 +1066,7 @@
                     <div class="tutorial__inner">
                         <div class="tutorial__item">
                             <div class="tutorial__item-images"
-                                style="background-image: url(images/Content/tutorial.jpg);">
+                                style="background-image: url(images/content/tutorial.jpg);">
 
                             </div>
                             <div class="tutorial__item-title">
@@ -1065,7 +1075,7 @@
                         </div>
                         <div class="tutorial__item">
                             <div class="tutorial__item-images"
-                                style="background-image: url(images/Content/tutorial.jpg);">
+                                style="background-image: url(images/content/tutorial.jpg);">
 
                             </div>
                             <div class="tutorial__item-title">
@@ -1074,7 +1084,7 @@
                         </div>
                         <div class="tutorial__item">
                             <div class="tutorial__item-images"
-                                style="background-image: url(images/Content/tutorial.jpg);">
+                                style="background-image: url(images/content/tutorial.jpg);">
 
                             </div>
                             <div class="tutorial__item-title">
@@ -1089,7 +1099,7 @@
             <div class="footer__content">
                 <div class="container">
                     <div class="footer__inner">
-                        <div class="footer__col footer__col-menu">
+                        <div class="footer__col footer__col-menu footer__col-adress">
                             <div class="footer__col-title">
                                 About Company
                             </div>
@@ -1127,7 +1137,7 @@
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
-                        <div class="footer__col">
+                        <div class="footer__col footer__col-social">
                             <div class="footer__col-title">
                                 Follow Us On
                             </div>
@@ -1159,6 +1169,24 @@
                 </div>
             </div>
         </footer>
+        <div id="modal">
+            <div class="login__wrapper">
+                <div class="login__title">
+                    Login
+                </div>
+                <form>
+                    <label class="login__label-name">
+                        <input type="text" placeholder="Name" required>
+                    </label>
+                    <label class="login__label-pass">
+                        <input type="text" placeholder="Password" required>
+                    </label>
+                    <button type="submit">submit</button>
+                    <a href="#" class="creat-acc">Create An Account</a>
+                    <a href="#" class="lost-pass">Lost Password?</a>
+                </form>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
