@@ -1,6 +1,10 @@
 $(function(){
    
-    $('.slider').slick({ });
+    $('.slider').slick({ 
+        lidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+    });
     
   
     
