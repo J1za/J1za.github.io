@@ -68,8 +68,8 @@
     &:before{
         position: absolute;
         content: '';
-        width: 1950px;
-        min-height: 1105px;
+        width: 102%;
+        min-height: 155%;
         background-color: $grey;
         clip-path: polygon(100% 0, 0% 100%, 100% 100%);
         right: 0;
@@ -120,11 +120,11 @@
     &:before{
         position: absolute;
         content: '';
-        min-height: 425px; 
-        width: 740px; 
+        min-height: 205%; 
+        width: 39%; 
         max-width: 100%;
         max-height: 100%;
-        top: -395px;
+        top: -396px;
         clip-path: polygon(0 0, 0% 100%, 100% 100%);
         background-color: $blue; 
         z-index: 0;
@@ -132,9 +132,9 @@
         &:after{
             position: absolute;
             content: '';
-            min-height: 425px; 
-            width: 740px;
-            bottom: -246px; 
+            min-height: 204%; 
+            width: 39%;
+            bottom: -245px; 
             max-height: 100%;
             max-width: 100%;
             transform: scale(1, -1);
