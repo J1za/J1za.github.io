@@ -16,6 +16,7 @@ a{
   text-decoration: none;
   padding: 0;
   margin: 0;
+  color: #fff;
 }
 ul,
 li{
@@ -23,6 +24,11 @@ li{
   padding: 0;
   list-style: none;
   display: inline-block;
+}
+button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: $blue;
 }
 .container{
     max-width: 1200px;
@@ -33,4 +39,6 @@ li{
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    color: $blue;
+    
 }
