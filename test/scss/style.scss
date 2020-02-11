@@ -6,7 +6,7 @@
 
 .header{
     position: relative;
-    margin-bottom: 132px;
+    z-index: 1;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -54,6 +54,7 @@
     &__main{
         display: flex;
         margin-top: 38px;
+        margin-bottom: 135px;
         &-info{
             min-width: 370px;
             margin-top: 75px;
@@ -95,12 +96,12 @@
     &:before{
         position: absolute;
         content: '';
-        width: 102%;
-        min-height: 155%;
+        width: 80%;
+        height: 887px;
         background-color: $grey;
         clip-path: polygon(100% 0, 0% 100%, 100% 100%);
         right: 0;
-        bottom: -607px;
+        top: 200px;
         z-index: -1;
     }
 }
@@ -112,6 +113,7 @@
     &__inner{
         display: flex;
         justify-content: space-between; 
+        
     }
     &__btn{
         min-width: 500px;
@@ -126,6 +128,7 @@
         font-size: 18px;
         line-height: 28px;
         @include f400;
+        z-index: 1;
         span{
             display: block;
             margin-top: 40px;
@@ -182,6 +185,7 @@
 .team{
     background-color: $grey;
     padding-bottom: 120px;
+  
     &__inner{
         display: flex;
         justify-content: center;
@@ -198,6 +202,7 @@
         &-slider{
             margin-top: 42px;
             position: relative;
+            
             &:before{
                 position: absolute;
                 content: '';
@@ -208,14 +213,13 @@
             }
             &-box{
                text-align: center;
+               z-index: 1;
                 .team__images{
                     background-repeat: no-repeat;
                     display: inline-block;
                     height: 345px;
                     width: 260px;
-                }
-                .team__images + .team__images{
-                    margin-left: 65px;
+                    
                 }
             }
         }
@@ -246,6 +250,7 @@
     border-radius: 50%;
     background-color: $yellow; 
     color: #003d86;
+    z-index: 100;
 }
 .slick-dots li button:before {
     display: none;
@@ -355,6 +360,7 @@
     &__items{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-top: 52px;
         
         .news__item{
@@ -525,6 +531,20 @@
                         position: absolute;
                         content: url(../images/svg/email.svg);
                         left: 0;
+                    }
+                }
+                &-icon{
+                    display: flex;
+                    .icon-facebook:before{
+                        color: #00acff;
+                        margin-right: 40px;
+                    }
+                    .icon-twitter{
+                        color: #00acff;
+                        margin-right: 40px;
+                    }
+                    .icon-instagram{
+                        color: #00acff;
                     }
                 }
              }
