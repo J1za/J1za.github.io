@@ -4,6 +4,11 @@ $yellow: #ffd000;
 $grey: #eff1f5;
 
 
+
+@mixin f300 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
 @mixin f400 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;

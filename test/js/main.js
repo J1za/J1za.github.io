@@ -8,11 +8,38 @@ $(function(){
         infinite: true,
         speed: 600,
         slidesToShow: 3,
-        slidesToScroll: 1 ,
-        centerMode: true ,
-        adaptiveHeight: true,
-       
+        slidesToScroll: 1,
+        centerMode: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 850,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              
+            }
+          }
+          
+        ]
         
         
+      });
+      $('.header__box-on').on('click', function(){
+      $('a').toggleClass('active');
+      
+      });
+
+      $('.header__burger').click(function(event){
+        $('.header__burger, .header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
       });
 });
