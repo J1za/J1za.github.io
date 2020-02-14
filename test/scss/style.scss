@@ -3,6 +3,22 @@
 @import 'global';
 
 //header start
+#animation1 {
+    background: #003E86;
+  }
+  #animation2 #cube1_shadow,
+  #animation2 #cube2_shadow,
+  #animation2 #cube3_shadow {
+    stroke: #00adff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 0px;
+  }
+.liner-gradient{
+    height: 360px;
+    background: linear-gradient(40deg, rgb(104, 147, 238) 50%, rgb(255, 255, 255) 0%) no-repeat;
+    background-size: 22%;
+}
 
 .header{
     position: relative;
@@ -117,7 +133,7 @@
 .header__language-adaptiv{
     display: none;
 }
-.header__menu a:focus{
+.header__menu .active__btn a  {
     color: #00adff;
 }
 //header end
@@ -1054,36 +1070,68 @@ h1{
         position: relative;
         display: flex;
         flex-wrap: wrap;
-        flex-basis: 50%;
         z-index: 2;
-        &-intend{
-            margin-top: 90px;
-            padding-bottom: 190px;
-        }
+        padding-bottom: 190px;
+        
+    }
+    .teams__person{
+        flex-wrap: wrap;
+        height: 100%;
+       
+        z-index: 1;
+        background-repeat: no-repeat; 
+        margin-bottom: 40px;
+        position: relative;
+        margin-left: 10px;
+        
     }
     .person-two{
-        position: relative;
         z-index: 1;
     }
     .person-four{
+        padding-top: 10px;
         position: absolute;
         left: 210px;
-        top: 21px;    
+        z-index: 0;
     }
     .person-five{
-        margin-left: 260px;
+     img{
+        padding-left: 240px;
+        padding-top: 22px;
+    }   
+}
+    .person-six img {
+        padding-top: 10px;
+    }
+    .person-seven img{ 
+        
+            width: 97%;
+        
     }
     .person-eight{
-        position: relative;
-        margin-right: 230px;
-        z-index: 2;
+        margin-right: 240px;
+         img{
+        
     }
+}
     .person-nine{
+        z-index: 0;
+    img{ 
         position: absolute;
-        bottom: 190px;
-        left: 210px;
-        z-index: 1;
+        padding-top: 10px;
+        right: 50px;
+        
     }
+} 
+    .person-ten img{
+        padding-top: 31px;
+        margin-right: 90px;
+    }
+    .person-eleven{
+        
+    }
+    
+    
 }
 // end team
 @import 'media';
@@ -1105,7 +1153,7 @@ h1{
         height: 10px;
         border-width: 380px 700px 0 645px;
     }
-    .header__main-img img{
+    .header__main-img svg{
         max-width: 100%;
     }
     .about__text:before{
@@ -1559,6 +1607,19 @@ h1{
     }
 }
 @media (max-width: 767px){
+    .teams__inner .person-nine img{
+        position: static;
+    }
+    .teams__inner .person-eight{
+        margin-right: 1px;
+    }
+    .teams__inner .person-ten img{
+        margin-right: 0;
+    }
+    .teams__inner .person-five img {
+        padding-left: 20px;
+        padding-top: 22px;
+    }
     .header__main{
         margin-bottom: 20px;
     }
@@ -1626,9 +1687,6 @@ h1{
     .header__main-info .main-info__text p{
         padding-bottom: 10px;
     }
-    .teams__inner-people{
-        display: none;
-    }
     .teams__main .teams-box{
         margin-bottom: 30px;
     }
@@ -1660,6 +1718,25 @@ h1{
     }
 }
 @media (max-width: 500px){
+    .teams__inner-people{
+        justify-content:  flex-start;
+    }
+    .teams__person img{
+       height: 160px;
+       width: 80px;
+    }
+    .teams__inner .person-four {
+        padding-top: 0px;
+        position: static;
+        left: 100px;
+        z-index: 0;
+    }
+    .teams__inner .person-seven img {
+        background-size: contain;
+        width: 70px;
+        left: 0;
+        
+    }
     .header__main-info .main-info__text li{
         padding-bottom: 20px;
     }
@@ -1961,6 +2038,22 @@ h1{
 }
 
 @media (max-width: 399px){
+    .person-four img{
+        padding-top: 10px;
+        position: absolute;
+        left: 100px;
+        z-index: 0;
+    }
+    .teams__inner .person-eight{
+        padding: 0;
+        margin: 0;
+    }
+    .teams__inner .person-five{
+        padding-left: 117px;
+        margin-left: 0px;
+        width: 75px;
+
+    }
     .header__main-info .main-info__text li{
         padding-bottom: 10px;
     }
