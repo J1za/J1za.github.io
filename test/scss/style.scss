@@ -39,7 +39,7 @@
             display: flex;
             position: absolute;
             bottom: 55px;
-            right: 25px;
+            right: 20px;
             font-size: 14px;
             @include f500;
             cursor: pointer;
@@ -61,11 +61,11 @@
             }
         }
         li+li{
-            padding-left: 60px;
+            padding-left: 58px;
         }
         li:last-child{
             background-color: $yellow;
-            padding: 13px 28px;
+            padding: 12px 23px;
             margin-left: 33px;
             border-radius: 20px;
         }
@@ -75,15 +75,20 @@
     }
     &__main{
         display: flex;
-        margin-top: 38px;
         margin-bottom: 135px;
         align-items: center;
         max-width: 100%;
         position: relative;
+        &-img{
+            height: 605px;
+            svg{
+                margin-top: 0px;
+            }
+        }
         &-info{
             min-width: 370px;
-            margin-top: 75px;
             z-index: 1;
+            
             h1{
                 color: $blue;
                 font-size: 38px;
