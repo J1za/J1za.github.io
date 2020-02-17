@@ -1,5 +1,6 @@
 $(function(){
    
+    
 
     $('.team__inner-slider').slick({
         autoplay: true,
@@ -33,13 +34,12 @@ $(function(){
         
       });
       
-
+      
       $('.header__burger').click(function(event){
         $('.header__burger, .header__menu').toggleClass('active');
         $('body').toggleClass('lock');
       });
 });
-
 
 
 
