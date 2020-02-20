@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
-    <div class="wrap-teams">
-        <header class="header box-triangle-right">
+    <div class="wrap-news">
+        <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a href="#" class="header__logo">
+                    <a href="index.html" class="header__logo">
                         <img src="./images/svg/logo_top.svg" alt="">
                     </a>
                     <div class="header__burger">
@@ -24,79 +25,79 @@
                     </div>
                     <nav class="header__menu">
                         <ul>
-                            <li><a href="#">About </a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Partners</a></li>
-                            <li><a href="#">Customers</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contacts</a></li>
+                            <li><a href="about.html">About </a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="partners.html">Partners</a></li>
+                            <li><a href="customers.html">Customers</a></li>
+                            <li class="active__btn"><a href="news.html">News</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
                         </ul>
-
                         <div class="header__language">
-                            <div class="header__language-eng active-language">Eng</div>
-                            <div class="header__language-ru">Rus</div>
+                            <a href="#" class="header__language-item active__btn">Eng</a>
+                            <a href="#" class="header__language-item ">Rus</a>
                         </div>
                     </nav>
                     <div class="header__language-adaptiv">
-                        <div class="header__language-adaptiv-eng">Eng</div>
-                        <div class="header__language-adaptiv-ru">Rus</div>
+                        <a href="#"  class="header__language-adaptiv-item active__btn">Eng</a>
+                        <a href="#"  class="header__language-adaptiv-item ">Rus</a>
                     </div>
                 </div>
             </div>
         </header>
-        <section class="teams">
+        <section class="newspaper">
             <!-- <div class="box-triangle-top"></div>
-            <div class="box-triangle-left newspapertwo-left"></div> -->
+            <div class="box-triangle-left newspaper-left"></div> -->
             <div class="container">
-                <div class="teams__head">
-                    <h1>Team</h1>
-                    <div class="teams__title">Our team has long been working in the market of solutions for SAP and
-                        other
-                        systems for business process automation.</div>
-                </div>
-                <div class="teams__main">
-                    <div class="teams-box">
-                        <div class="teams__box-img">
-                            <img src="./images/people/person-one.png" alt="">
+                <div class="newspaper__archive">
+                    <h1>News</h1>
+                    <div class="newspaper__archive-info">
+                        <div class="newspaper__archive-title">Archive:</div>
+                        <div class="newspaper__archive-years">
+                            <a href="#" class="newspaper__archive-date">2019</a>
+                            <a href="#" class="newspaper__archive-date active__btn">2020</a>
                         </div>
-                        <div class="teams__box-name">Nikita Balenkov</div>
-                        <div class="teams__box-profession">CEO</div>
-                    </div>
-                    <div class="teams-box">
-                        <div class="teams__box-img">
-                            <img src="./images/people/person-two.png" alt="">
-                        </div>
-                        <div class="teams__box-name">Peter Margolis</div>
-                        <div class="teams__box-profession">Technical Director</div>
-                    </div>
-                    <div class="teams-box">
-                        <div class="teams__box-img">
-                            <img src="./images/people/person-three.png" alt="">
-                        </div>
-                        <div class="teams__box-name">Mikhail Kornienko</div>
-                        <div class="teams__box-profession">Development Director</div>
                     </div>
                 </div>
-                <div class="teams__inner">
-                    <div class="teams__inner-people">
-                        <div class="teams__person person-two"><img src="./images/people/person-two.png" alt=""></div>
-                        <div class="teams__person person-four"><img src="./images/people/person-four.png" alt=""></div>
-                        <div class="teams__person person-five"><img src="./images/people/person-five.png" alt=""></div>
-                        <div class="teams__person person-six"><img src="./images/people/person-six.png" alt=""></div>
-                        <div class="teams__person person-seven"><img src="./images/people/person-seven.png" alt="">
+                <div class="nespaper__inner">
+                    <div class="news__items">
+                        <div class="news__item">
+                            <div class="news__item-date news__date">20.01.20</div>
+                            <div class="news__item-subtitle">Technology’s Impact on the Workplace in 2020</div>
+                            <div class="news__item-img"> <img src="./images/news/object1.jpg" alt=""><a class="btn-title btn-news" href="#">more</a>
+                            </div>
                         </div>
-                        <div class="teams__person person-eight"><img src="./images/people/person-eight.png" alt="">
+                        <div class="news__item">
+                            <div class="news__item-date news__date">20.01.20</div>
+                            <div class="news__item-subtitle">Technology’s Impact on the Workplace in 2020</div>
+                            <div class="news__item-img"> <img src="./images/news/object2.jpg" alt=""> <a class="btn-title btn-news" href="#">more</a>
+                            </div>
                         </div>
-                        <div class="teams__person person-nine"><img src="./images/people/person-nine.png" alt=""></div>
-                        <div class="teams__person person-ten"><img src="./images/people/person-ten.png" alt=""></div>
-                        <div class="teams__person person-eleven"><img src="./images/people/person-eleven.png" alt="">
+                        <div class="news__item">
+                            <div class="news__item-date news__date">20.01.20</div>
+                            <div class="news__item-subtitle">Technology’s Impact on the Workplace in 2020</div>
+                            <div class="news__item-img"><img src="./images/news/object1.jpg" alt=""><a class="btn-title btn-news" href="#">more</a>
+                            </div>
                         </div>
+                        <div class="news__item">
+                            <div class="news__item-date news__date">20.01.20</div>
+                            <div class="news__item-subtitle">Technology’s Impact on the Workplace in 2020</div>
+                            <div class="news__item-img"> <img src="./images/news/object2.jpg" alt=""> <a class="btn-title btn-news" href="#">more</a>
+                            </div>
+                        </div>
+                        <div class="news__item">
+                            <div class="news__item-date news__date">20.01.20</div>
+                            <div class="news__item-subtitle">Technology’s Impact on the Workplace in 2020</div>
+                            <div class="news__item-img"> <img src="./images/news/object1.jpg" alt=""><a class="btn-title btn-news" href="#">more</a>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <section class="feedback feedback__team">
+    <section class="feedback feedback__news">
         <div class="container">
             <div class="feedback__text">
                 <div class="feedback__text-title">Get In Touch</div>
@@ -116,9 +117,9 @@
         <div class="box-left aboutpage"></div>
         <div class="box-right aboutpage"></div>
     </section>
-    <section class="contacts contacts__team">
+    <section class="contacts contacts__news">
         <div class="contacts__inner">
-            <div class="contacts__map"></div>
+            <div class="contacts__map" data-coords="55.735349, 37.587356"></div>
             <div class="contacts__box">
                 <div class="contacts__box-title">Contacts</div>
                 <div class="contacts__box-list">
@@ -136,7 +137,7 @@
             </div>
         </div>
     </section>
-    <section class="footer footer__team">
+    <section class="footer">
         <div class="container">
             <div class="footer__top">
                 <div class="footer-logo">
@@ -153,8 +154,8 @@
                     </ul>
                 </nav>
                 <div class="footer__language">
-                    <div class="footer__language-ru">Ru</div>
-                    <div class="footer__language-eng">Eng</div>
+                    <a class="footer__language-item" href="#">Ru</a>
+                    <a class="footer__language-item" href="#">Eng</a>
                 </div>
             </div>
 

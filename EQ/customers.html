@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a href="#" class="header__logo">
+                    <a href="index.html" class="header__logo">
                         <img src="./images/svg/logo_top.svg" alt="">
                     </a>
                     <div class="header__burger">
@@ -24,22 +25,21 @@
                     </div>
                     <nav class="header__menu">
                         <ul>
-                            <li class="header__box-on"><a href="#">About </a></li>
-                            <li class="header__box-off"><a href="#">Team</a></li>
-                            <li class="header__box-off"><a href="#">Partners</a></li>
-                            <li class="header__box-off"><a href="#">Customers</a></li>
-                            <li class="header__box-off"><a href="#">News</a></li>
-                            <li class="header__box-off"><a href="#">Contacts</a></li>
+                            <li><a href="about.html">About </a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="partners.html">Partners</a></li>
+                            <li class="active__btn"><a href="customers.html">Customers</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
                         </ul>
-
                         <div class="header__language">
-                            <div class="header__language-eng">Eng</div>
-                            <div class="header__language-ru">Rus</div>
+                            <a href="#" class="header__language-item active__btn">Eng</a>
+                            <a href="#" class="header__language-item ">Rus</a>
                         </div>
                     </nav>
                     <div class="header__language-adaptiv">
-                        <div class="header__language-adaptiv-eng">Eng</div>
-                        <div class="header__language-adaptiv-ru">Rus</div>
+                        <a href="#"  class="header__language-adaptiv-item active__btn">Eng</a>
+                        <a href="#"  class="header__language-adaptiv-item ">Rus</a>
                     </div>
                 </div>
             </div>
@@ -98,22 +98,24 @@
                         </div>
                         <div class="customers__info">
                             <div class="customers__info-text">
-                                <span class="text-transform"> AKRIKHIN</span> is one of the leading Russian
+
+                                <p> AKRIKHIN is one of the leading Russian
                                 pharmaceutical
                                 companies that produces effective, affordable and high quality medicines in the most
                                 popular
                                 therapeutic areas in Russia. The company is in the top 5 leading local pharmaceutical
-                                producers by sales on the Russian market*.
+                                producers by sales on the Russian market*.</p>
 
-                                <p><span class="text-transform">AKRIKHIN</span> celebrated its
+                                <p>AKRIKHIN> celebrated its
                                     80th anniversary in 2016. The
                                     company is actively developing, placing an emphasis on modernization and expanding
                                     production, as well as embracing new technologies. As a result, the company’s
                                     performance
-                                    grows every year, in terms of both production output and sales volume. <span
-                                        class="text-transform">AKRIKHIN</span> is also working on ambitious plans for
+                                    grows every year, in terms of both production output and sales volume.
+                                    AKRIKHIN is also working on ambitious plans for
                                     the
                                     future. </p>
+
                                 <a href="#" class="customers__info-site">www.akrikhin.com</a>
                             </div>
                         </div>
@@ -124,7 +126,7 @@
                         </div>
                         <div class="customers__info">
                             <div class="customers__info-text">
-                                <span class="text-transform">BIOCAD</span> is Russia's leading innovative biotechnology
+                                <p>BIOCAD is Russia's leading innovative biotechnology
                                 company; it combines a world-class
                                 research and development center, ultra-modern pharmaceutical and biotechnological
                                 manufacturing facilities, as well as preclinical and clinical research infrastructure
@@ -134,7 +136,7 @@
                                 to large-scale commercial production and marketing support.
                                 BIOCAD`s medicines are dedicated to treat complex health conditions such as cancer, HIV
                                 and
-                                Hepatitis C infections, multiple sclerosis and other disorders.
+                                Hepatitis C infections, multiple sclerosis and other disorders.</p>
                                 <a href="#" class="customers__info-site">www.biocadglobal.com</a>
                             </div>
                         </div>
@@ -165,7 +167,7 @@
     </section>
     <div class="contacts">
         <div class="contacts__inner">
-            <div class="contacts__map"></div>
+            <div class="contacts__map" data-coords="55.735349, 37.587356"></div>
             <div class="contacts__box">
                 <div class="contacts__box-title">Contacts</div>
                 <div class="contacts__box-list">
@@ -200,8 +202,8 @@
                     </ul>
                 </nav>
                 <div class="footer__language">
-                    <div class="footer__language-ru">Ru</div>
-                    <div class="footer__language-eng">Eng</div>
+                    <a class="footer__language-item" href="#">Ru</a>
+                    <a class="footer__language-item" href="#">Eng</a>
                 </div>
             </div>
 

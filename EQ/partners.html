@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a href="#" class="header__logo">
+                    <a href="index.html" class="header__logo">
                         <img src="./images/svg/logo_top.svg" alt="">
                     </a>
                     <div class="header__burger">
@@ -24,22 +25,21 @@
                     </div>
                     <nav class="header__menu">
                         <ul>
-                            <li><a href="#">About </a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Partners</a></li>
-                            <li><a href="#">Customers</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contacts</a></li>
+                            <li><a href="about.html">About </a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li class="active__btn"><a href="partners.html">Partners</a></li>
+                            <li><a href="customers.html">Customers</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
                         </ul>
-
                         <div class="header__language">
-                            <div class="header__language-eng">Eng</div>
-                            <div class="header__language-ru">Rus</div>
+                            <a href="#" class="header__language-item active__btn">Eng</a>
+                            <a href="#" class="header__language-item ">Rus</a>
                         </div>
                     </nav>
                     <div class="header__language-adaptiv">
-                        <div class="header__language-adaptiv-eng">Eng</div>
-                        <div class="header__language-adaptiv-ru">Rus</div>
+                        <a href="#"  class="header__language-adaptiv-item active__btn">Eng</a>
+                        <a href="#"  class="header__language-adaptiv-item ">Rus</a>
                     </div>
                 </div>
             </div>
@@ -57,15 +57,15 @@
                         <div class="customers__info partners__info">
                             <div class="partner__title">Technology partner</div>
                             <div class="customers__info-text partners__info-text">
-                                <span class="text-transform">IBS</span> is a key technology partner of Russian business
+                                <p>IBS is a key technology partner of Russian business
                                 and
                                 government leaders. The company is transforming its team's knowledge and understanding
                                 of
                                 the modern economy into new solutions that help increase competitiveness and achieve
                                 better
-                                results in the digital age.
+                                results in the digital age.</p>
 
-                                <p> <span class="text-transform">IBS</span> solves complex tasks
+                                <p> IBS solves complex tasks
                                     in the field of strategic development of the organization's it resources and
                                     improving
                                     the efficiency of processes, as well as provides services in the field of creating
@@ -74,7 +74,7 @@
                                     development
                                     and unique custom solutions, information security and outsourcing.</p>
 
-                                <p> <span class="text-transform">IBS</span> builds long-term
+                                <p> IBS builds long-term
                                     partnerships with its clients, such as Aeroflot, Gazprom, Gazprombank, Rosatom,
                                     Rosneft,
                                     Sberbank, SIBUR, Transneft, X5, the Bank of Russia, the Russian Ministry of Finance,
@@ -94,7 +94,7 @@
                         <div class="customers__info partners__info">
                             <div class="partner__title">Technology partner</div>
                             <div class="customers__info-text partners__info-text">
-                                <span class="text-transform">SAP</span> is the market leader in enterprise application
+                                <p>SAPis the market leader in enterprise application
                                 software, helping companies of all sizes
                                 and in all industries run at their best: 77% of the world’s transaction revenue touches
                                 an
@@ -104,14 +104,14 @@
                                 suite of applications and services enables our customers to operate profitably, adapt
                                 continuously, and make a difference. With a global network of customers, partners,
                                 employees, and thought leaders, SAP helps the world run better and improves people’s
-                                lives.
+                                lives.</p>
 
-                                <p><span class="text-transform">SAP</span> is the market leader
+                                <p>SAP< is the market leader
                                     in enterprise application software, helping companies of all sizes
                                     and in all industries run at their best: 77% of the world’s transaction revenue
                                     touches
-                                    an
-                                    <span class="text-transform">SAP</span> system. Our machine learning, Internet of
+                                    an <br>
+                                SAP system. Our machine learning, Internet of
                                     Things
                                     (IoT), and advanced analytics
                                     technologies help turn customers’ businesses into intelligent enterprises. Our
@@ -133,9 +133,9 @@
                         <div class="customers__info partners__info">
                             <div class="partner__title">Technology partner</div>
                             <div class="customers__info-text partners__info-text">
-                                3Keys GmbH is specialised in delivering Track & Trace projects of all kinds, adapted to
+                                <p>3Keys GmbH is specialised in delivering Track & Trace projects of all kinds, adapted to
                                 the
-                                needs of various industries.
+                                needs of various industries.</p>
 
                                 <p> Based on several successfully delivered global Track & Trace projects we design,
                                     implement
@@ -181,7 +181,7 @@
     </section>
     <section class="contacts contacts__partners">
         <div class="contacts__inner">
-            <div class="contacts__map"></div>
+            <div class="contacts__map" data-coords="55.735349, 37.587356"></div>
             <div class="contacts__box">
                 <div class="contacts__box-title">Contacts</div>
                 <div class="contacts__box-list">
@@ -216,8 +216,8 @@
                     </ul>
                 </nav>
                 <div class="footer__language">
-                    <div class="footer__language-ru">Ru</div>
-                    <div class="footer__language-eng">Eng</div>
+                    <a class="footer__language-item" href="#">Ru</a>
+                    <a class="footer__language-item" href="#">Eng</a>
                 </div>
             </div>
 

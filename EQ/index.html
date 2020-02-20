@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-   
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-
 <body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="header__logo">
+                <a href="index.html" class="header__logo">
                     <img src="./images/svg/logo_top.svg" alt="">
                 </a>
                 <div class="header__burger">
@@ -24,7 +23,7 @@
                 </div>
                 <nav class="header__menu">
                     <ul>
-                        <li class="active__btn"><a href="about.html">About </a></li>
+                        <li><a href="about.html">About </a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="partners.html">Partners</a></li>
                         <li><a href="customers.html">Customers</a></li>
@@ -32,13 +31,13 @@
                         <li><a href="contacts.html">Contacts</a></li>
                     </ul>
                     <div class="header__language">
-                        <div class="header__language-eng active__btn">Eng</div>
-                        <div class="header__language-ru ">Rus</div>
+                        <a href="#" class="header__language-item active__btn">Eng</a>
+                        <a href="#" class="header__language-item ">Rus</a>
                     </div>
                 </nav>
                 <div class="header__language-adaptiv">
-                    <div class="header__language-adaptiv-eng active__btn">Eng</div>
-                    <div class="header__language-adaptiv-ru ">Rus</div>
+                    <a href="#"  class="header__language-adaptiv-item active__btn">Eng</a>
+                    <a href="#"  class="header__language-adaptiv-item ">Rus</a>
                 </div>
             </div>
         </div>
@@ -1868,9 +1867,9 @@
                         <a class="btn-title btn-title-main" href="#">more</a>
                     </div>
                     <div class="about__text">
-                        Equilibrium LLC is a consulting company that provides services for the implementation,
+                        <p>Equilibrium LLC is a consulting company that provides services for the implementation,
                         development
-                        and support of Track&Trace solutions.
+                        and support of Track&Trace solutions.</p>
                         <p>We help build business processes at all levels and implement information systems for
                             implementing projects for serialization and full tracking of product movement, including
                             integration with contractors, contract manufacturers and 3PL, based on industry standards,
@@ -1919,9 +1918,9 @@
                 <div class="pathners__inner-title">Partners</div>
                 <div class="pathners__inner-text">Innovations works with numerous partners to serve you better.</div>
                 <div class="pathners__inner-img">
-                    <div class="pathners__emblem one"><img src="./images/partner/ibs.png" alt=""></div>
-                    <div class="pathners__emblem two"><img src="./images/partner/sap.png" alt=""></div>
-                    <div class="pathners__emblem three"><img src="./images/partner/3keys.png" alt=""></div>
+                    <div class="pathners__emblem"><img src="./images/partner/ibs.png" alt=""></div>
+                    <div class="pathners__emblem"><img src="./images/partner/sap.png" alt=""></div>
+                    <div class="pathners__emblem"><img src="./images/partner/3keys.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -1931,18 +1930,18 @@
             <div class="news__inner">
                 <div class="news__btn">
                     <div class="news__btn-title">News</div>
-                    <div class="news__btn-button"><a href="#">READ MORE</a> </div>
+                    <div class="news__btn-button"><a href="news.html">READ MORE</a> </div>
                 </div>
                 <div class="news__items">
                     <div class="news__item news__item-main">
                         <div class="news__item-date">20.01.20</div>
                         <div class="news__item-subtitle">Technology’s Impact on the Workplace in 2020</div>
-                        <div class="news__item-img"> <img src="./images/news/object1.jpg" alt=""><a class="btn-title btn-news" href="#">more</a></div>
+                        <div class="news__item-img"> <img src="./images/news/object1.jpg" alt=""><a class="btn-title btn-news" href="news_item.html">more</a></div>
                     </div>
                     <div class="news__item news__item-main">
                         <div class="news__item-date">20.01.20</div>
                         <div class="news__item-subtitle">Technology’s Impact on the Workplace in 2020</div>
-                        <div class="news__item-img"> <img src="./images/news/object2.jpg" alt=""><a class="btn-title btn-news" href="#">more</a></div>
+                        <div class="news__item-img"> <img src="./images/news/object2.jpg" alt=""><a class="btn-title btn-news" href="news_item.html">more</a></div>
                     </div>
                 </div>
             </div>
@@ -1970,7 +1969,7 @@
     </section>
     <section class="contacts">
         <div class="contacts__inner">
-            <div class="contacts__map"></div>
+            <div class="contacts__map" data-coords="55.735349, 37.587356"></div>
             <div class="contacts__box">
                 <div class="contacts__box-title">Contacts</div>
                 <div class="contacts__box-list">
@@ -1979,14 +1978,11 @@
                     <div class="contacts__box-list-phone">+7 495 970 44 41</div>
                     <div class="contacts__box-list-email">info@equilibrium.ru</div>
                 </div>
-                <div id="share" class="contacts__box-list-icon">
-                    <div class="icon-facebook"></div>
-                    <div class="icon-twitter"></div>
-                    <div class="icon-instagram"></div>
+                <div class="contacts__box-list-icon">
+                    <a class="icon-facebook" href="#"></a>
+                    <a class="icon-twitter" href="#"></a>
+                    <a class="icon-instagram" href="#"></a>
                 </div>
-            </div>
-            <div class="" id="share">
-
             </div>
         </div>
     </section>
@@ -2007,8 +2003,8 @@
                     </ul>
                 </nav>
                 <div class="footer__language">
-                    <div class="footer__language-ru">Ru</div>
-                    <div class="footer__language-eng">Eng</div>
+                    <a class="footer__language-item" href="#">Ru</a>
+                    <a class="footer__language-item" href="#">Eng</a>
                 </div>
             </div>
 
@@ -2023,10 +2019,11 @@
             </div>
         </div>
     </section>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
+   
 </body>
 
 </html>

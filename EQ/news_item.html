@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a href="#" class="header__logo">
+                    <a href="index.html" class="header__logo">
                         <img src="./images/svg/logo_top.svg" alt="">
                     </a>
                     <div class="header__burger">
@@ -24,22 +25,21 @@
                     </div>
                     <nav class="header__menu">
                         <ul>
-                            <li><a href="#">About </a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Partners</a></li>
-                            <li><a href="#">Customers</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contacts</a></li>
+                            <li><a href="about.html">About </a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="partners.html">Partners</a></li>
+                            <li><a href="customers.html">Customers</a></li>
+                            <li class="active__btn"><a href="news.html">News</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
                         </ul>
-
                         <div class="header__language">
-                            <div class="header__language-eng">Eng</div>
-                            <div class="header__language-ru">Rus</div>
+                            <a href="#" class="header__language-item active__btn">Eng</a>
+                            <a href="#" class="header__language-item ">Rus</a>
                         </div>
                     </nav>
                     <div class="header__language-adaptiv">
-                        <div class="header__language-adaptiv-eng">Eng</div>
-                        <div class="header__language-adaptiv-ru">Rus</div>
+                        <a href="#"  class="header__language-adaptiv-item active__btn">Eng</a>
+                        <a href="#"  class="header__language-adaptiv-item ">Rus</a>
                     </div>
                 </div>
             </div>
@@ -52,8 +52,10 @@
                     <h1>News</h1>
                     <div class="newspaper__archive-info">
                         <div class="newspaper__archive-title">Archive:</div>
-                        <div class="newspaper__archive-date2019">2019</div>
-                        <div class="newspaper__archive-date2020">2020</div>
+                        <div class="newspaper__archive-years">
+                            <a href="#" class="newspaper__archive-date">2019</a>
+                            <a href="#" class="newspaper__archive-date active__btn">2020</a>
+                        </div>
                     </div>
                 </div>
                 <div class="newspapertwo__inner">
@@ -67,7 +69,7 @@
                         <div class="newspapertwo__image">
                             <img class="newspapertwo-object" src="./images/news/object3.jpg" alt="">
                         </div>
-                        <div class="newspapertwo__text">BIOCAD is Russia's leading innovative biotechnology company; it
+                        <div class="newspapertwo__text"><p>BIOCAD is Russia's leading innovative biotechnology company; it
                             combines a world-class research and development center, ultra-modern pharmaceutical and
                             biotechnological manufacturing facilities, as well as preclinical and clinical research
                             infrastructure compliant with international standards. BIOCAD is one of the world`s few
@@ -76,15 +78,15 @@
                             engineering to large-scale commercial production and marketing support. BIOCAD`s medicines
                             are
                             dedicated to treat complex health conditions such as cancer, HIV and Hepatitis C infections,
-                            multiple sclerosis and other disorders.
+                            multiple sclerosis and other disorders.</p>
                             <p>BIOCAD is one of the world`s few full-cycle drug
                                 development and manufacturing companies, from
                                 new molecule discovery and genetic engineering to large-scale commercial production and
                                 marketing support.</p>
-                            BIOCAD`s medicines are dedicated to treat complex health conditions such as cancer,
+                            <p>BIOCAD`s medicines are dedicated to treat complex health conditions such as cancer,
                                 HIV
                                 and
-                                Hepatitis C infections, multiple sclerosis and other disorders.
+                                Hepatitis C infections, multiple sclerosis and other disorders.</p>
                         </div>
                         <div class="newspapertwo__btn">
                             <div class="newspapertwo__btn-text">Share:</div>
@@ -133,7 +135,7 @@
     </section>
     <section class="contacts contacts__newstwo">
         <div class="contacts__inner">
-            <div class="contacts__map"></div>
+            <div class="contacts__map" data-coords="55.735349, 37.587356"></div>
             <div class="contacts__box">
                 <div class="contacts__box-title">Contacts</div>
                 <div class="contacts__box-list">
@@ -168,8 +170,8 @@
                     </ul>
                 </nav>
                 <div class="footer__language">
-                    <div class="footer__language-ru">Ru</div>
-                    <div class="footer__language-eng">Eng</div>
+                    <a class="footer__language-item" href="#">Ru</a>
+                    <a class="footer__language-item" href="#">Eng</a>
                 </div>
             </div>
 

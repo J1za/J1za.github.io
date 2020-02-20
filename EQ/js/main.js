@@ -1,7 +1,49 @@
-$(function(){
-   
-    
+function reorderTeam() {
+    var data={};
+    if($(window).width()<500) {
 
+        $('.teams__person').each(function(){
+
+            data=$(this).data();
+
+            $style='';
+
+            if(data['leftMobile']) {
+                $style+='left:'+  data['leftMobile']+'px';
+            }
+
+            if(data['zIndexMobile']) {
+                $style+='z-index:'+  data['zIndexMobile'];
+            }
+
+            $(this).attr('style',$style);
+        });
+
+    } else {
+
+        $('.teams__person').each(function(){
+
+            data=$(this).data();
+
+            $style='';
+
+            if(data['leftDesktop']) {
+                $style+='left:'+  data['leftDesktop']+'px';
+            }
+
+            if(data['zIndexDesktop']) {
+                $style+='z-index:'+  data['zIndexDesktop'];
+            }
+
+
+            $(this).attr('style',$style);
+        });
+
+
+    }
+}
+
+$(function(){
     $('.team__inner-slider').slick({
         autoplay: true,
         autoplaySpeed: 3000 ,
@@ -25,33 +67,125 @@ $(function(){
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              
+
             }
           }
-          
+
         ]
-        
-        
+
+
       });
-      
-      
+
+
       $('.header__burger').click(function(event){
         $('.header__burger, .header__menu').toggleClass('active');
         $('body').toggleClass('lock');
       });
+
+
+      if($('.teams__inner-people')[0]) {
+
+          $(window).resize(function () {
+              reorderTeam();
+          })
+
+          $(window).resize();
+
+      }
+
+
 });
-
-
-
-'use strict';
-
+window.sr = new ScrollReveal()
+sr.reveal('.header',{
+    origin: 'top',
+    delay: 400,
+    duration: 1500,
+    distance: '200px',
+});
+sr.reveal('.header__main-info',{
+    origin: 'left',
+    delay: 400,
+    duration: 1500,
+    distance: '200px',
+});
+sr.reveal('.header__main-img',{
+    origin: 'right',
+    delay: 400,
+    duration: 1500,
+    distance: '250px',
+});
+sr.reveal('.team__inner-slider',{
+    origin: 'top',
+    delay: 200,
+    duration: 2500,
+    distance: '30px',
+    scale: 1.5,
+    cleanup: true,
+});
+sr.reveal('.about',{
+    origin: 'bottom',
+    delay: 400,
+    duration: 1500,
+    distance: '250px',
+});
+sr.reveal('.btn-title',{
+    delay: 100,
+    duration: 1500,
+    scale: 2,
+});
+sr.reveal('.feedback form button',{
+    delay: 100,
+    duration: 1500,
+    scale: 2,
+});
+sr.reveal('.pathners__inner-img',{
+    origin: 'bottom',
+    delay: 200,
+    duration: 1500,
+    distance: '250px',
+});
+sr.reveal('.feedback',{
+    origin: 'bottom',
+    delay: 300,
+    duration: 1500,
+    distance: '250px',
+});
+sr.reveal('.contacts',{
+    origin: 'bottom',
+    delay: 400,
+    duration: 1400,
+    distance: '250px',
+});
+sr.reveal('.customers__inner',{
+    origin: 'bottom',
+    delay: 100,
+    duration: 1000,
+    distance: '250px',
+});
+sr.reveal('.footer',{
+    origin: 'bottom',
+    delay: 500,
+    duration: 1600,
+    distance: '250px',
+});
+sr.reveal('.footer__down',{
+    origin: 'bottom',
+    delay: 700,
+    duration: 1600,
+    distance: '250px',
+});
+sr.reveal('.teams__box-img', { 
+    duration: 1000 
+});
+sr.reveal('.teams__inner-people', { 
+    duration: 3000 
+});
 
 var tl = anime.timeline({
     easing: 'linear',
     loop: true,
     endDelay: 1000
 });
-
 
 tl.add({
     targets: 'svg #notebook', // вылетел ноутбук
