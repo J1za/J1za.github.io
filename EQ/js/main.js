@@ -96,10 +96,18 @@ $(function(){
 
 });
 window.sr = new ScrollReveal()
+sr.reveal('body', {
+    delay: 0,
+    duration: 800,
+    distance: '0',
+    scale: 1,
+    viewFactor: 0.01,
+    cleanup: true,
+});
 sr.reveal('.header',{
     origin: 'top',
-    delay: 400,
-    duration: 1500,
+    delay: 100,
+    duration: 300,
     distance: '200px',
 });
 sr.reveal('.header__main-info',{
@@ -125,7 +133,7 @@ sr.reveal('.team__inner-slider',{
 sr.reveal('.about',{
     origin: 'bottom',
     delay: 400,
-    duration: 1500,
+    duration: 500,
     distance: '250px',
 });
 sr.reveal('.btn-title',{
