@@ -38,13 +38,16 @@
                         <li>without third-party developers</li>
                         <li>without conclusion of an agreement</li>
                     </ul>
+
                     <input type="file" name="file" id="file" class="inputfile"
                         data-multiple-caption="{count} files selected" multiple />
                     <label for="file">
                         <p>Upload files</p>
                     </label>
+
                 </div>
                 <div class="header__main-img">
+                    <img src="./images/main-img.png" alt="">
                     <img src="./images/main-img.png" alt="">
                 </div>
             </div>
@@ -96,8 +99,18 @@
                     </p>
                 </div>
             </div>
-            <button> <span>Ask a Question</span> </button>
+            <button data-fancybox data-src="#modal" > <span>Ask a Question</span> </button>
         </div>
+        <div id="modal">
+            <div class="load__contact">
+                <form>
+                    <input type="email" placeholder="Your email" required>
+                    <textarea placeholder="Task description" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="load__contact-back"></div>
+            </div>
+        </div> 
     </section>
     <section class="load">
         <div class="container">
@@ -115,7 +128,8 @@
                     <div class="upload__box">
                         <div class="upload__box-img"><img src="./images/icons/file-verybig.png" alt=""></div>
 
-                        <input name="file" type="file" name="file" id="input__file" class="input__file" multiple>
+                        <input name="file" type="file" name="file" id="input__file" class="input__file" multiple
+                            value="#">
                         <label for="input__file" class="input__file-button">
                             <span class="input__file-button-text">Upload files</span>
                         </label>
@@ -133,6 +147,24 @@
                 </div>
 
             </div>
+        </div>
+        <div class="file-back">
+            <img src="./images/icons/file-back.png" alt="">
+        </div>
+        <div class="file-back">
+            <img src="./images/icons/file-back.png" alt="">
+        </div>
+        <div class="file-back">
+            <img src="./images/icons/file-back.png" alt="">
+        </div>
+        <div class="file-back">
+            <img src="./images/icons/file-back.png" alt="">
+        </div>
+        <div class="file-back">
+            <img src="./images/icons/file-back.png" alt="">
+        </div>
+        <div class="file-back">
+            <img src="./images/icons/file-back.png" alt="">
         </div>
     </section>
     <section class="aplications">
@@ -181,6 +213,9 @@
         </div>
     </section>
     <section class="service">
+        <div class="check-lien">
+            <img src="./images/svg/check-line.svg" alt="">
+        </div>
         <div class="container">
             <div class="title-service title">
                 Service advantages
@@ -250,7 +285,8 @@
                     </div>
                 </div>
                 <div class="accordion__item">
-                    <div class="accordion__title">After downloading the file, what will need to be done, what will be the deadlines?</div>
+                    <div class="accordion__title">After downloading the file, what will need to be done, what will be
+                        the deadlines?</div>
                     <div class="accordion__content">
                         <p> Someone likes to work in a large team, while someone prefers individual cooperation. To
                             avoid disappointment, learn more about team structure, number of people, etc. Someone likes
