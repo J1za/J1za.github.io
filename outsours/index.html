@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="container">
             <div class="header__top">
@@ -99,7 +98,7 @@
                     </p>
                 </div>
             </div>
-            <button data-fancybox data-src="#modal" > <span>Ask a Question</span> </button>
+            <button data-fancybox data-src="#modal"> <span>Ask a Question</span> </button>
         </div>
         <div id="modal">
             <div class="load__contact">
@@ -110,7 +109,8 @@
                 </form>
                 <div class="load__contact-back"></div>
             </div>
-        </div> 
+        </div>
+
     </section>
     <section class="load">
         <div class="container">
@@ -124,12 +124,14 @@
                 <span></span>
             </div>
             <div class="load__wrapper">
+
                 <div class="upload__inner">
+
                     <div class="upload__box">
                         <div class="upload__box-img"><img src="./images/icons/file-verybig.png" alt=""></div>
 
                         <input name="file" type="file" name="file" id="input__file" class="input__file" multiple
-                            value="#">
+                            value="upload">
                         <label for="input__file" class="input__file-button">
                             <span class="input__file-button-text">Upload files</span>
                         </label>
@@ -142,6 +144,9 @@
                         <input type="email" placeholder="Your email" required>
                         <textarea placeholder="Task description" required></textarea>
                         <button type="submit">Submit</button>
+                        <label for="input__file" class="input__file-button">
+                            <span class="input__file-button-text">Upload files</span>
+                        </label>
                     </form>
                     <div class="load__contact-back"></div>
                 </div>
@@ -212,7 +217,7 @@
             </div>
         </div>
     </section>
-    <section class="service">
+     <section class="service">
         <div class="check-lien">
             <img src="./images/svg/check-line.svg" alt="">
         </div>
@@ -261,8 +266,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="faq">
+   </section>
+     <section class="faq">
         <div class="container">
             <div class="title-faq title">
                 Faq
@@ -326,6 +331,7 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
