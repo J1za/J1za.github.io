@@ -9,16 +9,22 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        document.documentElement.classList.add('sr');
+    </script>
+    <style>
+        .sr body{ visibility: hidden }
+    </style>
+    <script src="js/effects.js"></script>
 </head>
 
-<body>
+<body id="page_team">
     <div class="wrap-teams">
         <header class="header box-triangle-right">
             <div class="container">
                 <div class="header__inner">
                     <a href="index.html" class="header__logo">
-                        <img src="./images/svg/logo_top.svg" alt="">
+                        <img src="images/svg/logo_top.svg" alt="">
                     </a>
                     <div class="header__burger">
                         <span></span>
@@ -33,17 +39,18 @@
                             <li><a href="contacts.html">Contacts</a></li>
                         </ul>
                         <div class="header__language">
-                            <a href="#" class="header__language-item active__btn">Eng</a>
-                            <a href="#" class="header__language-item ">Rus</a>
+                            <a href="team.html#" class="header__language-item active__btn">Eng</a>
+                            <a href="team.html#" class="header__language-item ">Rus</a>
                         </div>
                     </nav>
                     <div class="header__language-adaptiv">
-                        <a href="#"  class="header__language-adaptiv-item active__btn">Eng</a>
-                        <a href="#"  class="header__language-adaptiv-item ">Rus</a>
+                        <a href="team.html#"  class="header__language-adaptiv-item active__btn">Eng</a>
+                        <a href="team.html#"  class="header__language-adaptiv-item ">Rus</a>
                     </div>
                 </div>
             </div>
         </header>
+        <div class="header__padding"></div>
         <section class="teams">
             <!-- <div class="box-triangle-top"></div>
             <div class="box-triangle-left newspapertwo-left"></div> -->
@@ -55,23 +62,23 @@
                         systems for business process automation.</div>
                 </div>
                 <div class="teams__main">
-                    <div class="teams-box">
+                    <div class="teams-box team_item">
                         <div class="teams__box-img">
-                            <img src="./images/people/person-one.png" alt="">
+                            <img src="images/people/person-one.png" alt="">
                         </div>
                         <div class="teams__box-name">Nikita Balenkov</div>
                         <div class="teams__box-profession">CEO</div>
                     </div>
-                    <div class="teams-box">
+                    <div class="teams-box team_item">
                         <div class="teams__box-img">
-                            <img src="./images/people/person-two.png" alt="">
+                            <img src="images/people/person-two.png" alt="">
                         </div>
                         <div class="teams__box-name">Peter Margolis</div>
                         <div class="teams__box-profession">Technical Director</div>
                     </div>
-                    <div class="teams-box">
+                    <div class="teams-box team_item">
                         <div class="teams__box-img">
-                            <img src="./images/people/person-three.png" alt="">
+                            <img src="images/people/person-three.png" alt="">
                         </div>
                         <div class="teams__box-name">Mikhail Kornienko</div>
                         <div class="teams__box-profession">Development Director</div>
@@ -79,17 +86,17 @@
                 </div>
                 <div class="teams__inner">
                     <div class="teams__inner-people">
-                        <div class="teams__person" data-left-desktop="-10" data-z-index-desktop="" data-left-mobile="" data-z-index-mobile="" data-order-mobile="1"><img src="./images/people/person-two.png" alt=""></div>
-                        <div class="teams__person" data-left-desktop="" data-z-index-desktop="" data-left-mobile="" data-z-index-mobile="" data-order-mobile="2"><img src="./images/people/person-four.png" alt=""></div>
-                        <div class="teams__person" data-left-desktop="" data-z-index-desktop="" data-left-mobile="" data-z-index-mobile="" data-order-mobile="3"><img src="./images/people/person-five.png" alt=""></div>
-                        <div class="teams__person" data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="5"><img src="./images/people/person-six.png" alt=""></div>
-                        <div class="teams__person " data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="6"><img src="./images/people/person-seven.png" alt="">
+                        <div class="teams__person" data-left-desktop="-10" data-z-index-desktop="" data-left-mobile="" data-z-index-mobile="" data-order-mobile="1"><img src="images/people/person-two.png" alt=""></div>
+                        <div class="teams__person" data-left-desktop="" data-z-index-desktop="" data-left-mobile="" data-z-index-mobile="" data-order-mobile="2"><img src="images/people/person-four.png" alt=""></div>
+                        <div class="teams__person" data-left-desktop="" data-z-index-desktop="" data-left-mobile="" data-z-index-mobile="" data-order-mobile="3"><img src="images/people/person-five.png" alt=""></div>
+                        <div class="teams__person" data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="5"><img src="images/people/person-six.png" alt=""></div>
+                        <div class="teams__person " data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="6"><img src="images/people/person-seven.png" alt="">
                         </div>
-                        <div class="teams__person" data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="4"><img src="./images/people/person-eight.png" alt="">
+                        <div class="teams__person" data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="4"><img src="images/people/person-eight.png" alt="">
                         </div>
-                        <div class="teams__person" data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="7"><img src="./images/people/person-nine.png" alt=""></div>
-                        <div class="teams__person" data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="8"><img src="./images/people/person-ten.png" alt=""></div>
-                        <div class="teams__person" data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="9"><img src="./images/people/person-eleven.png" alt="">
+                        <div class="teams__person" data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="7"><img src="images/people/person-nine.png" alt=""></div>
+                        <div class="teams__person" data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="8"><img src="images/people/person-ten.png" alt=""></div>
+                        <div class="teams__person" data-left-desktop="" data-z-index-desktop=""  data-left-mobile="" data-z-index-mobile="" data-order-mobile="9"><img src="images/people/person-eleven.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -140,21 +147,21 @@
         <div class="container">
             <div class="footer__top">
                 <div class="footer-logo">
-                    <img src="./images/svg/logo_bottom.svg" alt="">
+                    <img src="images/svg/logo_bottom.svg" alt="">
                 </div>
                 <nav class="footer__menu">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a href="team.html#">About</a></li>
+                        <li><a href="team.html#">Team</a></li>
+                        <li><a href="team.html#">Partners</a></li>
+                        <li><a href="team.html#">Customers</a></li>
+                        <li><a href="team.html#">News</a></li>
 
                     </ul>
                 </nav>
                 <div class="footer__language">
-                    <a class="footer__language-item" href="#">Ru</a>
-                    <a class="footer__language-item" href="#">Eng</a>
+                    <a class="footer__language-item" href="team.html#">Ru</a>
+                    <a class="footer__language-item" href="team.html#">Eng</a>
                 </div>
             </div>
 

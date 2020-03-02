@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        document.documentElement.classList.add('sr');
+    </script>
+    <style>
+        .sr body{ visibility: hidden }
+    </style>
+    <script src="js/effects.js"></script>
 </head>
 
 <body>
@@ -17,7 +23,7 @@
         <div class="container">
             <div class="header__inner">
                 <a href="index.html" class="header__logo">
-                    <img src="./images/svg/logo_top.svg" alt="">
+                    <img src="images/svg/logo_top.svg" alt="">
                 </a>
                 <div class="header__burger">
                     <span></span>
@@ -32,17 +38,18 @@
                         <li class="active__btn"><a href="contacts.html">Contacts</a></li>
                     </ul>
                     <div class="header__language">
-                        <a href="#" class="header__language-item active__btn">Eng</a>
-                        <a href="#" class="header__language-item ">Rus</a>
+                        <a href="contacts.html#" class="header__language-item active__btn">Eng</a>
+                        <a href="contacts.html#" class="header__language-item ">Rus</a>
                     </div>
                 </nav>
                 <div class="header__language-adaptiv">
-                    <a href="#"  class="header__language-adaptiv-item active__btn">Eng</a>
-                    <a href="#"  class="header__language-adaptiv-item ">Rus</a>
+                    <a href="contacts.html#"  class="header__language-adaptiv-item active__btn">Eng</a>
+                    <a href="contacts.html#"  class="header__language-adaptiv-item ">Rus</a>
                 </div>
             </div>
         </div>
     </header>
+    <div class="header__padding"></div>
     <section class="feedback feedback__contacts ">
         <div class="yellow-contacts"></div>
         <div class="container">
@@ -86,21 +93,21 @@
         <div class="container">
             <div class="footer__top">
                 <div class="footer-logo">
-                    <img src="./images/svg/logo_bottom.svg" alt="">
+                    <img src="images/svg/logo_bottom.svg" alt="">
                 </div>
                 <nav class="footer__menu">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a href="contacts.html#">About</a></li>
+                        <li><a href="contacts.html#">Team</a></li>
+                        <li><a href="contacts.html#">Partners</a></li>
+                        <li><a href="contacts.html#">Customers</a></li>
+                        <li><a href="contacts.html#">News</a></li>
 
                     </ul>
                 </nav>
                 <div class="footer__language">
-                    <a class="footer__language-item" href="#">Ru</a>
-                    <a class="footer__language-item" href="#">Eng</a>
+                    <a class="footer__language-item" href="contacts.html#">Ru</a>
+                    <a class="footer__language-item" href="contacts.html#">Eng</a>
                 </div>
             </div>
 

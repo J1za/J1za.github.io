@@ -14,48 +14,16 @@ var ScrollReveal=function(){"use strict";var r={delay:0,distance:"0",duration:60
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    window.sr = ScrollReveal();
+    window.sr = new ScrollReveal();
 
     sr.reveal('body', {
         delay: 0,
         duration: 800,
-        distance: '0',
+        distance: 0,
         scale: 1,
-        viewFactor: 0.01,
-        cleanup: true,
-    });
-
-
-
-
-        sr.reveal('.requirements__item', {
-            delay: 200,
-            duration: 500,
-            distance: '30px',
-            origin: 'top',
-            scale: 1,
-            interval: 50,
-            cleanup: true,
-        },100);
-
-
-
-    sr.reveal('.slider__items', {
-        origin: 'right',
-        delay: 100,
-        duration: 900,
-        distance: '30px',
-        scale: 1,
-        cleanup: true,
-    });
-
-
-    sr.reveal('.slider__item__border', {
-        origin: 'right',
-        delay: 200,
-        duration: 900,
-        distance: '30px',
-        scale: 1,
+        viewOffset: {
+            top: -10000
+        },
         cleanup: true,
     });
 
@@ -68,22 +36,136 @@ document.addEventListener("DOMContentLoaded", function () {
         case 'page_index':
 
 
-            sr.reveal('.header', {
-                mobile: false,
-                duration: 800,
-                delay: 800,
+            sr.reveal('.header',{
                 origin: 'top',
-                distance: '10px',
-                scale: 1,
+                delay: 100,
+                duration: 800,
+                distance: '200px',
+                cleanup: true,
+            });
+
+            sr.reveal('.header__main-info',{
+                origin: 'left',
+                delay: 400,
+                duration: 1500,
+                distance: '200px',
+                cleanup: true,
+            });
+
+
+            sr.reveal('.about',{
+                origin: 'bottom',
+                delay: 1600,
+                duration: 800,
+                distance: '50px',
                 cleanup: true,
             });
 
 
 
 
+
+            sr.reveal('.pathners__emblem',{
+                origin: 'bottom',
+                delay: 100,
+                scale: 0.9,
+                duration: 1000,
+                distance: '20px',
+                cleanup: true,
+                interval: 200,
+            });
+
+
             break;
 
+
+        case 'page_team':
+
+            sr.reveal('.teams-box',{
+                origin: 'bottom',
+                delay: 300,
+                duration: 600,
+                distance: '20px',
+                cleanup: true,
+                interval:500
+            });
+
+            sr.reveal('.teams__person img',{
+                viewOffset: {
+                    top: -10000
+                },
+                origin: 'bottom',
+                delay: 1800,
+                duration: 500,
+                distance: '20px',
+                cleanup: true,
+                interval:400
+            });
+
+
+            break;
+
+        case 'page_customers':
+        case 'page_partners':
+
+            sr.reveal('.customers__inner',{
+                origin: 'bottom',
+                delay: 100,
+                scale: 0.9,
+                duration: 1000,
+                distance: '20px',
+                cleanup: true,
+                interval: 200,
+            });
+
+
+      break;
+
     }
+
+    sr.reveal('.news__item',{
+        origin: 'bottom',
+        delay: 300,
+        duration: 800,
+        distance: '20px',
+        cleanup: true,
+        interval:400
+    });
+
+
+    sr.reveal('.team',{
+        origin: 'top',
+        delay: 600,
+        duration: 1400,
+        distance: '0',
+        scale: 0.9,
+        cleanup: true,
+    });
+
+
+
+
+/*    sr.reveal('.feedback .container',{
+        origin: 'bottom',
+        delay: 600,
+        duration: 800,
+        distance: '0px',
+        scale: 1.1,
+        cleanup: true,
+    });*/
+
+/*    sr.reveal('.contacts',{
+        origin: 'bottom',
+        delay: 600,
+        duration: 800,
+        distance: '0px',
+        scale: 1.1,
+        cleanup: true,
+    });*/
+
+
+
+
 
 
 

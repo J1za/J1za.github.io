@@ -9,16 +9,21 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-</head>
+    <script>
+        document.documentElement.classList.add('sr');
+    </script>
+    <style>
+        .sr body{ visibility: hidden }
+    </style>
+    <script src="js/effects.js"></script>
 
-<body>
+<body id="page_news_item">
     <div class="wrap-newstwo">
         <header class="header">
             <div class="container">
                 <div class="header__inner">
                     <a href="index.html" class="header__logo">
-                        <img src="./images/svg/logo_top.svg" alt="">
+                        <img src="images/svg/logo_top.svg" alt="">
                     </a>
                     <div class="header__burger">
                         <span></span>
@@ -33,17 +38,18 @@
                             <li><a href="contacts.html">Contacts</a></li>
                         </ul>
                         <div class="header__language">
-                            <a href="#" class="header__language-item active__btn">Eng</a>
-                            <a href="#" class="header__language-item ">Rus</a>
+                            <a href="news_item.html#" class="header__language-item active__btn">Eng</a>
+                            <a href="news_item.html#" class="header__language-item ">Rus</a>
                         </div>
                     </nav>
                     <div class="header__language-adaptiv">
-                        <a href="#"  class="header__language-adaptiv-item active__btn">Eng</a>
-                        <a href="#"  class="header__language-adaptiv-item ">Rus</a>
+                        <a href="news_item.html#"  class="header__language-adaptiv-item active__btn">Eng</a>
+                        <a href="news_item.html#"  class="header__language-adaptiv-item ">Rus</a>
                     </div>
                 </div>
             </div>
         </header>
+        <div class="header__padding"></div>
         <section class="newspapertwo">
             <!-- <div class="box-triangle-top"></div>
         <div class="box-triangle-left newspapertwo-left"></div> -->
@@ -53,8 +59,8 @@
                     <div class="newspaper__archive-info">
                         <div class="newspaper__archive-title">Archive:</div>
                         <div class="newspaper__archive-years">
-                            <a href="#" class="newspaper__archive-date">2019</a>
-                            <a href="#" class="newspaper__archive-date active__btn">2020</a>
+                            <a href="news_item.html#" class="newspaper__archive-date">2019</a>
+                            <a href="news_item.html#" class="newspaper__archive-date active__btn">2020</a>
                         </div>
                     </div>
                 </div>
@@ -67,7 +73,7 @@
                                 Workplace in 2020</div>
                         </div>
                         <div class="newspapertwo__image">
-                            <img class="newspapertwo-object" src="./images/news/object3.jpg" alt="">
+                            <img class="newspapertwo-object" src="images/news/object3.jpg" alt="">
                         </div>
                         <div class="newspapertwo__text"><p>BIOCAD is Russia's leading innovative biotechnology company; it
                             combines a world-class research and development center, ultra-modern pharmaceutical and
@@ -90,22 +96,22 @@
                         </div>
                         <div class="newspapertwo__btn">
                             <div class="newspapertwo__btn-text">Share:</div>
-                            <a href="#" class="icon-facebook"></a>
-                            <a href="#" class="icon-instagram"></a>
-                            <div class="newspapertwo__btn-back">back</div>
+                            <a href="news_item.html#" class="icon-facebook"></a>
+                            <a href="news_item.html#" class="icon-instagram"></a>
+                            <a href="news.html" class="newspapertwo__btn-back">back</a>
                         </div>
                     </div>
                     <div class="news__items">
                         <div class="news__item">
                             <div class="news__item-date item__newstwo">20.01.20</div>
                             <div class="news__item-subtitle">Technology’s Impact on the Workplace in 2020</div>
-                            <div class="news__item-img" ><img src="./images/news/object1.jpg" alt=""><a class="btn-title btn-news" href="#">more</a>
+                            <div class="news__item-img" ><img src="images/news/object1.jpg" alt=""><a class="btn-title btn-news" href="news_item.html">more</a>
                             </div>
                         </div>
                         <div class="news__item">
                             <div class="news__item-date item__newstwo"">20.01.20</div>
                             <div class="news__item-subtitle">Technology’s Impact on the Workplace in 2020</div>
-                            <div class="news__item-img"><img src="./images/news/object2.jpg" alt=""><a class="btn-title btn-news" href="#">more</a>
+                            <div class="news__item-img"><img src="images/news/object2.jpg" alt=""><a class="btn-title btn-news" href="news_item.html">more</a>
                             </div>
                         </div>
                     </div>
@@ -157,21 +163,21 @@
         <div class="container">
             <div class="footer__top">
                 <div class="footer-logo">
-                    <img src="./images/svg/logo_bottom.svg" alt="">
+                    <img src="images/svg/logo_bottom.svg" alt="">
                 </div>
                 <nav class="footer__menu">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a href="news_item.html#">About</a></li>
+                        <li><a href="news_item.html#">Team</a></li>
+                        <li><a href="news_item.html#">Partners</a></li>
+                        <li><a href="news_item.html#">Customers</a></li>
+                        <li><a href="news_item.html#">News</a></li>
 
                     </ul>
                 </nav>
                 <div class="footer__language">
-                    <a class="footer__language-item" href="#">Ru</a>
-                    <a class="footer__language-item" href="#">Eng</a>
+                    <a class="footer__language-item" href="news_item.html#">Ru</a>
+                    <a class="footer__language-item" href="news_item.html#">Eng</a>
                 </div>
             </div>
 

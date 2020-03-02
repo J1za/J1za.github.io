@@ -9,17 +9,20 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        document.documentElement.classList.add('sr');
+    </script>
     <style>
         .sr body{ visibility: hidden }
     </style>
+    <script src="js/effects.js"></script>
 </head>
-<body>
+<body id="page_index">
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <a href="index.html" class="header__logo">
-                    <img src="./images/svg/logo_top.svg" alt="">
+                    <img src="images/svg/logo_top.svg" alt="">
                 </a>
                 <div class="header__burger">
                     <span></span>
@@ -34,17 +37,18 @@
                         <li><a href="contacts.html">Contacts</a></li>
                     </ul>
                     <div class="header__language">
-                        <a href="#" class="header__language-item active__btn">Eng</a>
-                        <a href="#" class="header__language-item ">Rus</a>
+                        <a href="index.html#" class="header__language-item active__btn">Eng</a>
+                        <a href="index.html#" class="header__language-item ">Rus</a>
                     </div>
                 </nav>
                 <div class="header__language-adaptiv">
-                    <a href="#"  class="header__language-adaptiv-item active__btn">Eng</a>
-                    <a href="#"  class="header__language-adaptiv-item ">Rus</a>
+                    <a href="index.html#"  class="header__language-adaptiv-item active__btn">Eng</a>
+                    <a href="index.html#"  class="header__language-adaptiv-item ">Rus</a>
                 </div>
             </div>
         </div>
     </header>
+    <div class="header__padding"></div>
     <div class="wrap-main">
         <section class="main">
             <div class="container">
@@ -1107,7 +1111,7 @@
                                         </g>
                                         <polygon id="cube3_glow"
                                             points="225.86 106.25 238.23 177.69 272.77 157.75 307.32 177.69 321.23 106.25 225.86 106.25"
-                                            style="fill: url(#Безымянный_градиент_30)" />
+                                            style="fill: url(index.html)" />
                                         <g id="cube3_code">
                                             <g>
                                                 <polygon
@@ -1218,7 +1222,7 @@
                                         </g>
                                         <polygon id="cube2_glow"
                                             points="405.86 5.25 418.23 76.69 452.77 56.75 487.32 76.69 501.23 5.25 405.86 5.25"
-                                            style="fill: url(#Безымянный_градиент_30-2)" />
+                                            style="fill: url(index.html)" />
                                         <g id="cube2_barcode">
                                             <polygon
                                                 points="445.54 110.13 423.94 97.66 423.94 113.5 445.54 125.97 445.54 110.13"
@@ -1369,7 +1373,7 @@
                                         </g>
                                         <polygon id="cube1_glow"
                                             points="75.86 19.25 88.23 90.69 122.78 70.75 157.32 90.69 171.23 19.25 75.86 19.25"
-                                            style="fill: url(#Безымянный_градиент_30-3)" />
+                                            style="fill: url(index.html)" />
                                         <g id="cube1_barcode">
                                             <polygon
                                                 points="117.54 122.13 95.94 109.66 95.94 125.5 117.54 137.97 117.54 122.13"
@@ -1483,7 +1487,7 @@
                                             </g>
                                             <polygon
                                                 points="327.41 173.94 285.57 148.27 275.11 144.46 264.65 147.31 219.95 174.89 243.73 60.78 295.07 59.83 327.41 173.94"
-                                                style="fill: url(#Безымянный_градиент_28)" />
+                                                style="fill: url(index.html)" />
                                         </g>
                                         <path
                                             d="M571.26,157.31l-83.82,48.26a14.56,14.56,0,0,1-13,.13L324.87,121c-3.57-2-4.72-13-1.08-15.05l85-40.66a14.56,14.56,0,0,1,13-.13L572,142.09C575.55,144.11,574.89,155.21,571.26,157.31Z"
@@ -1867,7 +1871,7 @@
                 <div class="about__inner">
                     <div class="about__btn">
                         <div class="about__btn-title">About Us</div>
-                        <a class="btn-title btn-title-main" href="#">more</a>
+                        <a class="btn-title btn-title-main" href="index.html#">more</a>
                     </div>
                     <div class="about__text">
                         <p>Equilibrium LLC is a consulting company that provides services for the implementation,
@@ -1892,23 +1896,23 @@
                 </div>
                 <div class="team__inner-slider">
                     <div class="team__inner-slider-box">
-                        <div class="team__images" style="background-image: url(./images/people/person-one.png);">
+                        <div class="team__images" style="background-image: url(images/people/person-one.png);">
                         </div>
                     </div>
                     <div class="team__inner-slider-box">
-                        <div class="team__images" style="background-image: url(./images/people/person-two.png);">
+                        <div class="team__images" style="background-image: url(images/people/person-two.png);">
                         </div>
                     </div>
                     <div class="team__inner-slider-box">
-                        <div class="team__images" style="background-image: url(./images/people/person-three.png);">
+                        <div class="team__images" style="background-image: url(images/people/person-three.png);">
                         </div>
                     </div>
                     <div class="team__inner-slider-box">
-                        <div class="team__images" style="background-image: url(./images/people/person-one.png);">
+                        <div class="team__images" style="background-image: url(images/people/person-one.png);">
                         </div>
                     </div>
                     <div class="team__inner-slider-box">
-                        <div class="team__images" style="background-image: url(./images/people/person-two.png);">
+                        <div class="team__images" style="background-image: url(images/people/person-two.png);">
                         </div>
                     </div>
                 </div>
@@ -1921,9 +1925,9 @@
                 <div class="pathners__inner-title">Partners</div>
                 <div class="pathners__inner-text">Innovations works with numerous partners to serve you better.</div>
                 <div class="pathners__inner-img">
-                    <div class="pathners__emblem"><img src="./images/partner/ibs.png" alt=""></div>
-                    <div class="pathners__emblem"><img src="./images/partner/sap.png" alt=""></div>
-                    <div class="pathners__emblem"><img src="./images/partner/3keys.png" alt=""></div>
+                    <div class="pathners__emblem"><img src="images/partner/ibs.png" alt=""></div>
+                    <div class="pathners__emblem"><img src="images/partner/sap.png" alt=""></div>
+                    <div class="pathners__emblem"><img src="images/partner/3keys.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -1939,12 +1943,12 @@
                     <div class="news__item news__item-main">
                         <div class="news__item-date">20.01.20</div>
                         <div class="news__item-subtitle">Technology’s Impact on the Workplace in 2020</div>
-                        <div class="news__item-img"> <img src="./images/news/object1.jpg" alt=""><a class="btn-title btn-news" href="news_item.html">more</a></div>
+                        <div class="news__item-img"> <img src="images/news/object1.jpg" alt=""><a class="btn-title btn-news" href="news_item.html">more</a></div>
                     </div>
                     <div class="news__item news__item-main">
                         <div class="news__item-date">20.01.20</div>
                         <div class="news__item-subtitle">Technology’s Impact on the Workplace in 2020</div>
-                        <div class="news__item-img"> <img src="./images/news/object2.jpg" alt=""><a class="btn-title btn-news" href="news_item.html">more</a></div>
+                        <div class="news__item-img"> <img src="images/news/object2.jpg" alt=""><a class="btn-title btn-news" href="news_item.html">more</a></div>
                     </div>
                 </div>
             </div>
@@ -1982,9 +1986,9 @@
                     <div class="contacts__box-list-email">info@equilibrium.ru</div>
                 </div>
                 <div class="contacts__box-list-icon">
-                    <a class="icon-facebook" href="#"></a>
-                    <a class="icon-twitter" href="#"></a>
-                    <a class="icon-instagram" href="#"></a>
+                    <a class="icon-facebook" href="index.html#"></a>
+                    <a class="icon-twitter" href="index.html#"></a>
+                    <a class="icon-instagram" href="index.html#"></a>
                 </div>
             </div>
         </div>
@@ -1993,21 +1997,21 @@
         <div class="container">
             <div class="footer__top">
                 <div class="footer-logo">
-                    <img src="./images/svg/logo_bottom.svg" alt="">
+                    <img src="images/svg/logo_bottom.svg" alt="">
                 </div>
                 <nav class="footer__menu">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a href="index.html#">About</a></li>
+                        <li><a href="index.html#">Team</a></li>
+                        <li><a href="index.html#">Partners</a></li>
+                        <li><a href="index.html#">Customers</a></li>
+                        <li><a href="index.html#">News</a></li>
 
                     </ul>
                 </nav>
                 <div class="footer__language">
-                    <a class="footer__language-item" href="#">Ru</a>
-                    <a class="footer__language-item" href="#">Eng</a>
+                    <a class="footer__language-item" href="index.html#">Ru</a>
+                    <a class="footer__language-item" href="index.html#">Eng</a>
                 </div>
             </div>
 
@@ -2026,7 +2030,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
-   
+
 </body>
 
 </html>

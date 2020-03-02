@@ -44,9 +44,33 @@ function reorderTeam() {
 }
 
 $(function(){
+
+
+    var $header = $('.header');
+    var scrollPos = 0;
+
+    window.addEventListener('scroll', () => {
+        /*    let st = $(window).scrollTop();
+            let scrollDown = true;
+
+            if ($page_index && (document.body.getBoundingClientRect()).top > scrollPos) {
+                scrollDown = false;
+            }*/
+
+        if ($(window).scrollTop() > 50 /*&& scrollDown*/) {
+            $header.addClass('scroll');
+        } else {
+            $header.removeClass('scroll');
+        }
+
+        scrollPos = (document.body.getBoundingClientRect()).top;
+    });
+
+
+
     $('.team__inner-slider').slick({
         autoplay: true,
-        autoplaySpeed: 3000 ,
+        autoplaySpeed: 10000,
         dots: true,
         infinite: true,
         speed: 600,
@@ -95,99 +119,8 @@ $(function(){
 
 
 });
-window.sr = new ScrollReveal()
-sr.reveal('body', {
-    delay: 0,
-    duration: 800,
-    distance: '0',
-    scale: 1,
-    viewFactor: 0.01,
-    cleanup: true,
-});
-sr.reveal('.header',{
-    origin: 'top',
-    delay: 100,
-    duration: 300,
-    distance: '200px',
-});
-sr.reveal('.header__main-info',{
-    origin: 'left',
-    delay: 400,
-    duration: 1500,
-    distance: '200px',
-});
-sr.reveal('.header__main-img',{
-    origin: 'right',
-    delay: 400,
-    duration: 1500,
-    distance: '250px',
-});
-sr.reveal('.team__inner-slider',{
-    origin: 'top',
-    delay: 200,
-    duration: 2500,
-    distance: '30px',
-    scale: 1.5,
-    cleanup: true,
-});
-sr.reveal('.about',{
-    origin: 'bottom',
-    delay: 400,
-    duration: 500,
-    distance: '250px',
-});
-sr.reveal('.btn-title',{
-    delay: 100,
-    duration: 1500,
-    scale: 2,
-});
-sr.reveal('.feedback form button',{
-    delay: 100,
-    duration: 1500,
-    scale: 2,
-});
-sr.reveal('.pathners__inner-img',{
-    origin: 'bottom',
-    delay: 200,
-    duration: 1500,
-    distance: '250px',
-});
-sr.reveal('.feedback',{
-    origin: 'bottom',
-    delay: 300,
-    duration: 1500,
-    distance: '250px',
-});
-sr.reveal('.contacts',{
-    origin: 'bottom',
-    delay: 400,
-    duration: 1400,
-    distance: '250px',
-});
-sr.reveal('.customers__inner',{
-    origin: 'bottom',
-    delay: 100,
-    duration: 1000,
-    distance: '250px',
-});
-sr.reveal('.footer',{
-    origin: 'bottom',
-    delay: 500,
-    duration: 1600,
-    distance: '250px',
-});
-sr.reveal('.footer__down',{
-    origin: 'bottom',
-    delay: 700,
-    duration: 1600,
-    distance: '250px',
-});
-sr.reveal('.teams__box-img', { 
-    duration: 1000 
-});
-sr.reveal('.teams__inner-people', { 
-    duration: 3000 
-});
+
+
 
 var tl = anime.timeline({
     easing: 'linear',
