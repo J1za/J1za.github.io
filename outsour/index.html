@@ -1,136 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>OutSours</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to OutSours</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <script defer src="/__/firebase/7.9.3/firebase-database.js"></script>
+
+    <script defer src="/__/firebase/7.9.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+
 </head>
-
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <div class="logo">
-                    <a href="#">
-                        <img src="./images/svg/logo.svg" alt="">
-                        <div class="logo-text">
-                            <p>Outsourcing</p>
-                            <p>We will do the work for you</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="contacts">
-                    <a href="tel:8-800-888-99-00">8-800-888-99-00</a>
-                    <a href="mailto:welcome@dodelaem.ru">welcome@dodelaem.ru</a>
-                </div>
+<header class="header">
+    <div class="container">
+        <div class="header__top">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/svg/logo.svg" alt="">
+                    <div class="logo-text">
+                        <p>Outsourcing</p>
+                        <p>We will do the work for you</p>
+                    </div>
+                </a>
             </div>
-            <div class="header__main">
-                <div class="header__main-title">
-                    <h1>We will complete the development for you.
-                        <p>45 pages discount -10%</p>
-                    </h1>
-                    <ul>
-                        <li>without third-party developers</li>
-                        <li>without conclusion of an agreement</li>
-                    </ul>
+            <div class="contacts">
+                <a href="tel:8-800-888-99-00">8-800-888-99-00</a>
+                <a href="mailto:welcome@dodelaem.ru">welcome@dodelaem.ru</a>
 
-                    <input type="file" name="file" id="file" class="inputfile"
-                        data-multiple-caption="{count} files selected" multiple />
-                    <label for="file">
-                        <p>Upload files</p>
-                    </label>
+            </div>
+            <div class="language"><a href="index.html" class="header__language active__btn" data-lang="en">Eng</a><a href="./ru" class="header__language " data-lang="ru">Rus</a></div>
+        </div>
+        <div class="header__main">
+            <div class="header__main-title">
+                <h1>We will complete the development for you.
+                    <p>45 pages discount -10%</p>
+                </h1>
+                <ul>
+                    <li>without third-party developers</li>
+                    <li>without conclusion of an agreement</li>
+                </ul>
 
-                </div>
-                <div class="header__main-img">
-                    <img src="./images/main-img.png" alt="">
-                    <img src="./images/main-img.png" alt="">
-                </div>
+                <input type="file" name="file" id="file" class="inputfile">
+                <label for="file">
+                    <p>Upload files</p>
+                </label>
+
+            </div>
+            <div class="header__main-img">
+                <img src="./images/main-img.png" alt="">
+                <img src="./images/main-img.png" alt="">
             </div>
         </div>
-    </header>
-    <section class="process">
-        <div class="container">
-            <div class="title">
-                Work process
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="instruction">
-                <div class="instruction__box">
-                    <div class="instruction__box-file">
-                        <img src="./images/icons/file_big.png" alt="">
-                    </div>
-                    <p>
-                        Pages upload
-                    </p>
-                    <p>
-                        Upload screen design or describe in text
-                    </p>
-                </div>
-                <div class="instruction__box">
-                    <div class="instruction__box-clock">
-                        <img src="./images/icons/clock.png" alt="">
-                    </div>
-                    <p>
-                        Development
-                    </p>
-                    <p>
-                        We will develop it in a short time
-                    </p>
-                </div>
-                <div class="instruction__box">
-                    <div class="instruction__box-pencel">
-                        <img src="./images/icons/pencel.png" alt="">
-                    </div>
-                    <p>
-                        Finished screen
-                    </p>
-                    <p>
-                        Use the finished screen in your project
-                    </p>
-                </div>
-            </div>
-            <button data-fancybox data-src="#modal"> <span>Ask a Question</span> </button>
+    </div>
+</header>
+<section class="process">
+    <div class="container">
+        <div class="title">
+            Work process
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div id="modal">
-            <div class="load__contact">
-                <form>
-                    <input type="email" placeholder="Your email" required>
-                    <textarea placeholder="Task description" required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-                <div class="load__contact-back"></div>
+        <div class="instruction">
+            <div class="instruction__box">
+                <div class="instruction__box-file">
+                    <img src="./images/icons/file_big.png" alt="">
+                </div>
+                <p>
+                    Pages upload
+                </p>
+                <p>
+                    Upload screen design or describe in text
+                </p>
+            </div>
+            <div class="instruction__box">
+                <div class="instruction__box-clock">
+                    <img src="./images/icons/clock.png" alt="">
+                </div>
+                <p>
+                    Development
+                </p>
+                <p>
+                    We will develop it in a short time
+                </p>
+            </div>
+            <div class="instruction__box">
+                <div class="instruction__box-pencel">
+                    <img src="./images/icons/pencel.png" alt="">
+                </div>
+                <p>
+                    Finished screen
+                </p>
+                <p>
+                    Use the finished screen in your project
+                </p>
             </div>
         </div>
+        <a data-fancybox data-src="#modal"> <span>Ask a Question</span> </a>
+    </div>
+    <div id="modal">
+        <div class="load__contact">
+            <form id="form-modal" method="POST">
 
-    </section>
-    <section class="load">
-        <div class="container">
-            <div class="title load-title">
-                Page loading
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="load__wrapper">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="OutSours" value="TestSite">
+                <input type="hidden" name="OutSours" value="sadcxsd@x3mailer.com">
+                <input type="hidden" name="form_subject" value="Form Subject">
+                <!-- END Hidden Required Fields -->
 
-                <div class="upload__inner">
+
+                <input name="user_email" type="email" placeholder="Your email" required>
+                <textarea name="text" placeholder="Task description" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="load__contact-back"></div>
+        </div>
+
+    </div>
+    <div id="modal-done">
+        <div class="modal-done__title">
+            <p>Your question has been sent.Within an hour we will answer you.</p>
+            <div class="modal-done__back"></div>
+        </div>
+    </div>
+</section>
+<section class="load">
+    <div class="container">
+        <div class="title load-title">
+            Page loading
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="load__wrapper">
+            <div class="upload__inner">
+                <form id="form" enctype="multipart/form-data" method="POST">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="TestSite">
+                    <input type="hidden" name="OutSours" value="admin_email">
+                    <input type="hidden" name="form_subject" value="form_subject">
+                    <!-- END Hidden Required Fields -->
 
                     <div class="upload__box">
                         <div class="upload__box-img"><img src="./images/icons/file-verybig.png" alt=""></div>
-
-                        <input name="file" type="file" name="file" id="input__file" class="input__file" multiple
+                        <input type="file" name="uploadfile" id="input__file" class="input__file" multiple
                             value="upload">
                         <label for="input__file" class="input__file-button">
                             <span class="input__file-button-text">Upload files</span>
@@ -138,203 +162,205 @@
 
                     </div>
                     <div class="upload__box-back"></div>
+            </div>
+            <div class="load__contact">
+                <input name="user_email" type="email" placeholder="Your email" required>
+                <textarea name="text" placeholder="Task description" required></textarea>
+                <button type="submit">Submit</button>
+                <label for="input__file" class="input__file-button">
+                    <span class="input__file-button-text">Upload files</span>
+                </label>
+                <div class="load__contact-back"></div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="file-back">
+        <img src="./images/icons/file-back.png" alt="">
+    </div>
+    <div class="file-back">
+        <img src="./images/icons/file-back.png" alt="">
+    </div>
+    <div class="file-back">
+        <img src="./images/icons/file-back.png" alt="">
+    </div>
+    <div class="file-back">
+        <img src="./images/icons/file-back.png" alt="">
+    </div>
+    <div class="file-back">
+        <img src="./images/icons/file-back.png" alt="">
+    </div>
+    <div class="file-back">
+        <img src="./images/icons/file-back.png" alt="">
+    </div>
+</section>
+<section class="aplications">
+    <div class="container">
+        <div class="title-aplications title">
+            Application screens
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="slider">
+            <div class="slider__box">
+                <img src="./images/slider/iphone.png" alt="">
+                <div class="slider__box-images">
+                    <img src="./images/slider/YandexMoney.jpg" alt="">
                 </div>
-                <div class="load__contact">
-                    <form>
-                        <input type="email" placeholder="Your email" required>
-                        <textarea placeholder="Task description" required></textarea>
-                        <button type="submit">Submit</button>
-                        <label for="input__file" class="input__file-button">
-                            <span class="input__file-button-text">Upload files</span>
-                        </label>
-                    </form>
-                    <div class="load__contact-back"></div>
+            </div>
+            <div class="slider__box">
+                <img src="./images/slider/iphone.png" alt="">
+                <div class="slider__box-images">
+                    <img src="./images/slider/RadioRecord.jpg" alt="">
                 </div>
+            </div>
+            <div class="slider__box">
+                <img src="./images/slider/iphone.png" alt="">
+                <div class="slider__box-images">
+                    <img src="./images/slider/mainhome.jpg" alt="">
+                </div>
+            </div>
+            <div class="slider__box">
+                <img src="./images/slider/iphone.png" alt="">
+                <div class="slider__box-images">
+                    <img src="./images/slider/YandexTaxi.jpg" alt="">
+                </div>
+            </div>
+            <div class="slider__box">
+                <img src="./images/slider/iphone.png" alt="">
+                <div class="slider__box-images">
+                    <img src="./images/slider/RadioRecord.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="service">
+    <div class="check-lien">
+        <img src="./images/svg/check-line.svg" alt="">
+    </div>
+    <div class="container">
+        <div class="title-service title">
+            Service advantages
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="service__inner">
+            <div class="checkmark">
+                <div class="checkmark__circle">
+                    <div class="circle__color"></div>
+                </div>
+                <div class="checkmark__text">
+                    No need to hire and then fire people
+                </div>
+            </div>
+            <div class="checkmark">
+                <div class="checkmark__circle circle-two">
+                    <div class="circle__color"></div>
+                </div>
+                <div class="checkmark__text">
+                    No need to conclude an agreement for 6-12-24 months
+                </div>
+            </div>
+            <div class="checkmark">
+                <div class="checkmark__circle circle-three">
+                    <div class="circle__color"></div>
+                </div>
+                <div class="checkmark__text">
+                    No need to pay for support
+                </div>
+            </div>
+            <div class="checkmark">
+                <div class="checkmark__circle circle-four">
+                    <div class="circle__color"></div>
+                </div>
+                <div class="checkmark__text">
+                    You can develop a large number of screens and run projects earlier
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faq">
+    <div class="container">
+        <div class="title-faq title">
+            Faq
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
+        <div class="accorrdion__wrapper">
+            <div class="accordion__item">
+                <div class="accordion__title">What resources do you attract for application development?</div>
+                <div class="accordion__content">
+                    <p> Someone likes to work in a large team, while someone prefers individual cooperation. To
+                        avoid disappointment, learn more about team structure, number of people, etc. Someone likes
+                        to work in a large team, while someone prefers individual cooperation. To avoid
+                        disappointment, learn more about team structure, number of people, etc.</p>
+                </div>
             </div>
-        </div>
-        <div class="file-back">
-            <img src="./images/icons/file-back.png" alt="">
-        </div>
-        <div class="file-back">
-            <img src="./images/icons/file-back.png" alt="">
-        </div>
-        <div class="file-back">
-            <img src="./images/icons/file-back.png" alt="">
-        </div>
-        <div class="file-back">
-            <img src="./images/icons/file-back.png" alt="">
-        </div>
-        <div class="file-back">
-            <img src="./images/icons/file-back.png" alt="">
-        </div>
-        <div class="file-back">
-            <img src="./images/icons/file-back.png" alt="">
-        </div>
-    </section>
-    <section class="aplications">
-        <div class="container">
-            <div class="title-aplications title">
-                Application screens
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="accordion__item">
+                <div class="accordion__title">After downloading the file, what will need to be done, what will be
+                    the deadlines?</div>
+                <div class="accordion__content">
+                    <p> Someone likes to work in a large team, while someone prefers individual cooperation. To
+                        avoid disappointment, learn more about team structure, number of people, etc. Someone likes
+                        to work in a large team, while someone prefers individual cooperation. To avoid
+                        disappointment, learn more about team structure, number of people, etc.</p>
+                </div>
             </div>
-            <div class="slider">
-                <div class="slider__box">
-                    <img src="./images/slider/iphone.png" alt="">
-                    <div class="slider__box-images">
-                        <img src="./images/slider/YandexMoney.jpg" alt="">
-                    </div>
-                </div>
-                <div class="slider__box">
-                    <img src="./images/slider/iphone.png" alt="">
-                    <div class="slider__box-images">
-                        <img src="./images/slider/RadioRecord.jpg" alt="">
-                    </div>
-                </div>
-                <div class="slider__box">
-                    <img src="./images/slider/iphone.png" alt="">
-                    <div class="slider__box-images">
-                        <img src="./images/slider/mainhome.jpg" alt="">
-                    </div>
-                </div>
-                <div class="slider__box">
-                    <img src="./images/slider/iphone.png" alt="">
-                    <div class="slider__box-images">
-                        <img src="./images/slider/YandexTaxi.jpg" alt="">
-                    </div>
-                </div>
-                <div class="slider__box">
-                    <img src="./images/slider/iphone.png" alt="">
-                    <div class="slider__box-images">
-                        <img src="./images/slider/RadioRecord.jpg" alt="">
-                    </div>
+            <div class="accordion__item">
+                <div class="accordion__title">How effectively do you cope with tasks?</div>
+                <div class="accordion__content">
+                    <p> Someone likes to work in a large team, while someone prefers individual cooperation. To
+                        avoid disappointment, learn more about team structure, number of people, etc. Someone likes
+                        to work in a large team, while someone prefers individual cooperation. To avoid
+                        disappointment, learn more about team structure, number of people, etc.</p>
                 </div>
             </div>
         </div>
-    </section>
-     <section class="service">
-        <div class="check-lien">
-            <img src="./images/svg/check-line.svg" alt="">
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="header__top footer__top">
+            <div class="logo">
+                <a href="#">
+                    <img src="./images/svg/logo.svg" alt="">
+                    <div class="logo-text">
+                        <p>Outsourcing</p>
+                        <p>We will do the work for you</p>
+                    </div>
+                </a>
+            </div>
+            <div class="contacts">
+                <a href="#"> Все права защищены 2020 © Outsourcing.com</a>
+                <a href="tel:8-800-888-99-00">8-800-888-99-00</a>
+                <a href="mailto:welcome@dodelaem.ru">welcome@dodelaem.ru</a>
+            </div>
+            <div class="language">
+                <a href="#" class="header__language" data-lang="en">Eng</a><a href="#"
+                    class="header__language active__btn" data-lang="ru">Rus</a></div>
         </div>
-        <div class="container">
-            <div class="title-service title">
-                Service advantages
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="service__inner">
-                <div class="checkmark">
-                    <div class="checkmark__circle">
-                        <div class="circle__color"></div>
-                    </div>
-                    <div class="checkmark__text">
-                        No need to hire and then fire people
-                    </div>
-                </div>
-                <div class="checkmark">
-                    <div class="checkmark__circle circle-two">
-                        <div class="circle__color"></div>
-                    </div>
-                    <div class="checkmark__text">
-                        No need to conclude an agreement for 6-12-24 months
-                    </div>
-                </div>
-                <div class="checkmark">
-                    <div class="checkmark__circle circle-three">
-                        <div class="circle__color"></div>
-                    </div>
-                    <div class="checkmark__text">
-                        No need to pay for support
-                    </div>
-                </div>
-                <div class="checkmark">
-                    <div class="checkmark__circle circle-four">
-                        <div class="circle__color"></div>
-                    </div>
-                    <div class="checkmark__text">
-                        You can develop a large number of screens and run projects earlier
-                    </div>
-                </div>
-            </div>
-        </div>
-   </section>
-     <section class="faq">
-        <div class="container">
-            <div class="title-faq title">
-                Faq
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
 
-            <div class="accorrdion__wrapper">
-                <div class="accordion__item">
-                    <div class="accordion__title">What resources do you attract for application development?</div>
-                    <div class="accordion__content">
-                        <p> Someone likes to work in a large team, while someone prefers individual cooperation. To
-                            avoid disappointment, learn more about team structure, number of people, etc. Someone likes
-                            to work in a large team, while someone prefers individual cooperation. To avoid
-                            disappointment, learn more about team structure, number of people, etc.</p>
-                    </div>
-                </div>
-                <div class="accordion__item">
-                    <div class="accordion__title">After downloading the file, what will need to be done, what will be
-                        the deadlines?</div>
-                    <div class="accordion__content">
-                        <p> Someone likes to work in a large team, while someone prefers individual cooperation. To
-                            avoid disappointment, learn more about team structure, number of people, etc. Someone likes
-                            to work in a large team, while someone prefers individual cooperation. To avoid
-                            disappointment, learn more about team structure, number of people, etc.</p>
-                    </div>
-                </div>
-                <div class="accordion__item">
-                    <div class="accordion__title">How effectively do you cope with tasks?</div>
-                    <div class="accordion__content">
-                        <p> Someone likes to work in a large team, while someone prefers individual cooperation. To
-                            avoid disappointment, learn more about team structure, number of people, etc. Someone likes
-                            to work in a large team, while someone prefers individual cooperation. To avoid
-                            disappointment, learn more about team structure, number of people, etc.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="header__top footer__top">
-                <div class="logo">
-                    <a href="#">
-                        <img src="./images/svg/logo.svg" alt="">
-                        <div class="logo-text">
-                            <p>Outsourcing</p>
-                            <p>We will do the work for you</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="contacts">
-                    <a href="#"> Все права защищены 2020 © Outsourcing.com</a>
-                    <a href="tel:8-800-888-99-00">8-800-888-99-00</a>
-                    <a href="mailto:welcome@dodelaem.ru">welcome@dodelaem.ru</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase.js"></script>
+<script src="js/main.js"></script>
 
 </html>

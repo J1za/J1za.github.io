@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.66" height="25.71" viewBox="0 0 17.66 25.71">
+  <title>marker</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <g>
+        <path d="M16.66,8.83c0,6-7.83,15.33-7.83,15.33S1,14.83,1,8.83a7.83,7.83,0,1,1,15.66,0Z" style="fill: none;stroke: #00487e;stroke-miterlimit: 10;stroke-width: 2px"/>
+        <circle cx="8.83" cy="8.83" r="4.68" style="fill: none;stroke: #00487e;stroke-miterlimit: 10;stroke-width: 2px"/>
+      </g>
+    </g>
+  </g>
+</svg>

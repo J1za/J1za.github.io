@@ -1,0 +1,20 @@
+$black: #383838;
+$dark:  #424242;
+
+@mixin f400 {
+    font-family: 'Geometria', sans-serif;
+    
+}
+@mixin f500 {
+    font-family: 'Conv_Geometria-Medium', sans-serif;
+    font-weight: 500;
+}
+
+@mixin f700 {
+    font-family: 'Conv_Geometria-Bold', sans-serif;
+    
+}
+@mixin f900 {
+    font-family: 'Conv_Geometria-Heavy', sans-serif;
+    font-weight: 900;
+}
