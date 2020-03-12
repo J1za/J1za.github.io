@@ -44,85 +44,68 @@
             </div>
         </div>
     </header>
-    <section class="contributions">
+    <section class="chat">
         <div class="header__main-list">
             <ul>
-                <li><a href="all-news.html">Новости</a></li>
-                <li><a href="manual.html">Руководство</a></li>
-                <li><a href="queston-answer.html">Вопрос / Ответ</a></li>
-                <li><a href="regulalitons.html">Правила PDF</a></li>
-                <li><a href="wallet-btc.html">Почему BTC?</a></li>
-                <li><a href="wallet-btc.html">Кошелёк BTC</a></li>
-                <li><a href="exchanger.html">Обменник BTC</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Руководство</a></li>
+                <li><a href="#">Вопрос / Ответ</a></li>
+                <li><a href="#">Правила PDF</a></li>
+                <li><a href="#">Почему BTC?</a></li>
+                <li><a href="#">Кошелёк BTC</a></li>
+                <li><a href="#">Обменник BTC</a></li>
             </ul>
         </div>
         <div class="container">
-            <div class="contributions__inner">
+            <div class="chat__inner">
                 <ul class="breadcrumb">
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">Кабинет</a></li>
-                    <li class="activebtn">Ваши вклады</li>
+                    <li><a href="#">сообщения</a></li>
+                    <li>Ваше сообщение</li>
+
                 </ul>
                 <div class="titles">
-                    Ваши вклады
+                    Сообщения
                 </div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Дата создания</th>
-                            <th>План</th>
-                            <th>Сумма</th>
-                            <th>Осталось дней</th>
-                            <th>Ваш промокод</th>
-                            <th>Статус</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>28 августа 2020, 16:12</td>
-                            <td>A</td>
-                            <td>0.001 BTC</td>
-                            <td>340</td>
-                            <td>A000001</td>
-                            <td class="green">выполнен</td>
-                        </tr>
-                        <tr>
-                            <td>28 августа 2020, 16:12</td>
-                            <td>A</td>
-                            <td>0.02 BTC</td>
-                            <td>0</td>
-                            <td>A000001</td>
-                            <td class="orange">активен</td>
-                        </tr>
-                        <tr>
-                            <td>28 августа 2020, 16:12</td>
-                            <td>B</td>
-                            <td>0.021 BTC</td>
-                            <td>25</td>
-                            <td>A000001</td>
-                            <td class="red">завершен</td>
-                        </tr>
-                        <tr>
-                            <td>28 августа 2020, 16:12</td>
-                            <td>A</td>
-                            <td>0.00001 BTC</td>
-                            <td>159</td>
-                            <td>A000001</td>
-                            <td class="green">выполнен</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <ul class="pagination">
-                    <a href="#"></a> <!-- стрелка назад-->
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">...</a>
-                    <a href="#"></a> <!-- стрелка вперед-->
-                </ul>
-
-                <div class="tabs">
+                <div class="subtitles">
+                    <p>
+                        Ваше сообщение
+                    </p>
+                    <a href="#">
+                        Закрыть сообщение
+                    </a>
+                </div>
+                <div class="forms">
+                    <input class="chat-input" type="text" placeholder="Возврат средств" required>
+                    <textarea placeholder="This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, l orem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.
+                    "></textarea>
+                    <a href="#">
+                        Закрыть сообщение
+                    </a>
+                </div>
+                <div class="chat__wrapper">
+                    <div class="chat__support">
+                        <p>Поддержка</p>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin
+                            gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                            lorem quis bibendum</p>
+                        <p>27 августа 2019, 21:57</p>
+                    </div>
+                    <div class="chat__support urmessage">
+                        <p class="umsg">Вы</p>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin
+                            gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                            lorem quis bibendum</p>
+                        <p>28 августа 2019, 14:28</p>
+                    </div>
+                    <form>
+                        <textarea
+                            required>This is Photoshop's version  of Lorem Ipsum.Proin gravida nibh vel velit auctor aliquet.Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. mentum nunc. Etiam pharetra, erat sed fermentum</textarea>
+                        <button type="submit"></button>
+                    </form>
+                </div>
+                <div class="tabs tab-chat">
                     <div class="tabs__inner">
                         <div class="tabs__box">
                             <a href="#">Создать вклад </a>
@@ -130,17 +113,17 @@
                         <div class="tabs__box">
                             <a href="#">Ваши партнёры </a>
                         </div>
-                        <div class="tabs__box">
+                        <div class="tabs__box activecontr">
                             <a href="#">Сообщения </a>
                         </div>
-                        <div class="tabs__box activecontr">
-                            <a  href="#">Ваши вклады</a>
+                        <div class="tabs__box">
+                            <a href="#">Ваши вклады</a>
                         </div>
                         <div class="tabs__box">
                             <a href="#">История операций</a>
                         </div>
                         <div class="tabs__box ">
-                            <a href="#">Настройки  </a>
+                            <a href="#">Настройки </a>
                         </div>
                     </div>
                 </div>
