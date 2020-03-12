@@ -1,0 +1,36 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+html, body{
+  height: 100%;
+  position: relative;
+}
+a{
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+ul,
+li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    font-family: 'MULLERLIGHT', sans-serif;
+    font-weight: 200;
+}

@@ -1,0 +1,32 @@
+@mixin ml200 {
+    font-family: 'MULLERLIGHT', sans-serif;
+    font-weight: 200;
+}
+@mixin m700 {
+    font-family: 'MULLERBOLD', sans-serif;
+    font-weight: 700;
+}
+@mixin m400 {
+    font-family: 'MULLERREGULAR', sans-serif;
+    font-weight: 400;
+}
+@mixin g400 {
+    font-family: 'GOTHAMPRO', sans-serif;
+    font-weight: 400;
+}
+@mixin gi400 {
+    font-family: 'GOTHAMPRO-ITALIC', sans-serif;
+    font-weight: 400;
+}
+@mixin gl300 {
+    font-family: 'GOTHAMPRO-LIGHT', sans-serif;
+    font-weight: 300;
+}
+@mixin gb700 {
+    font-family: 'GOTHAMPRO-BOLD', sans-serif;
+    font-weight: 700;
+}
+@mixin gbi700 {
+    font-family: 'GOTHAMPRO-BOLDITALIC', sans-serif;
+    font-weight: 700;
+}
