@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to OutSours</title>
+    <title>Welcome to Microtasky</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -14,7 +14,7 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
-
+    
 </head>
 <header class="header">
     <div class="container">
@@ -23,31 +23,33 @@
                 <a href="index.html">
                     <img src="./images/svg/logo.svg" alt="">
                     <div class="logo-text">
-                        <p>Outsourcing</p>
+                        <p>Microtasky</p>
                         <p>We will do the work for you</p>
                     </div>
                 </a>
             </div>
             <div class="contacts">
-                <a href="tel:8-800-888-99-00">8-800-888-99-00</a>
-                <a href="mailto:welcome@dodelaem.ru">welcome@dodelaem.ru</a>
-
+                <a href="tel:852-5596-6811">+852-5596-6811</a>
+                <a href="mailto:microtasky@gmail.com">microtasky@gmail.com</a>
             </div>
-            <div class="language"><a href="index.html" class="header__language active__btn" data-lang="en">Eng</a><a href="./ru" class="header__language " data-lang="ru">Rus</a></div>
+            <div class="language" style="display: none;">
+                <a href="index.html" class="header__language active__btn" data-lang="en">Eng</a>
+                <a href="./ru" class="header__language " data-lang="ru">Rus</a>
+            </div>
         </div>
         <div class="header__main">
             <div class="header__main-title">
                 <h1>We will complete the development for you.
-                    <p>45 pages discount -10%</p>
+                    <p>Starts from $99 per screen</p>
                 </h1>
                 <ul>
-                    <li>without third-party developers</li>
-                    <li>without conclusion of an agreement</li>
+                    <li>Without third-party developers</li>
+                    <li>Without conclusion of an agreement</li>
                 </ul>
 
-                <input type="file" name="file" id="file" class="inputfile">
-                <label for="file">
-                    <p>Upload files</p>
+                <input  class="inputfile">
+                <label id="upload">
+                    <a href="#uploadfile">Upload files</a>
                 </label>
 
             </div>
@@ -75,10 +77,10 @@
                     <img src="./images/icons/file_big.png" alt="">
                 </div>
                 <p>
-                    Pages upload
+                    Design upload
                 </p>
                 <p>
-                    Upload screen design or describe in text
+                    Upload screen design or describe in words
                 </p>
             </div>
             <div class="instruction__box">
@@ -111,9 +113,9 @@
             <form id="form-modal" method="POST">
 
                 <!-- Hidden Required Fields -->
-                <input type="hidden" name="OutSours" value="TestSite">
-                <input type="hidden" name="OutSours" value="sadcxsd@x3mailer.com">
-                <input type="hidden" name="form_subject" value="Form Subject">
+                <input type="hidden" name="OutSours" value="Microtasky">
+                <input type="hidden" name="OutSours" value="microtasky@gmail.com">
+                <input type="hidden" name="form_subject" value="Design Upload">
                 <!-- END Hidden Required Fields -->
 
 
@@ -127,15 +129,16 @@
     </div>
     <div id="modal-done">
         <div class="modal-done__title">
-            <p>Your question has been sent.Within an hour we will answer you.</p>
+            <p>Your question has been sent. Within an hour we will answer to you.</p>
             <div class="modal-done__back"></div>
         </div>
     </div>
+    
 </section>
-<section class="load">
+<section class="load" id="uploadfile"">
     <div class="container">
         <div class="title load-title">
-            Page loading
+            Upload your design
             <span></span>
             <span></span>
             <span></span>
@@ -143,6 +146,7 @@
             <span></span>
             <span></span>
         </div>
+        
         <div class="load__wrapper">
             <div class="upload__inner">
                 <form id="form" enctype="multipart/form-data" method="POST">
@@ -152,12 +156,13 @@
                     <input type="hidden" name="form_subject" value="form_subject">
                     <!-- END Hidden Required Fields -->
 
-                    <div class="upload__box">
+                    <div  class="upload__box">
                         <div class="upload__box-img"><img src="./images/icons/file-verybig.png" alt=""></div>
                         <input type="file" name="uploadfile" id="input__file" class="input__file" multiple
                             value="upload">
                         <label for="input__file" class="input__file-button">
-                            <span class="input__file-button-text">Upload files</span>
+                            
+                            <span  class="input__file-button-text">Upload files</span>
                         </label>
 
                     </div>
@@ -197,7 +202,7 @@
 <section class="aplications">
     <div class="container">
         <div class="title-aplications title">
-            Application screens
+            What we did before
             <span></span>
             <span></span>
             <span></span>
@@ -259,7 +264,7 @@
                     <div class="circle__color"></div>
                 </div>
                 <div class="checkmark__text">
-                    No need to hire and then fire people
+                    Do not spend time and money for hiring new developers
                 </div>
             </div>
             <div class="checkmark">
@@ -267,7 +272,7 @@
                     <div class="circle__color"></div>
                 </div>
                 <div class="checkmark__text">
-                    No need to conclude an agreement for 6-12-24 months
+                    Do not enter into long-term contracts for 6-12-24 months
                 </div>
             </div>
             <div class="checkmark">
@@ -275,7 +280,7 @@
                     <div class="circle__color"></div>
                 </div>
                 <div class="checkmark__text">
-                    No need to pay for support
+                    Do not spend money on unnecessary support after
                 </div>
             </div>
             <div class="checkmark">
@@ -283,7 +288,7 @@
                     <div class="circle__color"></div>
                 </div>
                 <div class="checkmark__text">
-                    You can develop a large number of screens and run projects earlier
+                    You can develop a large number of screens at same time and completed projects earlier
                 </div>
             </div>
         </div>
@@ -292,7 +297,7 @@
 <section class="faq">
     <div class="container">
         <div class="title-faq title">
-            Faq
+            FAQ
             <span></span>
             <span></span>
             <span></span>
@@ -340,19 +345,20 @@
                 <a href="#">
                     <img src="./images/svg/logo.svg" alt="">
                     <div class="logo-text">
-                        <p>Outsourcing</p>
+                        <p>Microtasky</p>
                         <p>We will do the work for you</p>
                     </div>
                 </a>
             </div>
             <div class="contacts">
-                <a href="#"> Все права защищены 2020 © Outsourcing.com</a>
-                <a href="tel:8-800-888-99-00">8-800-888-99-00</a>
-                <a href="mailto:welcome@dodelaem.ru">welcome@dodelaem.ru</a>
+                <a href="#"> All rights reserved 2020 © Microtasky.com</a>
+                <a href="tel:852-5596-6811">+852-5596-6811</a>
+                <a href="mailto:microtasky@gmail.com">microtasky@gmail.com</a>
             </div>
             <div class="language">
-                <a href="#" class="header__language" data-lang="en">Eng</a><a href="#"
-                    class="header__language active__btn" data-lang="ru">Rus</a></div>
+                <a href="index.html" class="header__language active__btn" data-lang="en">Eng</a>
+                <a href="./ru" class="header__language " data-lang="ru">Rus</a>
+            </div>
         </div>
     </div>
 </footer>
