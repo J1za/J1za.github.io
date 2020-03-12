@@ -2,14 +2,19 @@
 $email = $_POST['user_email'];
 $message = $_POST['text'];
 $txt = "";
-$token = "1086631934:AAGa9SHk7ObkIJhjHlzXHPB4zCeFpRGnsFc";
-$chat_id = "-426035199"; 
-// $token = "1086631934:AAGa9SHk7ObkIJhjHlzXHPB4zCeFpRGnsFc";
-// $chat_id = "982850375"; //982850375
+
+
+$token =  "997369560:AAFvmIXUMN4qo7-AC3tpiyLHGTdxRr7IycE"; 
+$chat_id = "-499594172"; 
+
+// Путь загрузки
+$path = 'file/';
+ 
+
 //****************EMAL********************\\
-$project_name = 'test';
-$admin_email  = 'kwotvtanke@rambler.ru';
-$form_subject = 'Тест заявка ';
+$project_name = 'Microtasky';
+$admin_email  = 'microtasky@gmail.com';
+$form_subject = 'Заявка';
 //****************************************\\
 
 $arr = array(
@@ -21,27 +26,24 @@ foreach($arr as $key => $value) {
   $txt .= "<b>".$key."</b> ".$value."\n";
 };
 
-
+var_dump($_FILES['uploadfile']['name']);
 if($_FILES['uploadfile']['tmp_name']) {
 	
 	$postparam = array(
 		'chat_id' => $chat_id,
 		'caption' => $txt,
 		'parse_mode' => 'html',
-		'photo' => new CURLFile('images/image.png')
+		'document' => new CURLFile('file/'.$_FILES['uploadfile']['name'])
 	);
 	
-	// Путь загрузки
-	$path = 'images/';
-
 	// Обработка запроса
 	if ($_SERVER['REQUEST_METHOD'] == 'POST')
 	{
 	 // Загрузка файла и вывод сообщения
-	 @copy($_FILES['uploadfile']['tmp_name'], $path . 'image.png');
+	 @copy($_FILES['uploadfile']['tmp_name'], $path . $_FILES['uploadfile']['name']);
 	}
 
-	$request = curl('https://api.telegram.org/bot'.$token.'/sendphoto', $postparam);
+	$request = curl('https://api.telegram.org/bot'.$token.'/sendDocument', $postparam);
 	
 	foreach($arr as $key => $value) {
 		$message .= "
@@ -84,7 +86,7 @@ if($_FILES['uploadfile']['tmp_name']) {
 	 mail($admin_email, adopt($form_subject), $message, $headers );	
 	
 }
-	unlink('images/image.jpg');
+	unlink($path . $_FILES['uploadfile']['name']);
 	
 function curl($url, $postparam = []) {
 
