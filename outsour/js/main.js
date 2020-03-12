@@ -45,14 +45,21 @@ $(function () {
     $(this).closest('.accordion__item').toggleClass('active').find('.accordion__content').slideToggle(400);
     return false;
   });
-
+  
+// Якорь
+$("#upload").on("click","a", function (event) {
+  event.preventDefault();
+  var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+  $('body,html').animate({scrollTop: top}, 1500);
+});
 
 });
 
 
 
- 
-      
+
+
 //	E-mail Ajax Send
 	$("#form-modal").submit(function() { //Change
 		var th = $(this);
@@ -122,77 +129,65 @@ $(function () {
   $('#form').trigger( 'reset' );
   
 
-  // $(':file').on('change', function () {
-  //   var file = this.files[0];
-    
-  //   if (file.size > 1000024) {
-  //     alert('  max upload size is 10MB');
-  //   }
-    
-  //   // Also see .name, .type
-  //   });
-  
 
   
-
-
-
 let inputs = document.querySelectorAll('.input__file');
+
 Array.prototype.forEach.call(inputs, function (input) {
+
   let label = input.nextElementSibling,
-    labelVal = label.querySelector('.input__file-button-text').innerText;
+  labelVal = label.querySelector('.input__file-button-text').innerText;
 
   input.addEventListener('change', function (e) {
+    
     let countFiles = '';
+    
     if (this.files && this.files.length >= 1)
       countFiles = this.files.length;
 
     if (countFiles)
       label.querySelector('.input__file-button-text').innerText = 'Selected files: ' + countFiles;
     else
-      label.querySelector('.input__file-button-text').innerText = labelVal;
-  });
+      label.querySelector('.input__file-button-text').innerText = 'Upload files';
 
-  
-  
+  });
 });
 
 
 
 var firebaseConfig = {
-  apiKey: "AIzaSyAhF9HrZAbESDt1NjqJ9u8gpSTmTfBNRk8",
-  authDomain: "notional-media-158719.firebaseapp.com",
-  databaseURL: "https://notional-media-158719.firebaseio.com",
-  projectId: "notional-media-158719",
-  storageBucket: "notional-media-158719.appspot.com",
-  messagingSenderId: "147172687340",
-  appId: "1:147172687340:web:a2890cdae951dc81d714c9",
-  measurementId: "G-S7K1903Q9V"
+  apiKey: "AIzaSyC1I2FWA4g90MoiycNjqELezwXp6BK_u_I",
+  authDomain: "microtasky-1a703.firebaseapp.com",
+  databaseURL: "https://microtasky-1a703.firebaseio.com",
+  projectId: "microtasky-1a703",
+  storageBucket: "microtasky-1a703.appspot.com",
+  messagingSenderId: "1036848585355",
+  appId: "1:1036848585355:web:9661bb3b3502a8776e128e"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 
 input__file.addEventListener('change', function (e) {
-var file = e.target.files[0];
+ 
+  var file = e.target.files[0];
+  var storageRef = firebase.storage().ref('OutSoursCompany/' + file.name);
+  var task = storageRef.put(file);
 
-var storageRef = firebase.storage().ref('OutSoursCompany/' + file.name);
+  task.on('state_changed', 
+    function progress(snapshot) {
+      var percentage = (snapshot.bytesTransferred / snapshot.totalBytes)* 100;
+    },
+    function error(err){
 
-var task = storageRef.put(file);
+    },
+    function complete(){
 
-task.on('state_changed',
-  function progress(snapshot){
-    var percentage = (snapshot.bytesTransferred / snapshot.totalBytes)* 100;
-  },
-  function error(err){
-
-  },
-  function complete(){
-
-  }
-);
-
+    }
+  );
 });
+
+
 file.addEventListener('change', function (e) {
   var file = e.target.files[0];
   
