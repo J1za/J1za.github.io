@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Microtasky</title>
+    <title>Microtasky</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -14,7 +14,7 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
-    
+
 </head>
 <header class="header">
     <div class="container">
@@ -47,7 +47,7 @@
                     <li>Without conclusion of an agreement</li>
                 </ul>
 
-                <input  class="inputfile">
+                <input class="inputfile">
                 <label id="upload">
                     <a href="#uploadfile">Upload files</a>
                 </label>
@@ -133,52 +133,85 @@
             <div class="modal-done__back"></div>
         </div>
     </div>
-    
+
 </section>
 <section class="load" id="uploadfile"">
-    <div class="container">
-        <div class="title load-title">
-            Upload your design
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        
-        <div class="load__wrapper">
-            <div class="upload__inner">
-                <form id="form" enctype="multipart/form-data" method="POST">
-                    <!-- Hidden Required Fields -->
-                    <input type="hidden" name="project_name" value="TestSite">
-                    <input type="hidden" name="OutSours" value="admin_email">
-                    <input type="hidden" name="form_subject" value="form_subject">
-                    <!-- END Hidden Required Fields -->
+    <div class=" container">
+    <div class="title load-title">
+        Upload your design
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-                    <div  class="upload__box">
-                        <div class="upload__box-img"><img src="./images/icons/file-verybig.png" alt=""></div>
-                        <input type="file" name="uploadfile" id="input__file" class="input__file" multiple
-                            value="upload">
-                        <label for="input__file" class="input__file-button">
-                            
-                            <span  class="input__file-button-text">Upload files</span>
-                        </label>
+    <div class="load__wrapper">
+        <div class="upload__inner">
 
+            <form id="form" enctype="multipart/form-data" method="POST">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="TestSite">
+                <input type="hidden" name="OutSours" value="admin_email">
+                <input type="hidden" name="form_subject" value="form_subject">
+                <!-- END Hidden Required Fields -->
+
+                <div class="upload__box">
+                    <div class="loader__wrapper">
+                        <div class='loader loader1'>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p class="moreload">Loading...</p>
                     </div>
-                    <div class="upload__box-back"></div>
-            </div>
-            <div class="load__contact">
-                <input name="user_email" type="email" placeholder="Your email" required>
-                <textarea name="text" placeholder="Task description" required></textarea>
-                <button type="submit">Submit</button>
-                <label for="input__file" class="input__file-button">
-                    <span class="input__file-button-text">Upload files</span>
-                </label>
-                <div class="load__contact-back"></div>
-            </div>
-            </form>
+                    <div class="upload__box-img"><img src="./images/icons/file-verybig.png" alt=""></div>
+                    <input type="file" name="uploadfile" id="input__file" class="input__file" multiple value="upload">
+                    <label for="input__file" class="input__file-button">
+                        <span class="input__file-button-text">Upload files</span>
+                    </label>
+
+                </div>
+                <div class="upload__box-back"></div>
         </div>
+        <div class="load__contact">
+            <div class="loader__wrapper">
+                <div class='loader loader1'>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="moreload">Loading...</p>
+            </div>
+            <input id="input" name="user_email" type="email" placeholder="Your email" required>
+            <textarea name="text" placeholder="Task description"></textarea>
+            <button class="button" title="fill in the email field" id="button" type="submit">Submit</button>
+            <label for="input__file" class="input__file-button">
+                <span class="input__file-button-text">Upload files</span>
+            </label>
+            <div class="load__contact-back"></div>
+        </div>
+        </form>
+    </div>
     </div>
     <div class="file-back">
         <img src="./images/icons/file-back.png" alt="">
@@ -308,31 +341,51 @@
 
         <div class="accorrdion__wrapper">
             <div class="accordion__item">
-                <div class="accordion__title">What resources do you attract for application development?</div>
+                <div class="accordion__title">What is Microtasky?</div>
                 <div class="accordion__content">
-                    <p> Someone likes to work in a large team, while someone prefers individual cooperation. To
-                        avoid disappointment, learn more about team structure, number of people, etc. Someone likes
-                        to work in a large team, while someone prefers individual cooperation. To avoid
-                        disappointment, learn more about team structure, number of people, etc.</p>
+                    <p> Here you can order the development of a separate screen for your mobile application</p>
                 </div>
             </div>
             <div class="accordion__item">
-                <div class="accordion__title">After downloading the file, what will need to be done, what will be
-                    the deadlines?</div>
+                <div class="accordion__title">Who will benefit from the service?</div>
                 <div class="accordion__content">
-                    <p> Someone likes to work in a large team, while someone prefers individual cooperation. To
-                        avoid disappointment, learn more about team structure, number of people, etc. Someone likes
-                        to work in a large team, while someone prefers individual cooperation. To avoid
-                        disappointment, learn more about team structure, number of people, etc.</p>
+                    <p> The service will be useful to small development teams or companies that want to speed up the
+                        development process but do not want to hire new employees for this</p>
                 </div>
             </div>
             <div class="accordion__item">
-                <div class="accordion__title">How effectively do you cope with tasks?</div>
+                <div class="accordion__title">What form of cooperation?</div>
                 <div class="accordion__content">
-                    <p> Someone likes to work in a large team, while someone prefers individual cooperation. To
-                        avoid disappointment, learn more about team structure, number of people, etc. Someone likes
-                        to work in a large team, while someone prefers individual cooperation. To avoid
-                        disappointment, learn more about team structure, number of people, etc.</p>
+                    <p> You send us the screen design, pay for the single screen development lets say $150, we do the
+                        work and send you the finished screen that you can use it in your application</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title">What are the benefits?</div>
+                <div class="accordion__content">
+                    <p> No need to hire new employees and no need to fire them after the end of the project, no need to
+                        conclude long-term contracts of 6-12 months for development or support</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title">What technologies do you use in your work?</div>
+                <div class="accordion__content">
+                    <p> We use swift and native development without third-party dependencies. At the moment we are
+                        developing for iOS, over time it will be possible to make screens for android as well</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title">How is pricing?</div>
+                <div class="accordion__content">
+                    <p> It all depends on the complexity of the screen and the number of custom elements, the simplest
+                        can start at $99 usd, also can be $200+</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title">Can I order multiple screens at once?</div>
+                <div class="accordion__content">
+                    <p> Yes, you can order several screens at once and get them in a short time, thereby speeding up the
+                        development of the entire project</p>
                 </div>
             </div>
         </div>

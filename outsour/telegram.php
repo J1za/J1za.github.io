@@ -4,8 +4,12 @@ $message = $_POST['text'];
 $txt = "";
 
 
-$token =  "997369560:AAFvmIXUMN4qo7-AC3tpiyLHGTdxRr7IycE"; 
-$chat_id = "-499594172"; 
+//$token =  "997369560:AAFvmIXUMN4qo7-AC3tpiyLHGTdxRr7IycE"; 
+//$chat_id = "-499594172"; 
+// $token = "966996149:AAEtZXTEVZcB3sSUnqqeHab5-8eMBscZC9I";
+// $chat_id = "-1001358475925";
+$token = "1127681841:AAECvp_8c8NWPvVB12ZlQ3SFU4Xu4IzfdXQ";
+$chat_id = "-426263083";
 
 // Путь загрузки
 $path = 'file/';
@@ -13,7 +17,7 @@ $path = 'file/';
 
 //****************EMAL********************\\
 $project_name = 'Microtasky';
-$admin_email  = 'microtasky@gmail.com';
+$admin_email  = 'test@gmail.com';
 $form_subject = 'Заявка';
 //****************************************\\
 

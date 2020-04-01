@@ -15,7 +15,9 @@
     }
 }
 @media(max-width: 1201px){
-    
+    .faq .accordion__item.active .accordion__title:before {
+        line-height: 1.6;
+    }
     .footer .header__top.footer__top .contacts a:first-child{
         display: none;
     }
@@ -49,9 +51,6 @@
 }
 
 @media(max-width: 901px){
-    .faq .accordion__item:nth-child(2) .accordion__title:before{
-        bottom: 4px;
-    }
     .service{
         padding-bottom: 70px;
         &__inner{
@@ -238,7 +237,6 @@
         }
     }
     .header__main .inputfile+label{
-        margin-left: 0;
         width: 163px;
         height: 50px;
         P{  
@@ -253,6 +251,18 @@
                 transform: scale(.7);
             }
         }
+    }
+    .header__main .inputfile+label a {
+        font-size: 12px;
+        margin: 5px;
+        width: 151px;
+        height: 39px;
+        padding: 12px 17px;
+    }
+    .header__main .inputfile+label a:before {
+        right: 2px;
+        top: 0px;
+        transform: scale(0.7);
     }
     .header__top .contacts{
         a{
@@ -284,9 +294,6 @@
     }
 }
 @media(max-width: 658px){
-    .faq .accordion__item:nth-child(1) .accordion__title:before{
-        bottom: 4px;
-    }
     .faq .accordion__item.active .accordion__title:before{
         line-height: 1.7;
         
@@ -425,6 +432,7 @@
         height: 28px;
         line-height: 2;
         padding-left: 12px;
+        top: -5px;
     }
     .faq .accordion__item.active .accordion__title:before{
         line-height: 1.2;
@@ -496,10 +504,10 @@
 }
 @media(max-width: 455px){
     .faq .accordion__item:nth-child(2) .accordion__title:before {
-        bottom: 17px;
+        bottom: -5px;
     }
     .faq .accordion__item:nth-child(3) .accordion__title:before {
-        bottom: 5px;
+        bottom: -5px;
     }
 }
 @media(max-width: 390px){

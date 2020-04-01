@@ -167,7 +167,8 @@
                     background: linear-gradient(to right, rgb(70,203,158), rgb(58,167,198));
                     opacity: 0.3;
                     }
-                    p{   
+                    a{   
+                        display: block;
                         margin: 10px;
                         font-size: 16px;
                         @include f500;
@@ -180,6 +181,7 @@
                         background-image: linear-gradient(70deg, #46cb9e 0%, #3aa7c6 100%);
                         border-radius: 3px;
                         position: relative;
+                       
                         &:before{
                             position: absolute;
                             content: url(../images/icons/file-download.png);
@@ -452,7 +454,7 @@
         padding-right: 11px; 
     }
     .title span:nth-of-type(n+4){
-        margin-left: -410px;  
+        margin-left: -577px; 
     }
     &__wrapper{
         display: flex;
@@ -467,7 +469,7 @@
             position: relative;
             &:before{
                 position: absolute;
-                content: 'Загрузка файлов';
+                content: 'Design uploading';
                 font-size: 15px;
                 opacity: 0.3;
                 line-height: 36px;
@@ -544,7 +546,7 @@
         position: relative;
         &:before{
             position: absolute;
-            content: 'Описание проекта';
+            content: 'Description';
             font-size: 15px;
             opacity: 0.3;
             line-height: 36px;
@@ -1015,7 +1017,7 @@
     }
     .check-lien{
         position: absolute;
-        bottom: 165px;
+        bottom: 185px;
     }
 }
 //end service
@@ -1031,7 +1033,7 @@
     .title-faq{
         padding-top: 69px;
         &.title span:nth-of-type(n+4){
-            margin-left: -175px;  
+            margin-left: -185px;  
         }
     }
     .accorrdion__wrapper{
@@ -1130,5 +1132,87 @@
     display: none;
 }
 //end //end faq
+
+
+
+
+$grey: rgba(0, 0, 0, .5);
+$blue: rgba(0, 0, 255, .5);
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate2 {
+	0% {
+		transform: rotate(0deg);
+		border-top-color: $grey;
+	}
+	50% {
+		transform: rotate(180deg);
+		border-top-color: $blue;
+	}
+	100% {
+		transform: rotate(360deg);
+		border-top-color: $grey;
+	}
+}
+.loader {
+	position: relative;
+	margin: 56px auto;
+	width: 150px;
+	height: 150px;
+	display: block;
+    overflow: hidden;
+    cursor: pointer;
+	div {
+		height: 100%;
+	}
+}
+@mixin loaderDivMixin {
+	border-radius: 50%;
+	padding: 8px;
+	border: 2px solid transparent;
+	animation: rotate linear 3.5s infinite;
+}
+.loader1, .loader1 div {
+	@include loaderDivMixin;
+	border-top-color: $grey;
+    border-bottom-color: $blue;
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+.loader__wrapper{
+    display: none;
+}
+.loader__wrapper.active{
+    display: block;
+}
+.moreload{
+    display: inline-block;
+    padding-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    margin: 0 auto;
+    background-image: linear-gradient(70deg, #46cb9e 0%, #3aa7c6 100%);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Conv_Geometria-Medium', sans-serif;
+    font-weight: 500;
+    color: #fff;
+
+}
+
 
 @import 'media';

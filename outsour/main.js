@@ -128,6 +128,7 @@ $("#upload").on("click","a", function (event) {
 		return false;
   });
   $('#form').trigger( 'reset' );
+ 
 
 let inputs = document.querySelectorAll('.input__file');
 
@@ -150,9 +151,7 @@ Array.prototype.forEach.call(inputs, function (input) {
 
   });
 });
-$('#button').on('click', function() {
-  $('.input__file-button-text').text('Upload files'); //this only removes the values without reverting back to 0
-});
+
 
 
 // var firebaseConfig = {
