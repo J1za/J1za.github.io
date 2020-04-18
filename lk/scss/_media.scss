@@ -1,0 +1,506 @@
+@media(max-width: 1200px){
+    .online__inner .box .paragraph, .nds__inner .box .paragraph{
+        margin: 0;
+    }
+   
+    .check__inner, .nrequest__inner{
+        flex-wrap: wrap;
+        a{
+            margin-right: 30px;
+            
+        }
+    }
+    .support .request__inner p img{
+        position: static;   
+        float:left;
+        margin: 3px 10px 5px 0;
+    }
+    .scroll{
+        overflow-x: auto;
+        padding: 20px;
+    }
+    .check,.nrequest, .finance, .sharing, .dellivery, .online, .nds, .support, .items, .partners {
+        overflow: auto;
+    }
+    .issue__inner .wrapper__items{
+        justify-content: space-evenly;
+        .item{
+            width: 300px;
+            &:last-child{
+                margin-top: 30px;
+            }
+        }
+    }
+    .issue__inner .wrapper__info:before{
+        position: relative;
+    }
+    .issue__inner .sidenav{
+        width: 260px;
+    }
+    
+} 
+@media(max-width: 1090px){
+    .finance .purse{
+        justify-content: center;
+        .output{
+            margin-top: 10px;
+        }
+    } 
+    .sharing form .chosen-container,
+    .sharing form input{
+        margin-right: 0;
+    }
+    .sharing form button{
+        left: 0%;
+        transform: translateX(0%);
+    }
+    .sharing form{
+        justify-content: center;
+    }
+    .dellivery form textarea,
+    .dellivery form input{
+        margin-right: 0;
+    }
+    .dellivery form textarea{
+        & + textarea{
+            margin-top: 15px;
+        }
+    }
+    .online .box:last-child{
+        margin-left: 0px;
+        .paragraph{  
+            display: none;
+        }
+    }
+}
+@media(max-width: 905px){
+    .online__inner, .nds__inner{
+        display: block;
+    }
+    .check__inner, .nrequest__inner{
+        a{
+            margin-bottom: 10px;
+            
+        }
+    }
+    .header__burger{
+        display: flex;
+        z-index: 100;
+        &.active{
+            .icon-bar{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 70%;
+                &:nth-child(1){
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:nth-child(3){
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+        }
+    }
+    .header__box{
+        position: absolute;
+        left: 0;
+        top: -350%;
+        transform: translateY(-100%);
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        transform: translateY(0%);
+        padding: 20px 0;
+        transition: .5s;
+        &.active{
+            padding-left: 10px;
+            top: 100%;
+            justify-content: center;
+        }
+    }
+    .header__box .user__box{
+        .icon-user{
+            top: 2px;
+            right: 3px;
+        }
+        p{
+            padding-top: 13px;
+        }
+    } 
+    .header__box .balance__box p{
+        margin-right: 0;
+    }
+    .issue__inner .wrapper__items{
+        .item{
+            width: 340px;
+            &:nth-child(2){
+                margin-top: 20px;
+            }
+            &:last-child{
+                margin-top: 20px;
+            }
+        }
+    }
+    .issue__inner .sidenav{
+        width: 250px;
+    }
+    .issue__inner{
+        .wrapper__info{
+            .info{
+                padding-right: 60px;
+                padding-bottom: 10px;
+                padding-top: 5px;
+                h4{
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+    
+}
+@media(max-width: 700px){
+    .sharing__line a{
+        padding: 10px;
+    }
+    .online form .btn, .nds form .btn{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .online form button, .nds form button{
+        margin-top: 5px;
+        font-size: 16px;
+        width: 170px !important;
+        height: 40px !important;
+    }
+    .online__inner .box .paragraph, .nds__inner .box .paragraph{
+        margin-bottom: 15px;
+    }
+    .items .create-product{
+        height: 40px;
+        width: 240px;
+        margin-top: 15px;
+        padding-top: 11px;
+        font-size: 16px;
+    }
+    .partners p {
+        font-size: 16px;
+        line-height: 24px
+    }
+    .title{
+        margin-bottom: 10px;
+    }
+    .footer{
+        margin-top: 70px;
+    }
+    .issue__inner{
+        .wrapper__info{
+            margin-left: 0;
+            margin-top: 30px;
+            padding-left: 70px;
+            padding-top: 15px;
+            .info{
+                p{
+                    font-size: 15px;
+                }
+                h4{
+                    font-size: 18px;
+                }
+                a{
+                    padding: 10px 25px;
+                    font-size: 18px;
+                }
+                &:before{
+                    height: 45px;
+                    width: 45px;
+                    padding-left: 8px;
+                    padding-top: 7px;
+                    left: -57px;
+                    transform: scale(.9);
+                }
+            }
+        }
+
+    }
+    .issue__inner .sidenav{
+        width: 225px;
+    }
+    .footer .container{
+        flex-direction: column;
+        .telegram-link {
+            margin: 20px 0;
+        }
+    }
+}
+@media(max-width: 600px){
+    .sharing__line a{
+        padding: 8px;
+    }
+    .check__inner, .nrequest__inner{
+        justify-content: center;
+    }
+    .header__box{
+        padding-left: 0;
+        .user__box{
+            width: 48px;
+            p{
+                font-size: 0px;
+            }
+            .user-profile{
+                
+                &.active{
+                    width: 150px;
+                    max-height: 160px;
+                    left: -102px;
+                }
+            }
+        }
+    }
+    .header__box .user__box .user-profile.active ul li{
+        padding: 14px 0px 18px 13px;
+        &:first-child{
+            border-top: 0px solid;
+        }
+    }
+    .issue__inner .sidenav{
+        width: 60px;
+        a{
+            font-size: 0px;
+            padding: 25px;
+            &.active{
+                font-size: 0px;
+            }
+            &:before{
+                left: 13px;
+            }
+        }
+    }
+    .issue__inner .wrapper__box{
+        display: none;
+    }
+    .issue__inner .wrapper__items{
+        .item {
+            min-height: 0px;
+            margin-left: 10px;
+            button{
+                width: 170px;
+                height: 45px;
+                font-size: 16px;
+            }
+            h4{
+                font-size: 18px;
+                &:before{
+                    width: 80px;
+                }
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        &-img{
+            max-width: 150px;
+            height: 160px;
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+}
+@media(max-width: 500px){
+    .finance .purse .output{
+        padding: 20px 15px;
+        h4{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        label{
+            input{
+                width: 230px;
+            }
+        }
+        .payments{
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        button{
+            width: 240px;
+        }
+        input{
+            width: 230px;
+        }
+    }
+    .sharing__line a{
+        padding: 5px;
+    }
+    .dellivery form textarea+textarea,
+    .dellivery form input{
+        margin-bottom: 10px;
+    }
+    .dellivery form .inputfile+label{
+        width: 260px;
+        margin: 0 auto;
+    }
+    .dellivery form p{
+        width: 320px;
+        margin-top: 5px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .dellivery form button{
+        margin-top: 10px;
+    }
+    .online__inner .box label input, .nds__inner .box label input{
+        width: 100%;
+    }
+    .online__inner .box .chosen-container, .nds__inner .box .chosen-container{
+        width: 100%;
+    }
+    .check__inner a, .nrequest__inner a{
+        margin-right: 0px;
+    }
+    .header__inner .logo{
+        margin-left: 10px;
+    }
+    .check__inner a, .nrequest__inner a{
+        width: 230px;
+        height: 40px;
+        padding-top: 12px;
+        font-size: 16px;
+        &:before{
+            left: 17px;
+            top: 6px;
+            transform: scale(.8);
+        }
+    }
+    .check__inner .box, .nrequest__inner .box{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .issue__inner .wrapper__items{
+        .item{
+            width: 300px;
+        }
+    }
+    .items .btn-download{
+        font-size: 0px;
+        a{
+            margin: auto;
+        }
+    }
+}
+@media(max-width: 400px){
+    .dellivery .title:before{
+        transform: scale(.7);
+    }
+    .check__inner .box, .nrequest__inner .box{
+        margin-left: 40px;
+    }
+    .finance, .sharing, .dellivery, .online, .nds, .support, .items, .partners{
+        margin-left: 10px;
+        a{
+            font-size: 15px;
+        }
+    }
+    .footer{
+        margin-top: 50px;
+    }
+    .issue__inner{
+        .wrapper__info{
+            margin-top: 25px;
+            margin-right: 10px;
+            padding-top: 10px;
+            .info{
+                padding-right: 20px;
+                p{
+                    font-size: 14px;
+                }
+                h4{
+                    font-size: 16px;
+                }
+                a{
+                    font-size: 16px;
+                }
+                &:before{
+                    top: 20px;
+                    transform: scale(.8);
+                }
+            }
+        }
+
+    }
+    .issue__inner .wrapper__items{
+        .item{
+            width: 260px;
+        }
+        &-img {
+            height: 140px;
+        }
+    }
+    .issue__inner .wrapper__items .item:nth-child(1):after{
+        top: 90px;
+    }
+    .issue__inner .wrapper__items .item:nth-child(2):after{
+        display: none;
+    }
+    .issue__inner .wrapper__items .item:nth-child(3):after{
+        top: 50px;
+    }
+}
+@media(max-width: 370px){
+    .dellivery .title:before{
+        transform: scale(.4);
+    }
+    .header__box .balance__box{
+        p{
+            font-size: 16px;
+        }
+        a{
+            padding-right: 0;
+            &:before{
+                display: none;
+            }
+        }
+    } 
+}
+@media(max-width: 350px){
+    .qiwi-wallet.fancybox-content{
+        padding: 14px;
+    }
+    .finance .purse .output{
+        padding: 20px 10px;
+        label{
+            input{
+                width: 200px;
+            }
+        }
+        .payments{
+            font-size: 15px;
+        }
+        button{
+            width: 200px;
+        }
+        input{
+            width: 200px;
+        }
+    }
+    .dellivery .title:before{
+        display: none;
+    }
+    .dellivery .title{
+        padding-top: 0;
+    }
+    .issue__inner .wrapper__items{
+        .item{
+            width: 225px;
+            p{
+                font-size: 14px;
+            }
+            h4{
+                font-size: 15px;
+            }
+        }
+    }
+}

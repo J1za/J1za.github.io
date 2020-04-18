@@ -1,0 +1,29 @@
+$blue: #467ef1;
+@mixin o400 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+@mixin o600 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+@mixin o700 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+@mixin pn600 {
+    font-family: 'ProximaNova-Semibold', sans-serif;
+    font-weight: 600;
+}
+@mixin pn400 {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-weight: 400;
+}
+@mixin u500 {
+    font-family: 'Ubuntu-M', sans-serif;
+    font-weight: 500;
+}
+@mixin u400 {
+    font-family: 'Ubuntu-R', sans-serif;
+    font-weight: 400;
+}
