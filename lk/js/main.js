@@ -4,5 +4,8 @@ $(document).ready(function () {
         $('.user__box,.user-profile').toggleClass('active');
       });
 
+      $("select").chosen({
+        disable_search_threshold: 10
+      })
      
 });
