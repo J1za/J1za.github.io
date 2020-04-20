@@ -283,7 +283,7 @@
                     }
                     &:nth-child(7){
                         &:before{
-                            content: url(../images/icons/cassshar.png);
+                            content: url(../images/icons/partner.png);
                         }
                     }
                     &:nth-child(8){
@@ -1434,7 +1434,7 @@
     }
     form{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
         margin-top: 40px;
         input{
@@ -1514,6 +1514,8 @@
             box-shadow: 0px 7px 20px 0px rgba(82, 184, 27, 0.25),inset 0px 0px 9.49px 3.51px rgba(205, 250, 179, 0.35);
             width: 278px;
             height: 51px;
+            left: 50%;
+            transform: translateX(-50%);
             border-radius: 25px;
             margin-top: 15px;
             color: #fff;

@@ -1,4 +1,11 @@
 @media(max-width: 1200px){
+    .dellivery form{
+        justify-content: center;
+        button{
+            left: 0%;
+            transform: translateX(0%);
+        }
+    }
     .online__inner .box .paragraph, .nds__inner .box .paragraph{
         margin: 0;
     }
