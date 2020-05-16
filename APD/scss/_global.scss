@@ -51,7 +51,7 @@ body{
 	flex: 0 0 auto;
 }
 body.lock{
-  overflow: hidden;
+  overflow-y: hidden;
   
   z-index: 100;
 }

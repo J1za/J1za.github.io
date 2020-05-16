@@ -1,13 +1,34 @@
 @import 'vars';
 @import 'fonts';
 @import 'global';
-
-.header{  
-        background-repeat: no-repeat;    
-        background-position: center center;
-        background-size: cover;
+.overlay.active{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 150;
+}
+.header{ 
         height: 720px;
         position: relative;
+    &__img{
+        position: absolute;
+        width: 67%;
+        height: 100%;
+        right: 0;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%; 
+        }
+        .linear{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(1.42deg, #02191D -6.31%, rgba(5, 135, 155, 0) 40.95%);
+            transform: rotate(-180deg);
+        }
+    }
     &__inner{
         display: flex;
         position: relative; 
@@ -21,7 +42,7 @@
             width: 34.3%;
             display: flex;
             justify-content: flex-end;
-            z-index: 1;
+            z-index: 151;
             
             ul{
                 display: flex;
@@ -87,28 +108,19 @@
         }
         .contact{
             display: flex;
-            flex-direction: column;
             align-self: flex-end;
             a{
-                margin-top: 28px;
-                margin-right: 15px;
-                @include f300;
-                font-size: 18px;
+                
+                margin-right: 100px;
+                
+                font-size: 14px;
+                text-align: center;
+                color: #fff;
                 position: relative;
-                &:before{
-                    position: absolute;
-                    left: -40px;
-                }
-                &:first-child{
-                    &:before{
-                        content: url(../images/icons/phone.svg);
-                    }
-                }
-                &:last-child{
-                    &:before{
-                        content: url(../images/icons/email.svg);
-                    }
-                }
+                background: #00B2CD;
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+                border-radius: 115px;
+                padding: 8px 16.5px 7px;
                 
             }
         }
@@ -152,6 +164,7 @@
         }
     }
 }
+
 .title{
     margin: 43px 0 30px 25px;
     font-size: 36px;
@@ -275,6 +288,7 @@
         margin-bottom: 17px;
         padding: 10px 0px 10px 10px;
         outline: none;
+        width: 100%;
         &::placeholder{
             transition: .3s;
             color: #000;
@@ -619,12 +633,26 @@
 }
 //end contacts
 // start publications-all
+
 .publications.publications-all{
     .box{
         max-width: 100%;
         display: flex;
         position: relative;
         flex-basis: 100%;
+        &-img{
+            flex: 0 0 33.333%;
+            position: relative;
+            min-height: 200px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
         &__inner{
             margin: 30px 25px 23px 30px;
             display: flex;
@@ -644,11 +672,7 @@
                 
             }
         }
-        img{
-            max-height: 255px;
-            height: 100%;
-            object-fit: contain;
-        }
+        
         
     }
     .container-fluid {
@@ -768,7 +792,13 @@
         background-color: #fff;
     }
 }
-
+.pagination .nav-links .page-numbers{
+    width: 26px;
+    height: 26px;
+    border: 0.5px solid #C4C4C4;
+    background-color: transparent;
+    color: #000;
+}
 
 //end slick
 @import 'media';
