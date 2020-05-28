@@ -7,34 +7,45 @@
     
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//unpkg.com/viewport-checker@^2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
     <title>Document</title>
   </head>
 
 <body>
-  <div class="wrapper">
+<div class="wrapper">
+    
     <header class="header">
         <div class="header-backgrond">
             <div class="header-backgrond-left"></div>
             <div class="header-backgrond-right"></div>
         </div>
         <div class="container">
+            <div class="navBurger" role="navigation" id="navToggle"></div>
             <div class="header__inner">
+                <div class="logo-mobile">
+                   <a href="#"><img src="../images/logo-mobile.svg" alt=""></a> 
+                </div>
                 <div class="logo">
-                   <a href="#"><img src="../images/logo.svg" alt=""></a> 
+                   <a href="#"><img src="../images/logo.svg" alt=""></a>
                     <div class="logo-text">
                         <p>швейцарсько-український проект</p>
                         <p>децентралізація для розвитку демократичної освіти</p>
                     </div>
                 </div>
                 <div class="header__menu">
-                    <ul>
+                    <nav class="overlayMenu"> 
+                    <ul class="menu">
                         <li><a href="#news">Новини</a></li>
                         <li><a href="#project">Про Проект</a></li>
                         <li><a href="#partners">Партнери</a></li>
                         <li><a href="#footer">Контакти</a></li>
                     </ul>
-
+                </nav>
                         <div class="search-holder">
                             <div class="circle"></div>
                             <div class="form">
@@ -47,8 +58,9 @@
                         <a href="#">UA</a>
                         <a href="#">ENG</p>
                     </div>
-
+                    
                 </div>
+                
                 
             </div>
             <div class="header__partners">
@@ -62,6 +74,7 @@
                     <img src="../images/partners/header/ph-zh.svg" alt="">
                 </a>
             </div>
+            
     </header>
   <!-- WRITE CODE HERE -->
   <div class="content">
@@ -72,8 +85,8 @@
             <div class="relevant">
                 <div class="relevant-wrapper">
                     <p>Актуально</p>
-                    <h2>Вчимо і вивчаємо на карантині</h2>
-                    <h4>Зміни в системі освіти</h4>
+                    <p>Вчимо і вивчаємо на карантині</p>
+                    <p>Зміни в системі освіти</p>
                     <a href="#">
                         <span></span>
                         <span></span>
@@ -82,7 +95,7 @@
                         Детальніше</a>
                 </div>
             </div>
-            <div class="slider">
+            <div class="slider" data-wow-duration="3.5s" data-wow-delay="1s" data-wow-offset="120">
                 <div class="slider-main">
                     <div class="box">
                         <span></span>
@@ -127,7 +140,7 @@
                 </div>
 
             </div>
-            <div class="row vacancies" style="background-image:  linear-gradient(180deg, rgba(99, 99, 99, 0.37) 0%, rgba(0, 0, 0, 0.52) 100%), url(../images/news/main-news2.jpg);">
+            <div class="row vacancies wow flash" style="background-image:  linear-gradient(180deg, rgba(99, 99, 99, 0.37) 0%, rgba(0, 0, 0, 0.52) 100%), url(../images/news/main-news2.jpg);">
                 <p>вакансії</p>
                 <p>Оголошується конкурс на вакантну посаду Національний експерт децентралізації управіння освітою проекту DECIDE</p>
             </div>
@@ -142,7 +155,7 @@
         </div>
     </div>
 </section>   
-<section id="project" class="project">
+<section id="project" class="project ">
     <div class="container">
         <div class="project__inner">
             <div class="project-about">
@@ -154,7 +167,7 @@
                         співробітництва в Україні.</p>
                     <p>Проєкт спрямовано на підтримку двох ключових реформ в Україні — освіти та децентралізації.</p>
                     <a href="#">Детальніше</a>
-                    <a href="#">При наведенні</a>
+                    <!-- <a href="#">При наведенні</a> -->
                 </div>
                 <div class="project-about__link">
                     <a href="#">Новини</a>
@@ -164,55 +177,69 @@
             </div>
             <div class="project-carousel">
                 <div class="project-carousel__line"></div>
-                    <div class="box">
+                <div class="box">
+                    <div class="box-inner">
                         <div class="title one">5 серпня
                             2020
                         </div>
                         <div class="img">
                             <img src="../images/icons/rezidenc.svg" alt="">
                         </div>
-                        <div class="subtitle ">
-                            Розробка і впровадження ефективної моделі управління освітою
-                        </div>
                     </div>
-                    <div class="box">
-                        <div class="title two">5 серпня
-                            2020
-                        </div>
-                        <div class="img">
-                            <img src="../images/icons/shocce.png" alt="">
-                        </div>
-                        <div class="subtitle">
-                            Формування Дорожної карти реалізації Стратегії
-                        </div>
+                    <div class="subtitle ">
+                        Розробка і впровадження ефективної моделі управління освітою
                     </div>
-                    <div class="box">
-                        <div class="title three">5 серпня
-                            2020
-                        </div>
-                        <div class="img">
-                            <img src="../images/icons/partners.svg" alt="">
-                        </div>
-                        <div class="subtitle">
-                            Стретегічна сесія з ДСЯО
-                        </div>
+                </div>
+                <div class="box">
+                    <div class="box-inner">
+                    <div class="title two">5 серпня
+                        2020
                     </div>
-                    <div class="box">
-                        <div class="title four">5 серпня
-                            2020
-                        </div>
-                        <div class="img">
-                            <img src="../images/icons/wall.svg" alt="">
-                        </div>
-                        <div class="subtitle">
-                            Реальна стратегічна сесія
-                        </div>
+                    <div class="img">
+                        <img src="../images/icons/shocce.png" alt="">
                     </div>
+                </div>
+                    <div class="subtitle">
+                        Формування Дорожної карти реалізації Стратегії
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-inner">
+                    <div class="title three">5 серпня
+                        2020
+                    </div>
+                    <div class="img">
+                        <img src="../images/icons/partners.svg" alt="">
+                    </div>
+                </div>
+                    <div class="subtitle">
+                        Стретегічна сесія з ДСЯО
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-inner">
+                    <div class="title four">5 серпня
+                        2020
+                    </div>
+                    <div class="img">
+                        <img src="../images/icons/wall.svg" alt="">
+                    </div>
+                </div>
+                    <div class="subtitle">
+                        Реальна стратегічна сесія
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
+    <div class="project-about__link down">
+        <a href="#">Новини</a>
+        <a href="#">Відео</a>
+        <a href="#">е-Бібліотека</a>
+    </div>
 </section>
-<section id="news" class="news">
+<section id="news" class="news wow backInDown">
     <div class="container">
         <div class="news__inner">
             <div class="item">
@@ -600,7 +627,7 @@
                         </div>
                     </div>
                     <div class="items">
-                        <div class="img">
+                        <div class="img poltava">
                             <img src="../images/icons/region/Poltava.svg" alt="">
                             <div>
                                 <span data-slide="1"></span>
@@ -662,7 +689,7 @@
                         </div>
                     </div>
                     <div class="items">
-                        <div class="img">
+                        <div class="img lugansk">
                             <img src="../images/icons/region/Lugansk.svg" alt="">
                             <div>
                                 <span data-slide="1"></span>
@@ -1269,8 +1296,7 @@
                     <h3>DOCCU</h3>
                     <div>
                         <a href="#">facebook.com/DOCCU</a>
-                        <a href="#">youtube.com/DOCCU</a>
-
+                        <a href="#">https://youtube.com/DOCCU</a>
                     </div>
 
                 </div>
@@ -1280,7 +1306,7 @@
   </div>
 
   <!-- STOP WRITE CODE -->
-  <footer id="footer" class="footer">
+<footer id="footer" class="footer">
     <div class="container">
         <div class="footer__inner">
             <div class="footer__top">
@@ -1320,7 +1346,7 @@
             </div>
             <div class="footer__bottom">
                 <div class="hashtags">
-                    <p>#MADE <span>WITH</span>  SWITZERLAND</p>
+                    <p>#MADE <span>WITH </span>  SWITZERLAND</p>
                     <p>#DECIDE</p>
                     <p>#DOCCU</p>
                 </div>
@@ -1340,11 +1366,15 @@
         </div>
     </div>
 </footer>
-</div>
+</div> 
   <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<script src="js/viewportChecker.js"></script>
+
+
 </body>
 
 </html>
