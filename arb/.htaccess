@@ -1,19 +1,16 @@
-#### кеш браузера ##############
-<ifModule mod_expires.c>
 
-ExpiresActive On
- 
-#по умолчанию кеш в 1 день
-#ExpiresDefault "access plus 1 days"
 
-# Включаем кэширование css, javascript и текстовых файлов на одну неделю
-ExpiresByType text/css "access plus 8213126400 seconds"
-ExpiresByType text/javascript "access plus 8213126400 seconds"
-ExpiresByType application/javascript "access plus 8213126400 seconds"
-ExpiresByType application/x-javascript "access plus 8213126400 seconds"
- 
-# Включаем кэширование html и htm файлов на один день
-ExpiresByType text/html "access plus 8213126400 seconds"
-
-</ifModule>
-######## end/кеш браузера############### 
+# BEGIN EXPIRES 
+<IfModule mod_expires.c>
+ExpiresActive On 
+ExpiresDefault "access plus 6 month"
+ExpiresByType text/css "access plus 6 month" 
+ExpiresByType text/plain "access plus 6 month"
+ExpiresByType image/gif "access plus 6 month"
+ExpiresByType image/png "access plus 6 month" 
+ExpiresByType image/jpeg "access plus 6 month" 
+ExpiresByType application/x-javascript "access plus 6 month"
+ExpiresByType application/javascript "access plus 6 month"
+ExpiresByType application/x-icon "access plus 6 month" 
+</IfModule>  
+# END EXPIRES
