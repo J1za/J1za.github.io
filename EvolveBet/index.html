@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Site">
+	<meta name="keywords"
+				content="Gulp4, html, css, js">
+	<link rel="shortcut icon"
+				href="img/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>EvolveBet</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+	<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="other">
+                    <div class="other-twofa">
+                        <a href="#">2fa</a>
+                    </div>
+                    <div class="other-language">
+                        <div class="other-language__active">
+                            <img src="./img/icons/flags/United-States.png" alt="">
+                        </div>
+                        <div class="other-language__all">
+                            <a href="#">
+                                <img src="./img/icons/flags/Ethiopia.png" alt="">
+                                <p>Ethiopia</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/icons/flags/United-States.png" alt="">
+                                <p>United States</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/icons/flags/Ukraine.png" alt="">
+                                <p>Ukraine</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="other-login">
+                        <div class="other-login__logout">
+                            <a href="#">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">DASHBOARD</a></li>
+                    <li><a href="deposit.html">MY DEPOSIT</a></li>
+                    <li><a href="operetions.html">TRANSACTIONS</a></li>
+                    <li><a href="partner.html">Partner program</a></li>
+                    <li><a href="promo.html">PROMO CODE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header-info">
+        <div class="container">
+            <div class="account">
+                <div class="account-welcome">
+                    <div class="account-welcome__avatar">
+                       <a href="#"><img src="./img/icons/account/avatar.png" alt=""></a> 
+                    </div>
+                    <div class="account-welcome__info">
+                        <p class="welcome">Welcome to EvolveBet!</p>
+                        <p class="fname">Henry Price</p>
+                        <p class="email">henryprice@gmail.com</p>
+                        <p class="ip">192.168.10.10</p>
+                    </div>
+                </div>
+                <div class="account-number">
+                    <p>upup.bet account number:</p>
+                    <p class="acc-number">3245867543</p>
+                </div>
+                <div class="account-wallet">
+                    <div class="box">
+                        <div class="box-title">
+                            Total deposits
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 BTC">
+                                <img src="./img/icons/account/btc.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 ETH">
+                                <img src="./img/icons/account/eth.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="2.030000 LTC">
+                                <img src="./img/icons/account/ltc.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">
+                            Total paid
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 XRP">
+                                <img src="./img/icons/account/xrp.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 TRX">
+                                <img src="./img/icons/account/trx.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">
+                            Affiliate reward
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 BTC">
+                                <img src="./img/icons/account/btc.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 ETH">
+                                <img src="./img/icons/account/eth.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="2.030000 LTC">
+                                <img src="./img/icons/account/ltc.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.030000 XRP">
+                                <img src="./img/icons/account/xrp.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 TRX">
+                                <img src="./img/icons/account/trx.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">
+                            In processing
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 XRP">
+                                <img src="./img/icons/account/xrp.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 TRX">
+                                <img src="./img/icons/account/trx.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-info">
+                    <div class="account-info__settings">
+                        <a href="#">Settings</a>
+                    </div>
+                    <div class="account-info__wallet">
+                        <a href="#">My Wallet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+	<section class="criptprice">
+    <div class="container">
+        <div class="criptprice__inner">
+            <div class="box">
+                <div class="box-image">
+                    <img src="./img/icons/other/btc.png" alt="">
+                </div>
+                <div class="box-info">
+                    <div class="box-info__name">
+                        Bitcoin
+                    </div>
+                    <div class="box-info__price">
+                        0.000000
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="./img/icons/other/eth.png" alt="">
+                </div>
+                <div class="box-info">
+                    <div class="box-info__name">
+                        Ethereum
+                    </div>
+                    <div class="box-info__price">
+                        0.000000
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="./img/icons/other/ltc.png" alt="">
+                </div>
+                <div class="box-info">
+                    <div class="box-info__name">
+                        Litecoin
+                    </div>
+                    <div class="box-info__price">
+                        0.000000
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="./img/icons/other/bch.png" alt="">
+                </div>
+                <div class="box-info">
+                    <div class="box-info__name">
+                        Bitcoin Cash
+                    </div>
+                    <div class="box-info__price">
+                        0.000000
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="./img/icons/other/usdt.png" alt="">
+                </div>
+                <div class="box-info">
+                    <div class="box-info__name">
+                        ERC20
+                    </div>
+                    <div class="box-info__price">
+                        0.000000
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="./img/icons/other/xrp.png" alt="">
+                </div>
+                <div class="box-info">
+                    <div class="box-info__name">
+                        Ripple
+                    </div>
+                    <div class="box-info__price">
+                        0.000000
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="./img/icons/other/xlm.png" alt="">
+                </div>
+                <div class="box-info">
+                    <div class="box-info__name">
+                        Stellar
+                    </div>
+                    <div class="box-info__price">
+                        0.000000
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="./img/icons/other/trx.png" alt="">
+                </div>
+                <div class="box-info">
+                    <div class="box-info__name">
+                        Tron
+                    </div>
+                    <div class="box-info__price">
+                        0.000000
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="./img/icons/other/doge.png" alt="">
+                </div>
+                <div class="box-info">
+                    <div class="box-info__name">
+                        Dogecoin
+                    </div>
+                    <div class="box-info__price">
+                        0.000000
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<main class="main">
+    <div class="container">
+        <div class="main__inner">
+            <div class="plans-info">
+                <div class="plana">
+                    <div class="plana-week">
+                        <div class="plana-week__title">
+                            Plan A
+                        </div>
+                        <div class="plana-week__line">
+                            <ul>
+                                <li class="active">
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li class="active">
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li class="active">
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li class="active">
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li class="active">
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li class="active">
+                                    <p class="romb">◆</p>
+                                    <p class="week">6 week</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                                <li>
+                                    <p class="romb">◆</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plana-deposit">
+                        <div class="plana-deposit__inner">
+                            <div class="plana-deposit__amount">
+                                <div class="amount-title">
+                                    Deposit amount*
+                                </div>
+                                <div class="amount__count">
+                                    $200.00
+                                </div>
+                            </div>
+                            <div class="plana-deposit__return">
+                                <div class="amount-title">
+                                    Total return
+                                </div>
+                                <div class="amount__count">
+                                    $300.00
+                                </div>
+                            </div>
+                            <div class="plana-deposit__terms">
+                                <div class="amount-title">
+                                    Plan Terms
+                                </div>
+                                <div class="amount__count">
+                                    <span>150%</span> for 175 days
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plana-deposit__image">
+                            <img src="./img/graphs/a.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="planb">
+                    <div class="planb-mounth">
+                        <div class="planb-mounth__title">
+                            Plan B
+                        </div>
+                        <div class="planb-mounth__count">
+                            <ul>
+                                <li class="active">
+                                    <p class="mounth">1 mounth</p>
+                                    <p class="percent">10%</p>
+                                </li>
+                                <li>
+                                    <p class="mounth">2 mounth</p>
+                                    <p class="percent">20%</p>
+                                </li>
+                                <li>
+                                    <p class="mounth">3 mounth</p>
+                                    <p class="percent">30%</p>
+                                </li>
+                                <li>
+                                    <p class="mounth">4 mounth</p>
+                                    <p class="percent">40%</p>
+                                </li>
+                                <li>
+                                    <p class="mounth">5 mounth</p>
+                                    <p class="percent">50%</p>
+                                </li>
+                                <li>
+                                    <p class="mounth">6 mounth</p>
+                                    <p class="percent">50%</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plana-deposit">
+                        <div class="plana-deposit__inner">
+                            <div class="plana-deposit__amount">
+                                <div class="amount-title">
+                                    Deposit amount*
+                                </div>
+                                <div class="amount__count">
+                                    $200.00
+                                </div>
+                            </div>
+                            <div class="plana-deposit__return">
+                                <div class="amount-title">
+                                    Total return
+                                </div>
+                                <div class="amount__count">
+                                    $400.00
+                                </div>
+                            </div>
+                            <div class="plana-deposit__terms">
+                                <div class="amount-title">
+                                    Plan Terms
+                                </div>
+                                <div class="amount__count">
+                                    <span>200%</span> for 180 days
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plana-deposit__image" data-percent="10%">
+                            <img src="./img/graphs/b.png" alt="">
+                        </div>
+                    </div>
+                    <div class="plana-subscribe">
+                        *The example shows the calculation for the minimum deposit amount of $200
+                    </div>
+                </div>
+            </div>
+
+            <div class="selected">
+                <div class="selected__inner">
+                    <div class="tabs-select">
+                        <div class="tabs-select__button">
+                            <a href="#plana" data-tab="plana" class="active">
+                                Plan A
+                            </a>
+                            <a href="#planb" data-tab="planb" class="tabs-select__button">
+                                Plan B
+                            </a>
+                        </div>
+
+                        <div id="plana" class="tabs-select__info active">
+                            <div class="box">
+                                <div class="box__count">
+                                    <div class="box-left">
+                                        <p>Plan Terms:</p>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>150% for 175 days</p>
+                                    </div>
+                                </div>
+                                <div class="box__count">
+                                    <div class="box-left">
+                                        <p>Dividends:</p>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>every 7 days</p>
+                                    </div>
+                                </div>
+                                <div class="box__count">
+                                    <div class="box-left">
+                                        <p>ROI:</p>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>50%</p>
+                                    </div>
+                                </div>
+                                <div class="box__count">
+                                    <div class="box-left">
+                                        <p>Min. deposit:</p>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>~$200.00</p>
+                                    </div>
+                                </div>
+                                <div class="box__count">
+                                    <div class="box-left">
+                                        <p>Deposit type:</p>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>principal included</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="graph">
+                                <img src="./img/graphs/graph1.png" alt="">
+                            </div>
+                        </div>
+                        <div id="planb" class="tabs-select__info">
+                            <div class="box">
+                                <div class="box__count">
+                                    <div class="box-left">
+                                        <p>Plan Terms:</p>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>280% for 180 days</p>
+                                    </div>
+                                </div>
+                                <div class="box__count">
+                                    <div class="box-left">
+                                        <p>Dividends:</p>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>every 30 days</p>
+                                    </div>
+                                </div>
+                                <div class="box__count">
+                                    <div class="box-left">
+                                        <p>ROI:</p>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                                <div class="box__count">
+                                    <div class="box-left">
+                                        <p>Min. deposit:</p>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>~$200.00</p>
+                                    </div>
+                                </div>
+                                <div class="box__count">
+                                    <div class="box-left">
+                                        <p>Deposit type:</p>
+                                    </div>
+                                    <div class="box-right">
+                                        <p>principal included</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="graph">
+                                <img src="./img/graphs/graph2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deposit">
+                <h2>Make deposit | Withdraw</h2>
+                <div class="deposit__inner">
+                    <div class="tabs">
+                        <div class="tabs-button">
+                            <a href="#tab1" class="deposit active" data-text="selected">Deposit
+                                <p class="reinvest">Reinvest</p>
+                            </a>
+                            <a href="#tab2" class="withdraw" data-text="selected">Withdraw</a>
+                        </div>
+
+                        <div id="tab1" class="tabs-form active">
+                            <form>
+                                <div class="carrency">
+                                    <p class="title-form">Carrency:</p>
+                                    <div class="current-wallet create-elem">
+                                        <span class="current-wallet-name">
+                                            <img src="./img/icons/other/xrp.png" alt="">
+                                            Ripple
+                                        </span>
+                                        <span class="current-wallet-count">204.567300</span>
+                                    </div>
+                                </div>
+                                <div class="amount">
+                                    <p class="title-form">Enter amount:</p>
+                                    <div class="create-elem">
+                                        <p class="create-elem__name">Amount</p>
+                                        <p class="create-elem__value">xrp</p>
+                                        <input type="text" class="create-elem__amount">
+                                    </div>
+                                </div>
+                                <div class="amount fox-course">
+                                    <div class="create-elem">
+                                        <p class="create-elem__name">Fix the course*</p>
+                                        <p class="create-elem__value">USD</p>
+                                        <input type="text" class="create-elem__amount">
+                                        <div class="create-elem__switch">
+                                            <span>Off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="amount total">
+                                    <div class="create-elem">
+                                        <p class="create-elem__name">Total</p>
+                                        <p class="create-elem__value">XRP</p>
+                                        <input type="text" class="create-elem__amount" value="200.000000">
+                                    </div>
+                                </div>
+                                <div class="note">*you can fix the rate for the entire period of the deposit, you will
+                                    receive dividends in your
+                                    currency that you invest at a fixed rate</div>
+                                <div class="button-create">
+                                    <button type="submit">Create deposit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="tab2" class="tabs-form withdraw">
+                            <form>
+                                <div class="carrency">
+                                    <p class="title-form">Carrency:</p>
+                                    <div class="current-wallet create-elem">
+                                        <span class="current-wallet-name">
+                                            <img src="./img/icons/other/xrp.png" alt="">
+                                            Ripple
+                                        </span>
+                                        <span class="current-wallet-count">204.567300</span>
+                                    </div>
+                                </div>
+                                <div class="amount">
+                                    <p class="title-form">Enter amount:</p>
+                                    <div class="create-elem">
+                                        <p class="create-elem__name">Amount</p>
+                                        <p class="create-elem__value">xrp</p>
+                                        <input type="text" class="create-elem__amount">
+                                    </div>
+                                </div>
+                                <div class="amount">
+                                    <p class="title-form">Wallet address:</p>
+                                    <div class="create-elem">
+                                        <p class="create-elem__name">
+                                            Ripple address</p>
+                                        <p class="create-elem__value">xrp</p>
+                                        <input type="text" class="create-elem__amount"
+                                            value="3AL8ZDN4we52pNxhotmPJ3vrQC8XB3kz2z">
+                                    </div>
+                                </div>
+                                <div class="note">
+                                    Deposit payouts are made only to the payment system you made the investment from
+                                </div>
+                                <div class="button-create">
+                                    <button type="submit">Create deposit</button>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ldeposit">
+                <h3 class="title">Last Deposits</h3>
+                <div class="ldeposit__inner">
+                    <div class="progress">
+                        <div class="progress-title">
+                            Deposit for plan A
+                        </div>
+                        <div class="progress-counts">
+                            <div class="progress-counts__left">
+                                0.150000 BTC
+                            </div>
+                            <div class="progress-counts__right">
+                                0.082500 BTC
+                            </div>
+                        </div>
+                        <div class="progress-plan">
+                           <p class="progress-percent"><span>55</span>% / 150%</p> <p>progress by plan condition</p>
+                        </div>
+                    </div>
+                    <div class="progress-deposit">
+                        <div class="box">
+                            <div class="box-plan">
+                                <div class="box-plan__title">
+                                    Deposit for plan A
+                                </div>
+                                <div class="box-plan__count">
+                                    0.150000 BTC
+                                </div>
+                            </div>
+                            
+                            <div class="box-progress">
+                                <svg width="94px" height="94px" class="box-progress__circle">
+                                   
+                                    <circle class="twice" cx="47" cy="47" r="23.5" />
+                                    <circle class="first" cx="47" cy="47" r="23.5" />
+                                </svg>
+                                
+                                <div class="box-progress__text">
+                                    <p>progress
+                                        <span>55%</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box green">
+                            <div class="box-plan">
+                                <div class="box-plan__title">
+                                    Deposit for plan B
+                                </div>
+                                <div class="box-plan__count">
+                                    12.500000 LTC
+                                </div>
+                            </div>
+                            
+                            <div class="box-progress">
+                                <svg width="94px" height="94px" class="box-progress__circle">
+                                   
+                                    <circle class="twice" cx="47" cy="47" r="23.5" />
+                                    <circle class="first" cx="47" cy="47" r="23.5" />
+                                </svg>
+                                
+                                <div class="box-progress__text">
+                                    <p>progress
+                                        <span>145 </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box green">
+                            <div class="box-plan">
+                                <div class="box-plan__title">
+                                    Deposit for plan B
+                                </div>
+                                <div class="box-plan__count">
+                                    12.500000 LTC
+                                </div>
+                            </div>
+                            
+                            <div class="box-progress">
+                                <svg width="94px" height="94px" class="box-progress__circle">
+                                   
+                                    <circle class="twice" cx="47" cy="47" r="23.5" />
+                                    <circle class="first" cx="47" cy="47" r="23.5" />
+                                </svg>
+                                
+                                <div class="box-progress__text">
+                                    <p>progress
+                                        <span>145%</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="operetion">
+                <h3 class="title">Last Operations</h3>
+                <div class="operetion__inner">
+                    <table class="table">
+                        <tr>
+                            <td>ID</td>
+                            <td>Operations</td>
+                            <td>Date</td>
+                            <td>Amount</td>
+                            <td>Currency</td>
+                            <td>Status</td>
+                        </tr>
+                        <tr>
+                            <td>#00023</td>
+                            <td>Deposit</td>
+                            <td>23 Jan, 2021  12:32</td>
+                            <td>230000.0000</td>
+                            <td>Bitcoin</td>
+                            <td><p class="wait">Waiting</p>  </td>
+                        </tr>
+                        <tr>
+                            <td>#00023</td>
+                            <td>Withdrawal</td>
+                            <td>23 Jan, 2021  12:32</td>
+                            <td>230000.0000</td>
+                            <td>Bitcoin</td>
+                            <td><p class="complete">Complete</p> </td>
+                        </tr>
+                        <tr>
+                            <td>#00023</td>
+                            <td>Partner reward</td>
+                            <td>23 Jan, 2021  12:32</td>
+                            <td>230000.0000</td>
+                            <td>Ethereum</td>
+                            <td><p class="error">Error</p> </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>#00023</td>
+                            <td>Accrual of dividends</td>
+                            <td>23 Jan, 2021  12:32</td>
+                            <td>230000.0000</td>
+                            <td>Ripple</td>
+                            <td ><p class="complete">Complete </p> </td>
+                        </tr>
+                        <tr>
+                            <td>#00023</td>
+                            <td>Accrual of dividends</td>
+                            <td>23 Jan, 2021  12:32</td>
+                            <td>230000.0000</td>
+                            <td>Litecoin</td>
+                            <td ><p class="wait">Wait</p> </td>
+                        </tr>
+                        <tr>
+                            <td>#00023</td>
+                            <td>Partner reward</td>
+                            <td>23 Jan, 2021  12:32</td>
+                            <td>230000.0000</td>
+                            <td>Bitcoin</td>
+                            <td><p class="expired">Expired</p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="affiliate">
+                <h3 class="title">Affiliate information</h3>
+                <div class="affiliate__inner">
+                    <div class="affiliate-status">
+                        <div class="affiliate-status__you">
+                            Your status:  Bronze
+                        </div>
+                        <div class="affiliate-status__num">
+                            4% - 1% - 0.5%
+                        </div>
+                    </div>
+                    
+                    <div class="affiliate-partners">
+                        <div class="box">
+                            <div class="box-left">
+                                Total partners
+                            </div>
+                            <div class="box-right">
+                                326
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-left">
+                                Active partners
+                            </div>
+                            <div class="box-right">
+                                189
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="affiliate-link">
+                        <div class="affiliate-link__url">
+                            https://evolve.bet/?aff=henryprice
+                        </div>
+                        <div class="affiliate-link__copy">
+                            Copy link
+                        </div>
+                    </div>
+
+                    <a href="#" class="prom-material">
+                        Promotion material
+                    </a>
+                </div>
+            </div>
+
+            <div class="support">
+                <h3 class="title">Support</h3>
+                <div class="support__inner">
+                    <div class="support-comunity">
+                        <a href="#">
+                            <img src="./img/icons/other/letegram.png" alt="">
+                            <p>Community EvolveBet</p>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti id nulla nobis natus impedit, facere </p>
+                    </div>
+                    <div class="support-links">
+                        <a href="#">
+                            <img src="./img/icons/social/facebook-f.png" alt="">
+                            <p>Facebook</p>
+                        </a>
+                        <a href="#">
+                            <img src="./img/icons/social/twitter.png" alt="">
+                            <p>Twitter</p>
+                        </a>
+                        <a href="#">
+                            <img src="./img/icons/social/instagram.png" alt="">
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lnews">
+                <h3 class="title">Latest news</h3>
+                <div class="lnews__inner">
+                    <ul class="list">
+                        <li>
+                            <a href="#">
+                                <p class="date">23 Feb</p>
+                               <p>EvolveBET support specialists are always </p> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                              <p class="date">23 Feb</p>
+                              <p>EvolveBET support specialists are always 
+                                support specialists are always
+                             </p>   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="date">23 Feb</p>
+                               <p>Support specialists are always </p> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="date">23 Feb</p>
+                               <p>EvolveBET support specialists are always </p> 
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="view-more"> 
+                        View more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</main>
+
+	</div>
+
+	<div class="footer">
+	<footer class="footer"></footer>
+	</div>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</div>
+</body>
+
+</html>
