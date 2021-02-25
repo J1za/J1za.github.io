@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Site">
+	<meta name="keywords"
+				content="Gulp4, html, css, js">
+	<link rel="shortcut icon"
+				href="img/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>EvolveBet</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+	<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="other">
+                    <div class="other-twofa">
+                        <a href="#">2fa</a>
+                    </div>
+                    <div class="other-language">
+                        <div class="other-language__active">
+                            <img src="./img/icons/flags/United-States.png" alt="">
+                        </div>
+                        <div class="other-language__all">
+                            <a href="#">
+                                <img src="./img/icons/flags/Ethiopia.png" alt="">
+                                <p>Ethiopia</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/icons/flags/United-States.png" alt="">
+                                <p>United States</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/icons/flags/Ukraine.png" alt="">
+                                <p>Ukraine</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="other-login">
+                        <div class="other-login__logout">
+                            <a href="#">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">DASHBOARD</a></li>
+                    <li><a href="deposit.html">MY DEPOSIT</a></li>
+                    <li><a href="operetions.html">TRANSACTIONS</a></li>
+                    <li><a href="partner.html">Partner program</a></li>
+                    <li><a href="promo.html">PROMO CODE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header-info">
+        <div class="container">
+            <div class="account">
+                <div class="account-welcome">
+                    <div class="account-welcome__avatar">
+                       <a href="#"><img src="./img/icons/account/avatar.png" alt=""></a> 
+                    </div>
+                    <div class="account-welcome__info">
+                        <p class="welcome">Welcome to EvolveBet!</p>
+                        <p class="fname">Henry Price</p>
+                        <p class="email">henryprice@gmail.com</p>
+                        <p class="ip">192.168.10.10</p>
+                    </div>
+                </div>
+                <div class="account-number">
+                    <p>upup.bet account number:</p>
+                    <p class="acc-number">3245867543</p>
+                </div>
+                <div class="account-wallet">
+                    <div class="box">
+                        <div class="box-title">
+                            Total deposits
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 BTC">
+                                <img src="./img/icons/account/btc.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 ETH">
+                                <img src="./img/icons/account/eth.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="2.030000 LTC">
+                                <img src="./img/icons/account/ltc.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">
+                            Total paid
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 XRP">
+                                <img src="./img/icons/account/xrp.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 TRX">
+                                <img src="./img/icons/account/trx.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">
+                            Affiliate reward
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 BTC">
+                                <img src="./img/icons/account/btc.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 ETH">
+                                <img src="./img/icons/account/eth.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="2.030000 LTC">
+                                <img src="./img/icons/account/ltc.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.030000 XRP">
+                                <img src="./img/icons/account/xrp.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 TRX">
+                                <img src="./img/icons/account/trx.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">
+                            In processing
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 XRP">
+                                <img src="./img/icons/account/xrp.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 TRX">
+                                <img src="./img/icons/account/trx.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-info">
+                    <div class="account-info__settings">
+                        <a href="#">Settings</a>
+                    </div>
+                    <div class="account-info__wallet">
+                        <a href="#">My Wallet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+	<section class="partner">
+    <div class="container">
+        <div class="partner__inner">
+
+            <div class="partner-line">
+                <div class="box">
+                    <div class="box-title">
+                        Your affiliate bonus
+                    </div>
+                    <div class="box-info">
+                        <strong>Bronze:</strong> 4% - 1% - 0.5%
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        My upline
+                    </div>
+                    <div class="box-info">
+                        you have no upline
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        Partner link
+                    </div>
+                    <div class="box-info melink">
+                        <p class="link">https://evolve.bet/?aff=genryprice</p>
+                        <a href="#" class="copy-link">Copy link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partner-card">
+                <div class="box reg">
+                    <div class="box-icon">
+                        <img src="./img/icons/other/reg.png" alt="">
+                    </div>
+                    <div class="box-total">
+                        <div class="box-total__title">
+                            Requirements
+                        </div>
+                        <div class="box-total__amount">
+                            Registration
+                        </div>
+                    </div>
+                    <div class="box-status">
+                        <div class="box-status__title">
+                            Status: Bronze
+                        </div>
+                        <div class="box-status__percent">
+                            4% - 1% - 0.5%
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-icon">
+                        <img src="./img/icons/other/total.png" alt="">
+                    </div>
+                    <div class="box-total">
+                        <div class="box-total__title">
+                            Total deposits
+                        </div>
+                        <div class="box-total__amount">
+                            $5,000 or more
+                        </div>
+                    </div>
+                    <div class="box-or">
+                        <p>or</p>
+                    </div>
+                    <div class="box-partner">
+                        <div class="box-partner__number">
+                            25
+                        </div>
+                        <div class="box-partner__text">
+                            active partner
+                        </div>
+                    </div>
+                    <div class="box-line">
+                        <div class="box-line__left">
+                            <p>$4,000</p>
+                            <span style="width: 40%;"></span>
+                        </div>
+                        <div class="box-line__right">
+                            <p>10 active partner</p>
+                            <span style="width: 25%;"></span>
+                        </div>
+                    </div>
+                    <div class="box-status">
+                        <div class="box-status__title">
+                            Status: Silver
+                        </div>
+                        <div class="box-status__percent">
+                            6% - 1.5% - 1%
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-icon">
+                        <img src="./img/icons/other/rub.png" alt="">
+                    </div>
+                    <div class="box-total">
+                        <div class="box-total__title">
+                            Total deposits
+                        </div>
+                        <div class="box-total__amount">
+                            $20,000 or more
+                        </div>
+                    </div>
+                    <div class="box-or">
+                        <p>or</p>
+                    </div>
+                    <div class="box-partner">
+                        <div class="box-partner__number">
+                            100
+                        </div>
+                        <div class="box-partner__text">
+                            active partner
+                        </div>
+                    </div>
+                    <div class="box-line">
+                        <div class="box-line__left">
+                            <p>$4,000</p>
+                            <span style="width: 20%;"></span>
+                        </div>
+                        <div class="box-line__right">
+                            <p>10 active partner</p>
+                            <span style="width: 10%;"></span>
+                        </div>
+                    </div>
+                    <div class="box-status">
+                        <div class="box-status__title">
+                            Status: Gold
+                        </div>
+                        <div class="box-status__percent">
+                            8% - 2% - 1.5%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partner-materials">
+                <div class="box">
+                    <div class="box-title">
+                        Total partners
+                    </div>
+                    <div class="box-text">
+                        40
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        Active partners
+                    </div>
+                    <div class="box-text">
+                        10
+                    </div>
+                </div>
+                <div class="box wallet">
+                    <div class="box-title">
+                        Structure turnover
+                    </div>
+                    <div class="box-cash">
+                        <div class="box-cash__value" data-tooltip="0.030000 BTC">
+                            <img src="./img/icons/account/btc.png" alt="">
+                        </div>
+                        <div class="box-cash__value" data-tooltip="0.1300 ETH">
+                            <img src="./img/icons/account/eth.png" alt="">
+                        </div>
+                        <div class="box-cash__value" data-tooltip="2.030000 LTC">
+                            <img src="./img/icons/account/ltc.png" alt="">
+                        </div>
+                        <div class="box-cash__value" data-tooltip="22.030000 LTC">
+                            <img src="./img/icons/account/xrp.png" alt="">
+                        </div>
+                        <div class="box-cash__value" data-tooltip="122.030000 LTC">
+                            <img src="./img/icons/account/trx.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="box wallet">
+                    <div class="box-title">
+                        Total affiliate reward
+                    </div>
+                    <div class="box-cash">
+                        <div class="box-cash__value" data-tooltip="0.030000 BTC">
+                            <img src="./img/icons/account/btc.png" alt="">
+                        </div>
+                        <div class="box-cash__value" data-tooltip="0.1300 ETH">
+                            <img src="./img/icons/account/eth.png" alt="">
+                        </div>
+                        <div class="box-cash__value" data-tooltip="2.030000 LTC">
+                            <img src="./img/icons/account/ltc.png" alt="">
+                        </div>
+                        <div class="box-cash__value" data-tooltip="22.030000 LTC">
+                            <img src="./img/icons/account/xrp.png" alt="">
+                        </div>
+                        <div class="box-cash__value" data-tooltip="122.030000 LTC">
+                            <img src="./img/icons/account/trx.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-materials">Promotion materials</a>
+            </div>
+
+            <div class="partner-details">
+                <div class="title">My team details</div>
+                <div class="partner-details__inner">
+                    <div class="box">
+                        <div class="box-lvl">
+                            <p>1</p>
+                            <span>Level</span>
+                        </div>
+                        <div class="box-info">
+                            <p>4%</p>
+                            <span>Your bonus</span>
+                        </div>
+                        <div class="box-info">
+                            <p>20</p>
+                            <span>Partners</span>
+                        </div>
+                        <div class="box-info">
+                            <p>5</p>
+                            <span>Active partners</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-lvl">
+                            <p>2</p>
+                            <span>Level</span>
+                        </div>
+                        <div class="box-info">
+                            <p>1%</p>
+                            <span>Your bonus</span>
+                        </div>
+                        <div class="box-info">
+                            <p>14</p>
+                            <span>Partners</span>
+                        </div>
+                        <div class="box-info">
+                            <p>3</p>
+                            <span>Active partners</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-lvl">
+                            <p>3</p>
+                            <span>Level</span>
+                        </div>
+                        <div class="box-info">
+                            <p>0.5%</p>
+                            <span>Your bonus</span>
+                        </div>
+                        <div class="box-info">
+                            <p>6</p>
+                            <span>Partners</span>
+                        </div>
+                        <div class="box-info">
+                            <p>2</p>
+                            <span>Active partners</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="partner-deposit">
+                <div class="menu">
+                    <div class="menu-first">
+                        <nav>
+                            <ul>
+                                <li class="open"><a href="#">Deposits</a></li>
+                                <li><a href="#">Affiliate reward</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu-twice">
+                        <nav>
+                            <ul>
+                                <li class="open"><a href="#">1 level</a></li>
+                                <li><a href="#">2 level</a></li>
+                                <li><a href="#">3 level</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="wallet">
+                    <div class="wallet-box">
+                        <div class="wallet-box__image">
+                            <img src="./img/icons/other/btc.png" alt="">
+                        </div>
+                        <div class="wallet-box__name">
+                            <p>BTC</p>
+                            <span>BTC</span>
+                        </div>
+                        <div class="wallet-box__number">
+                            <p>5.763000</p>
+                            <span>0.230520</span>
+                        </div>
+                    </div>
+                    <div class="wallet-box">
+                        <div class="wallet-box__image">
+                            <img src="./img/icons/other/eth.png" alt="">
+                        </div>
+                        <div class="wallet-box__name">
+                            <p>ETH</p>
+                            <span>ETH</span>
+                        </div>
+                        <div class="wallet-box__number">
+                            <p>0.000000</p>
+                            <span>0.000000</span>
+                        </div>
+                    </div>
+                    <div class="wallet-box">
+                        <div class="wallet-box__image">
+                            <img src="./img/icons/other/ltc.png" alt="">
+                        </div>
+                        <div class="wallet-box__name">
+                            <p>LTC</p>
+                            <span>LTC</span>
+                        </div>
+                        <div class="wallet-box__number">
+                            <p>0.000000</p>
+                            <span>0.000000</span>
+                        </div>
+                    </div>
+                    <div class="wallet-box">
+                        <div class="wallet-box__image">
+                            <img src="./img/icons/other/xrp.png" alt="">
+                        </div>
+                        <div class="wallet-box__name">
+                            <p>xrp</p>
+                            <span>xrp</span>
+                        </div>
+                        <div class="wallet-box__number">
+                            <p>0.000000</p>
+                            <span>0.000000</span>
+                        </div>
+                    </div>
+                    <div class="wallet-box">
+                        <div class="wallet-box__image">
+                            <img src="./img/icons/other/xlm.png" alt="">
+                        </div>
+                        <div class="wallet-box__name">
+                            <p>xlm</p>
+                            <span>xlm</span>
+                        </div>
+                        <div class="wallet-box__number">
+                            <p>1000000.000</p>
+                            <span>40000.00000</span>
+                        </div>
+                    </div>
+                    <div class="wallet-box">
+                        <div class="wallet-box__image">
+                            <img src="./img/icons/other/trx.png" alt="">
+                        </div>
+                        <div class="wallet-box__name">
+                            <p>trx</p>
+                            <span>trx</span>
+                        </div>
+                        <div class="wallet-box__number">
+                            <p>500000.0000</p>
+                            <span>20000.00000</span>
+                        </div>
+                    </div>
+                    <div class="wallet-box">
+                        <div class="wallet-box__image">
+                            <img src="./img/icons/other/doge.png" alt="">
+                        </div>
+                        <div class="wallet-box__name">
+                            <p>doge</p>
+                            <span>doge</span>
+                        </div>
+                        <div class="wallet-box__number">
+                            <p>0.000000</p>
+                            <span>0.000000</span>
+                        </div>
+                    </div>
+                    <div class="wallet-box">
+                        <div class="wallet-box__image">
+                            <img src="./img/icons/other/bch.png" alt="">
+                        </div>
+                        <div class="wallet-box__name">
+                            <p>bch</p>
+                            <span>bch</span>
+                        </div>
+                        <div class="wallet-box__number">
+                            <p>0.000000</p>
+                            <span>0.000000</span>
+                        </div>
+                    </div>
+                    <div class="wallet-box">
+                        <div class="wallet-box__image">
+                            <img src="./img/icons/other/usdt.png" alt="">
+                        </div>
+                        <div class="wallet-box__name">
+                            <p>ERC20</p>
+                            <span>ERC20</span>
+                        </div>
+                        <div class="wallet-box__number">
+                            <p>100000.00</p>
+                            <span>4000.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="operetion__inner partner-table">
+                <div class="menu">
+                    <h3 class="title">Partners</h3>
+                    <div class="menu__inner">
+                        <nav class="menu-first">
+                            <ul>
+                                <li class="open"><a href="#">Total</a></li>
+                                <li><a href="#">1 level</a></li>
+                                <li><a href="#">2 level</a></li>
+                                <li><a href="#">3 level</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="menu-twice">
+                            <ul>
+                                <li class="open"><a href="#">Partners</a></li>
+                                <li><a href="#">Active partners</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+                <table class="table">
+                    <tr>
+                        <td>Date</td>
+                        <td>Username</td>
+                        <td>Email</td>
+                        <td>Deposit</td>
+                        <td>Currency</td>
+                        <td>My reward</td>
+                    </tr>
+                    <tr>
+                        <td>23 Jan, 2021 12:32</td>
+                        <td>user1</td>
+                        <td>user1@gmail.com</td>
+                        <td>230000.0000</td>
+                        <td>Bitcoin</td>
+                        <td>
+                            230000.0000
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23 Jan, 2021 12:32</td>
+                        <td>user2</td>
+                        <td>user2@gmail.com</td>
+                        <td>230000.0000</td>
+                        <td>Bitcoin</td>
+                        <td>
+                            230000.0000
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23 Jan, 2021 12:32</td>
+                        <td>user3</td>
+                        <td>user3@gmail.com</td>
+                        <td>230000.0000</td>
+                        <td>Ethereum</td>
+                        <td>
+                            230000.0000
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>23 Jan, 2021 12:32</td>
+                        <td>user4</td>
+                        <td>user4@gmail.com</td>
+                        <td>230000.0000</td>
+                        <td>Ripple</td>
+                        <td>
+                            230000.0000
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23 Jan, 2021 12:32</td>
+                        <td>user5</td>
+                        <td>user5@gmail.com</td>
+                        <td>230000.0000</td>
+                        <td>Litecoin</td>
+                        <td>
+                            230000.0000
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23 Jan, 2021 12:32</td>
+                        <td>user6</td>
+                        <td>user6@gmail.com</td>
+                        <td>230000.0000</td>
+                        <td>Bitcoin</td>
+                        <td>
+                            230000.0000
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+	</div>
+
+	<div class="footer">
+	<footer class="footer"></footer>
+	</div>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</div>
+</body>
+
+</html>

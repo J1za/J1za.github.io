@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Site">
+	<meta name="keywords"
+				content="Gulp4, html, css, js">
+	<link rel="shortcut icon"
+				href="img/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>EvolveBet</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+	<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="other">
+                    <div class="other-twofa">
+                        <a href="#">2fa</a>
+                    </div>
+                    <div class="other-language">
+                        <div class="other-language__active">
+                            <img src="./img/icons/flags/United-States.png" alt="">
+                        </div>
+                        <div class="other-language__all">
+                            <a href="#">
+                                <img src="./img/icons/flags/Ethiopia.png" alt="">
+                                <p>Ethiopia</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/icons/flags/United-States.png" alt="">
+                                <p>United States</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/icons/flags/Ukraine.png" alt="">
+                                <p>Ukraine</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="other-login">
+                        <div class="other-login__logout">
+                            <a href="#">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">DASHBOARD</a></li>
+                    <li><a href="deposit.html">MY DEPOSIT</a></li>
+                    <li><a href="operetions.html">TRANSACTIONS</a></li>
+                    <li><a href="partner.html">Partner program</a></li>
+                    <li><a href="promo.html">PROMO CODE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header-info">
+        <div class="container">
+            <div class="account">
+                <div class="account-welcome">
+                    <div class="account-welcome__avatar">
+                       <a href="#"><img src="./img/icons/account/avatar.png" alt=""></a> 
+                    </div>
+                    <div class="account-welcome__info">
+                        <p class="welcome">Welcome to EvolveBet!</p>
+                        <p class="fname">Henry Price</p>
+                        <p class="email">henryprice@gmail.com</p>
+                        <p class="ip">192.168.10.10</p>
+                    </div>
+                </div>
+                <div class="account-number">
+                    <p>upup.bet account number:</p>
+                    <p class="acc-number">3245867543</p>
+                </div>
+                <div class="account-wallet">
+                    <div class="box">
+                        <div class="box-title">
+                            Total deposits
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 BTC">
+                                <img src="./img/icons/account/btc.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 ETH">
+                                <img src="./img/icons/account/eth.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="2.030000 LTC">
+                                <img src="./img/icons/account/ltc.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">
+                            Total paid
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 XRP">
+                                <img src="./img/icons/account/xrp.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 TRX">
+                                <img src="./img/icons/account/trx.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">
+                            Affiliate reward
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 BTC">
+                                <img src="./img/icons/account/btc.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 ETH">
+                                <img src="./img/icons/account/eth.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="2.030000 LTC">
+                                <img src="./img/icons/account/ltc.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.030000 XRP">
+                                <img src="./img/icons/account/xrp.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 TRX">
+                                <img src="./img/icons/account/trx.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">
+                            In processing
+                        </div>
+                        <div class="box-cash">
+                            <div class="box-cash__value" data-tooltip="0.030000 XRP">
+                                <img src="./img/icons/account/xrp.png" alt="">
+                            </div>
+                            <div class="box-cash__value" data-tooltip="0.1300 TRX">
+                                <img src="./img/icons/account/trx.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-info">
+                    <div class="account-info__settings">
+                        <a href="#">Settings</a>
+                    </div>
+                    <div class="account-info__wallet">
+                        <a href="#">My Wallet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+	<section class="promo">
+    <div class="container">
+        <div class="promo__inner">
+            <div class="promo-code">
+                <div class="title">Promo code</div>
+                <div class="promo-code__inner">
+                    <div class="text">
+                        <p>- Your FIRSTBET bonus is 10% of your total investment (maximum $ 100)!
+                        </p>
+                        <p>- FIRSTBET is a bonus for participating in an investment project. It is intended for betting on any sporting event. </p>
+                        <p>It differs from a regular bet in that you do not risk your money. When calculating such a bet, the net winnings are credited to your account balance, excluding the bet in the amount of FIRSTBET.</p>
+                        <p>- FIRSTBET can be obtained only upon registration and one-time!</p>
+                    </div>
+
+                    <div class="amount">
+                        <div class="amount-info">
+                            <div class="amount-info__title">
+                                Amount your deposits
+                            </div>
+                            <div class="amount-info__number">
+                                ≈ $350.00
+                            </div>
+                        </div>
+                        <div class="amount-info">
+                            <div class="amount-info__title">
+                                Your bonus is upup.bet
+                            </div>
+                            <div class="amount-info__number">
+                                $35.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="make-btn">
+                        <p>Do you want to increase your bonus?</p>
+                        <a href="#">Make deposit</a>
+                    </div>
+
+                    <div class="ypromo">
+                        <div class="ypromo-title">
+                            Your promo code:
+                        </div>
+                        <div class="ypromo-code">
+                            <p>------------</p>
+                        </div>
+                        <div class="ypromo-valid">
+                            VALID FOR 24 HOURS ONLY
+                        </div>
+                    </div>
+                    <div class="ypromo-get">
+                        <a href="#">Get promo code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promo-instruction">
+                <div class="title">
+                    Get a bonus for playing on the upUp.bet platform
+                </div>
+                <div class="text">
+                    <p>- Before registering, please read the rules and accept the terms of the user agreement!</p>
+                    <p>- All data when registering and filling out your personal account in upUP.bet, namely 
+                        e-mail address, mobile phone number, name, surname, date of birth, address of your registration 
+                        must correspond to your real data. The company at any time has the right to verify the account - 
+                        to request documents confirming this data.</p>
+                    <p> - You must be over 18 years old.</p>
+                   <p>- It is forbidden to create more than one account.</p>
+                   <p>- To receive a FIRSTBET, you must enter the PROMO CODE on the upUP.bet website 
+                    during registration.</p>
+                    <p>- FIRSTBET will be credited instantly to your bonus account in the currency selected when 
+                        registering at upUp.bet!</p>
+                </div>
+
+                <div class="make-btn">
+                    <a href="#">Sign Up on upup.bet</a>
+                </div>
+
+                <div class="promo-instruction__logo">
+                    <img src="./img/logo_light.png" alt="">
+                </div>
+
+                <div class="enter-number">
+                    <div class="enter-number-title">
+                        Enter your upup.bet account number to participate in the prize drawing:
+                    </div>
+                    <div class="enter-number-form">
+                        <input type="text" value="3245867543">
+                        <button type="submit">Save</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="promo-bonus">
+                <div class="title">Promo code bonus upup.bet</div>
+                <div class="subtitle">
+                    <p>All partners who registered on the upup.bet website and entered their account number have the following bonuses available</p>
+                </div>
+                <div class="row">
+                    <div class="row-text">
+                        <p>- Your FREEBET bonus is 10% of your total investment (maximum $ 100).
+                        </p>
+                        <p> - FREEBET (free bet) is a bonus for participating in an investment project. It is intended for betting 
+                            on any sporting event. It differs from a regular bet in that you do not risk your money. When 
+                            calculating such a bet, the net winnings are credited to your account balance, excluding the amount 
+                            of the free bet.</p>
+                        <p>- FREEBET can be obtained only upon registration and one-time!</p>
+                    </div>
+                    <div class="row-flyer">
+                        <div class="row-flyer__number">
+                            <div class="date">23 Jan, 2021  22:00</div>
+                            <div class="logo">
+                                <img src="./img/other/logo_dark.png" alt="">
+                            </div>
+                            <div class="number">
+                                #000001
+                            </div>
+                        </div>
+                        <div class="row-flyer__text">
+                            <p class="bg-black">we have a very</p>
+                            <p class="bg-black left">special gift for you</p>
+                            <p class="bg-other">
+                                <span>YOUR BONUS </span>
+                                for first deposit on</p>
+                            <p class="bg-black bold">upup.bet - $100</p>
+                        </div>
+                        <div class="row-flyer__code">
+                            <div class="ypromo">
+                                <div class="ypromo-title">
+                                    Your promo code:
+                                </div>
+                                <div class="ypromo-code">
+                                    <p>UPDEP100</p>
+                                </div>
+                                <div class="ypromo-valid">
+                                    VALID FOR 24 HOURS ONLY
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row fiolet">
+                    <div class="row-text">
+                        <p>- Your FREEBET bonus is 10% of your total investment (maximum $ 100).
+                        </p>
+                        <p> - FREEBET (free bet) is a bonus for participating in an investment project. It is intended for betting 
+                            on any sporting event. It differs from a regular bet in that you do not risk your money. When 
+                            calculating such a bet, the net winnings are credited to your account balance, excluding the amount 
+                            of the free bet.</p>
+                        <p>- FREEBET can be obtained only upon registration and one-time!</p>
+                    </div>
+                    <div class="row-flyer">
+                        <div class="row-flyer__number">
+                            <div class="date">23 Jan, 2021  22:00</div>
+                            <div class="logo">
+                                <img src="./img/other/logo_dark.png" alt="">
+                            </div>
+                            <div class="number">
+                                #000001
+                            </div>
+                        </div>
+                        <div class="row-flyer__text">
+                            <p class="bg-black">we have a very</p>
+                            <p class="bg-black left">special gift for you</p>
+                            <p class="bg-other">
+                                <span>YOUR BONUS </span>
+                                for first deposit on</p>
+                            <p class="bg-black bold">upup.bet - $100</p>
+                        </div>
+                        <div class="row-flyer__code">
+                            <div class="ypromo">
+                                <div class="ypromo-title">
+                                    Your promo code:
+                                </div>
+                                <div class="ypromo-code">
+                                    <p>--------------</p>
+                                </div>
+                                <div class="ypromo-valid">
+                                    VALID FOR 24 HOURS ONLY
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo-bonus gift">
+                <div class="title">Bonus upup.bet</div>
+                <div class="subtitle">
+                    <p>All partners who registered on the upup.bet website and entered their account number have the following bonuses available</p>
+                </div>
+                <div class="row fiolet">
+                    <div class="row-text">
+                        <p>- Your FREEBET bonus is 10% of your total investment (maximum $ 100).
+                        </p>
+                        <p> - FREEBET (free bet) is a bonus for participating in an investment project. It is intended for betting 
+                            on any sporting event. It differs from a regular bet in that you do not risk your money. When 
+                            calculating such a bet, the net winnings are credited to your account balance, excluding the amount 
+                            of the free bet.</p>
+                        <p>- FREEBET can be obtained only upon registration and one-time!</p>
+                    </div>
+                    <div class="row-flyer">
+                        <div class="row-flyer__number">
+                            <div class="logo">
+                                <img src="./img/other/logo_dark.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p>First deposit</p>
+                                <p>bonus</p>
+                            </div>
+                        </div>
+                        <div class="row-flyer__text">
+                            <p class="bg-black" style="margin-left:20px">we have a very</p>
+                            <p class="bg-black left" style="margin-left:130px">special gift for you</p>
+                            <p class="bg-black bold">Add funds your account </p>
+                            <p class="bg-other">with $100 and get a                             </p>
+                            <p class="bg-black bold" style="margin-left:90px">bonus of $100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-text">
+                        <p>- Your FREEBET bonus is 10% of your total investment (maximum $ 100).
+                        </p>
+                        <p> - FREEBET (free bet) is a bonus for participating in an investment project. It is intended for betting 
+                            on any sporting event. It differs from a regular bet in that you do not risk your money. When 
+                            calculating such a bet, the net winnings are credited to your account balance, excluding the amount 
+                            of the free bet.</p>
+                        <p>- FREEBET can be obtained only upon registration and one-time!</p>
+                    </div>
+                    <div class="row-flyer">
+                        <div class="row-flyer__number">
+                            <div class="logo">
+                                <img src="./img/other/logo_dark.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p>10 Days Login
+                                </p>
+                                <p>bonus</p>
+                            </div>
+                        </div>
+                        <div class="row-flyer__text">
+                            <p class="bg-black" style="margin-left:20px">we have a very</p>
+                            <p class="bg-black left" style="margin-left:130px">special gift for you</p>
+                            <p class="bg-black bold">Go to the site, place bets every day</p>
+                            <p class="bg-other" style="margin-left: 40px;text-align: left;"> for 10 days and get a    </p>
+                            <p class="bg-black bold" style="margin-right: 150px; align-self: flex-end;">bonus $20</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</section>
+	
+
+	</div>
+
+	<div class="footer">
+	<footer class="footer"></footer>
+	</div>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</div>
+</body>
+
+</html>
