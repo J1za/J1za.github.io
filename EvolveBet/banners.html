@@ -68,11 +68,26 @@
         <div class="container">
             <nav class="menu">
                 <ul>
-                    <li class="active"><a href="index.html">DASHBOARD</a></li>
-                    <li><a href="deposit.html">MY DEPOSIT</a></li>
-                    <li><a href="operetions.html">TRANSACTIONS</a></li>
-                    <li><a href="partner.html">Partner program</a></li>
-                    <li><a href="promo.html">PROMO CODE</a></li>
+                    <li class="active">
+                        <img src="./img/icons/menu/home.png" alt="">
+                        <a href="index.html">DASHBOARD</a>
+                    </li>
+                    <li>
+                        <img src="./img/icons/menu/customize.png" alt="">
+                        <a href="deposit.html">MY DEPOSIT</a>
+                    </li>
+                    <li>
+                        <img src="./img/icons/menu/file.png" alt="">
+                        <a href="operetions.html">TRANSACTIONS</a>
+                    </li>
+                    <li>
+                        <img src="./img/icons/menu/collection.png" alt="">
+                        <a href="partner.html">Partner program</a>
+                    </li>
+                    <li>
+                        <img src="./img/icons/menu/crown.svg" alt="">
+                        <a href="promo.html">PROMO CODE</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -286,6 +301,135 @@
 	</div>
 
 	<div class="footer">
+		<div class="popup twofa" >
+    <div class="container">
+        <div class="popup__inner">
+            <div class="title">
+                Security
+            </div>
+            <div class="close-popup">×</div>
+            <div class="qr-code">
+                <div class="qr-code-text">
+                    <p>Google Authenticator <br>
+                  <span>Scan QR-code by Google Authenticator <br>
+                    mobile app</span>  </p>
+                </div>
+                <div class="qr-code-image">
+                    <img src="./img/other/qr2fa.png" alt="">
+                </div>
+                <div class="qr-code-text">
+                    <p class="code">O5MJAQ757JLBAWSP</p>
+                    <p> 
+                        or enter the key to the app  </p>
+                </div>
+            </div>
+
+            <div class="qr-form">
+                <p class="qr-form-heading">
+                    Enter the 6-digit code from the app
+                </p>
+                <input type="text" class="qr-form-code" placeholder="Google Authenticator code">
+                <button type="submit">Enable 2FA</button>
+            </div>
+        </div>
+    </div>
+</div>
+		<div class="popup mwallets" >
+    <div class="container">
+        <div class="popup__inner">
+            <div class="title">
+                My wallet addresses
+            </div>
+            <div class="close-popup">×</div>
+            <div class="mwallets-form">
+                <div class="mwallets-form-address">
+                    <div class="icons">
+                        <img src="./img/icons/other/btc.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Bitcoin address">
+                    <button type="Submit">Save</button>
+                </div>
+                <div class="mwallets-form-address">
+                    <div class="icons">
+                        <img src="./img/icons/other/eth.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Ethereum address">
+                    <button type="Submit">Save</button>
+                </div>
+                <div class="mwallets-form-address">
+                    <div class="icons">
+                        <img src="./img/icons/other/ltc.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Litecoin address">
+                    <button type="Submit">Save</button>
+                </div>
+                <div class="mwallets-form-address">
+                    <div class="icons">
+                        <img src="./img/icons/other/xrp.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Ripple address">
+                    <input type="text" class="tag" placeholder="Tag">
+                    <button type="Submit">Save</button>
+                </div>
+                <div class="mwallets-form-address">
+                    <div class="icons">
+                        <img src="./img/icons/other/bch.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Bitcoin Cash address">
+                    <button type="Submit">Save</button>
+                </div>
+                <div class="mwallets-form-address">
+                    <div class="icons">
+                        <img src="./img/icons/other/usdt.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Tether ERC20 address">
+                    <button type="Submit">Save</button>
+                </div>
+                <div class="mwallets-form-address">
+                    <div class="icons">
+                        <img src="./img/icons/other/xlm.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Stellar address">
+                    <input type="text" class="tag" placeholder="Tag">
+                    <button type="Submit">Save</button>
+                </div>
+                <div class="mwallets-form-address">
+                    <div class="icons">
+                        <img src="./img/icons/other/trx.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Tron address">
+                    <button type="Submit">Save</button>
+                </div>
+                <div class="mwallets-form-address">
+                    <div class="icons">
+                        <img src="./img/icons/other/doge.png" alt="">
+                    </div>
+                    <input type="text" placeholder="Dogecoin address">
+                    <button type="Submit">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<div class="popup chpassword" >
+    <div class="container">
+        <div class="popup__inner">
+            <div class="title">
+                Change password
+            </div>
+            <div class="close-popup">×</div>
+            <div class="chpassword-form">
+                <div class="chpassword-form-address">
+                    <input type="text" placeholder="Current password">
+                    <input type="text" placeholder="New password">
+                    <input type="text" placeholder="Confirm password">
+                    <button type="Submit">Save new password</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 	<footer class="footer"></footer>
 	</div>
 	<script src="js/libs.min.js"></script>
