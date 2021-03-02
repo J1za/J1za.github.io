@@ -22,7 +22,7 @@
 <body>
 	<div class="wrapper">
 		<div class="content">
-	<header class="header">
+	<header class="header"> 
     <div class="header-top">
         <div class="container">
             <div class="header-top__inner">
@@ -188,6 +188,11 @@
             </div>
         </div>
     </div>
+    <div class="burger">
+        <span></span>
+        <span class="close"></span>
+        <span></span>
+      </div> 
 </header>
 	<section class="criptprice">
     <div class="container">
@@ -741,7 +746,7 @@
                                     receive dividends in your
                                     currency that you invest at a fixed rate</div>
                                 <div class="button-create">
-                                    <button type="submit">Create deposit</button>
+                                    <button type="submit" onclick='return false;'>Create deposit</button>
                                 </div>
                             </form>
                         </div>
@@ -752,7 +757,7 @@
                                     <div class="current-wallet create-elem">
                                         <span class="current-wallet-name">
                                             <img src="./img/icons/other/xrp.png" alt="">
-                                         <p> Ripple</p> 
+                                            <p> Ripple</p>
                                         </span>
                                         <span class="current-wallet-count">204.567300</span>
                                     </div>
@@ -835,7 +840,7 @@
                                     Deposit payouts are made only to the payment system you made the investment from
                                 </div>
                                 <div class="button-create">
-                                    <button type="submit">Create deposit</button>
+                                    <button type="submit" onclick='return false;'>Withdraw</button>
                                 </div>
                             </form>
 
@@ -861,7 +866,8 @@
                             </div>
                         </div>
                         <div class="progress-plan">
-                           <p class="progress-percent"><span>55</span>% / 150%</p> <p>progress by plan condition</p>
+                            <p class="progress-percent"><span>55</span>% / 150%</p>
+                            <p>progress by plan condition</p>
                         </div>
                     </div>
                     <div class="progress-deposit">
@@ -874,14 +880,14 @@
                                     0.150000 BTC
                                 </div>
                             </div>
-                            
+
                             <div class="box-progress">
                                 <svg width="94px" height="94px" class="box-progress__circle">
-                                   
+
                                     <circle class="twice" cx="47" cy="47" r="23.5" />
                                     <circle class="first" cx="47" cy="47" r="23.5" />
                                 </svg>
-                                
+
                                 <div class="box-progress__text">
                                     <p>progress
                                         <span>55%</span>
@@ -898,14 +904,14 @@
                                     12.500000 LTC
                                 </div>
                             </div>
-                            
+
                             <div class="box-progress">
                                 <svg width="94px" height="94px" class="box-progress__circle">
-                                   
+
                                     <circle class="twice" cx="47" cy="47" r="23.5" />
                                     <circle class="first" cx="47" cy="47" r="23.5" />
                                 </svg>
-                                
+
                                 <div class="box-progress__text">
                                     <p>progress
                                         <span>145</span>
@@ -922,14 +928,14 @@
                                     12.500000 LTC
                                 </div>
                             </div>
-                            
+
                             <div class="box-progress">
                                 <svg width="94px" height="94px" class="box-progress__circle">
-                                   
+
                                     <circle class="twice" cx="47" cy="47" r="23.5" />
                                     <circle class="first" cx="47" cy="47" r="23.5" />
                                 </svg>
-                                
+
                                 <div class="box-progress__text">
                                     <p>progress
                                         <span>145%</span>
@@ -944,65 +950,80 @@
             <div class="operetion">
                 <h3 class="title">Last Operations</h3>
                 <div class="operetion__inner">
-                    <table class="table">
-                        <tr>
-                            <td>ID</td>
-                            <td>Operations</td>
-                            <td>Date</td>
-                            <td>Amount</td>
-                            <td>Currency</td>
-                            <td>Status</td>
-                        </tr>
-                        <tr>
-                            <td>#00023</td>
-                            <td>Deposit</td>
-                            <td>23 Jan, 2021  12:32</td>
-                            <td>230000.0000</td>
-                            <td>Bitcoin</td>
-                            <td><p class="wait">Waiting</p>  </td>
-                        </tr>
-                        <tr>
-                            <td>#00023</td>
-                            <td>Withdrawal</td>
-                            <td>23 Jan, 2021  12:32</td>
-                            <td>230000.0000</td>
-                            <td>Bitcoin</td>
-                            <td><p class="complete">Complete</p> </td>
-                        </tr>
-                        <tr>
-                            <td>#00023</td>
-                            <td>Partner reward</td>
-                            <td>23 Jan, 2021  12:32</td>
-                            <td>230000.0000</td>
-                            <td>Ethereum</td>
-                            <td><p class="error">Error</p> </td>
-                            
-                        </tr>
-                        <tr>
-                            <td>#00023</td>
-                            <td>Accrual of dividends</td>
-                            <td>23 Jan, 2021  12:32</td>
-                            <td>230000.0000</td>
-                            <td>Ripple</td>
-                            <td ><p class="complete">Complete </p> </td>
-                        </tr>
-                        <tr>
-                            <td>#00023</td>
-                            <td>Accrual of dividends</td>
-                            <td>23 Jan, 2021  12:32</td>
-                            <td>230000.0000</td>
-                            <td>Litecoin</td>
-                            <td ><p class="wait">Wait</p> </td>
-                        </tr>
-                        <tr>
-                            <td>#00023</td>
-                            <td>Partner reward</td>
-                            <td>23 Jan, 2021  12:32</td>
-                            <td>230000.0000</td>
-                            <td>Bitcoin</td>
-                            <td><p class="expired">Expired</p></td>
-                        </tr>
-                    </table>
+                    <div class="overflow">
+                        <table class="table">
+                            <tr>
+                                <td>ID</td>
+                                <td>Operations</td>
+                                <td>Date</td>
+                                <td>Amount</td>
+                                <td>Currency</td>
+                                <td>Status</td>
+                            </tr>
+                            <tr>
+                                <td>#00023</td>
+                                <td>Deposit</td>
+                                <td>23 Jan, 2021 12:32</td>
+                                <td>230000.0000</td>
+                                <td>Bitcoin</td>
+                                <td>
+                                    <p class="wait">Waiting</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#00023</td>
+                                <td>Withdrawal</td>
+                                <td>23 Jan, 2021 12:32</td>
+                                <td>230000.0000</td>
+                                <td>Bitcoin</td>
+                                <td>
+                                    <p class="complete">Complete</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#00023</td>
+                                <td>Partner reward</td>
+                                <td>23 Jan, 2021 12:32</td>
+                                <td>230000.0000</td>
+                                <td>Ethereum</td>
+                                <td>
+                                    <p class="error">Error</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>#00023</td>
+                                <td>Accrual of dividends</td>
+                                <td>23 Jan, 2021 12:32</td>
+                                <td>230000.0000</td>
+                                <td>Ripple</td>
+                                <td>
+                                    <p class="complete">Complete </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#00023</td>
+                                <td>Accrual of dividends</td>
+                                <td>23 Jan, 2021 12:32</td>
+                                <td>230000.0000</td>
+                                <td>Litecoin</td>
+                                <td>
+                                    <p class="wait">Wait</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#00023</td>
+                                <td>Partner reward</td>
+                                <td>23 Jan, 2021 12:32</td>
+                                <td>230000.0000</td>
+                                <td>Bitcoin</td>
+                                <td>
+                                    <p class="expired">Expired</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
                 </div>
             </div>
 
@@ -1047,7 +1068,7 @@
                         </div>
                     </div>
 
-                    <a href="#" class="prom-material">
+                    <a href="banners.html" class="prom-material">
                         Promotion material
                     </a>
                 </div>
@@ -1307,7 +1328,7 @@
     </div>
 </div>
 	
-	<footer class="footer"></footer>
+	
 	</div>
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
