@@ -181,7 +181,85 @@
 	</div>
 
 	<div class="footer">
-	<div id="privacy-pop" class="popup">
+	<div class="popup-account popup-account-new">
+    <div class="popup-account__close">
+        <img src="./img/icons/close-icon.svg" alt="">
+    </div>
+    <div class="popup-account__title">
+        Open new account
+    </div>
+    <div class="popup-account__subtitle">
+        Join more than 3,500 partners!
+    </div>
+    <form class="popup-account__form">
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="Email">
+        <div class="popup-account__form-password">
+            <input type="text" placeholder="Password">
+            <div class="show-pass">
+                <img src="./img/icons/eye.svg" alt="">
+            </div>
+            <div class="popup-account__form-upline" data-notupline="you have no upline">
+                <input type="text" placeholder="Your upline:">
+            </div>
+            <button type="submit">Create account</button>
+        </div>
+    </form>
+    <div class="popup-account__login">
+        <p>Already have an account ?</p>
+        <a href="#" class="header__login">LOG IN</a>
+    </div>
+    <div class="popup-account__info">
+        <p>By pressing create account, you confirm
+            that you have read and agree with our <a href="#" class="terms-pop">Terms of Service</a> & <a href="#" class="privacy-pop" >Privacy policy</a> </p>
+    </div>
+</div>
+
+<div class="popup-account popup-account-login">
+    <div class="popup-account__close">
+        <img src="./img/icons/close-icon.svg" alt="">
+    </div>
+    <div class="popup-account__title">
+        Log in
+    </div>
+    <div class="popup-account__subtitle">
+        Welcome to the EvolveBet platform!
+    </div>
+    <form class="popup-account__form">
+        <input type="email" placeholder="Email">
+        <div class="popup-account__form-password">
+            <input type="text" placeholder="Password">
+            <div class="show-pass">
+                <img src="./img/icons/eye.svg" alt="">
+            </div>
+        </div>
+        <button type="submit">log in</button>
+    </form>
+    <div class="popup-account__forgot">
+        <a href="#" class="forgot-pass">FORGOT PASSWORD?</a>
+    </div>
+    <div class="popup-account__info">
+        <p>No account?</p>
+        <a href="#" class="header__open-account">open account</a>
+    </div>
+</div>
+<div class="popup-account popup-account-recovery">
+    <div class="popup-account__close">
+        <img src="./img/icons/close-icon.svg" alt="">
+    </div>
+    <div class="popup-account__title">
+        Recovery password
+    </div>
+    <div class="popup-account__subtitle">
+        Enter your Email and instructions will be sent to you!
+    </div>
+    <form class="popup-account__form">
+        <input type="email" placeholder="Email">
+        <button type="submit">recovery</button>
+    </form>
+</div>
+
+<div id="privacy-pop" class="popup">
     <div class="container">
         <div class="popup__close">
             <img src="./img/icons/cancel-close-cross-delete_114048.svg" alt="">
@@ -266,7 +344,7 @@
                 <div class="form__inner">
                     <label class="error-send">
                         <p>Enter your username</p>
-                        <input type="text" placeholder="Username" value="Alexander" >
+                        <input type="text" placeholder="Username" value="Alexander">
                         <p class="error-send-message">Invalid data entered</p>
                     </label>
                     <label>
@@ -279,7 +357,7 @@
                         <p>Enter your username</p>
                         <textarea placeholder="Message"></textarea>
                     </label>
-    
+
                 </div>
                 <div class="form__submit">
                     <button type="submit">send a message</button>
