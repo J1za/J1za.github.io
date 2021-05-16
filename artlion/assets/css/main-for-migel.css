@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: url("../img/migel/bg.png") no-repeat top;
+  height: 100vh;
+  background-size: cover;
+}
+
+.container {
+  width: 1600px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+}
+#main .container {
+  display: flex;
+  justify-content: center;
+}
+#main .main__wrapper {
+  background: #FFFFFF;
+  border-radius: 50px;
+  width: 70%;
+  padding-bottom: 25px;
+  position: relative;
+  top: 20px;
+}
+#main .main-info {
+  background: #77257D;
+  border-radius: 50px;
+  display: flex;
+  position: relative;
+  top: -20px;
+  right: 26px;
+  align-items: flex-start;
+  height: 301px;
+}
+#main .main-info__text {
+  position: relative;
+  bottom: 78px;
+}
+#main .main-info__title {
+  display: flex;
+  align-items: flex-start;
+}
+#main .main-info__title p {
+  font-family: "HelveticaNeueBoldCondensed";
+  font-size: 130px;
+  line-height: 157px;
+  color: #FFFFFF;
+  margin: 0;
+}
+#main .main-info__title img {
+  padding-top: 10px;
+}
+#main .main-info__description {
+  font-family: "HelveticaNeueCyr-Medium";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+#main .main-info__share {
+  margin-right: 30px;
+  margin-top: 14px;
+}
+#main .main-info__stic {
+  position: relative;
+  bottom: 84px;
+  width: 480px;
+}
+#main .main-link {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 26px;
+}
+#main .main-link-block {
+  display: flex;
+  padding-top: 20px;
+}
+#main .main-link-block__download {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#main .main-link-block__download p {
+  font-family: "HelveticaNeueCyr-Medium";
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #000;
+  margin: 0;
+}
+#main .main-link__button a {
+  margin-right: 40px;
+}
+#main .main-link__button a img {
+  transition: 0.4s;
+}
+#main .main-link__button a img:hover {
+  transform: scale(0.9);
+  transition: 0.4s;
+}
+#main .main-link a {
+  text-decoration: none;
+}
+#main .main-link__social {
+  display: flex;
+  align-items: flex-end;
+}
+#main .main-link__social a {
+  margin-left: 25px;
+  transition: 0.6s;
+}
+#main .main-link__social a:hover {
+  transform: translateY(-8px);
+  transition: 0.6s;
+}
+#main .main-link__social a:nth-child(3) {
+  display: none;
+}
+
+.qr {
+  margin-top: 3%;
+}
+.qr .container {
+  display: flex;
+  justify-content: center;
+}
+.qr .container img {
+  background: #000;
+  padding: 14px;
+  border-radius: 15px;
+  border: 2px solid #A7A7A7;
+  width: 10vw;
+}
+
+#footer {
+  position: absolute;
+  bottom: 5px;
+  padding-top: 30px;
+}
+#footer .container {
+  width: 100vw;
+}
+#footer .footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+#footer .footer__wrapper p {
+  font-family: "Gilroy-Medium";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 1.16667px;
+  color: #000000;
+  margin: 0;
+}
+#footer .footer__link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#footer .footer__link a {
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.6s;
+}
+#footer .footer__link a:hover {
+  transform: translateY(-8px);
+  transition: 0.6s;
+}/*# sourceMappingURL=main-for-migel.css.map */

@@ -1,0 +1,473 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #1C1C1C;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.bg__blur {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(28, 28, 28, 0.6);
+  position: absolute;
+}
+.bg-left, .bg-right {
+  position: absolute;
+  z-index: -2;
+  filter: blur(2px);
+}
+.bg-left {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50%;
+}
+.bg-left img:hover {
+  transform: scale(1.5);
+}
+.bg-left img {
+  position: absolute;
+  width: 11vh;
+}
+.bg-left img:nth-child(1) {
+  left: 212px;
+  bottom: 56vh;
+}
+.bg-left img:nth-child(2) {
+  left: 352px;
+  bottom: 47vh;
+}
+.bg-left img:nth-child(3) {
+  bottom: 40vh;
+  left: 242px;
+}
+.bg-left img:nth-child(4) {
+  bottom: 32vh;
+  left: 410px;
+}
+.bg-left img:nth-child(5) {
+  bottom: 25vh;
+  left: 292px;
+}
+.bg-left img:nth-child(6) {
+  bottom: 14vh;
+  left: 224px;
+}
+.bg-right {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50%;
+}
+.bg-right img {
+  position: absolute;
+  width: 11vh;
+}
+.bg-right img:nth-child(1) {
+  right: 148px;
+  bottom: 57vh;
+}
+.bg-right img:nth-child(2) {
+  right: 352px;
+  bottom: 46vh;
+}
+.bg-right img:nth-child(3) {
+  bottom: 36vh;
+  right: 230px;
+}
+.bg-right img:nth-child(4) {
+  bottom: 32vh;
+  right: 400px;
+}
+.bg-right img:nth-child(5) {
+  bottom: 19vh;
+  right: 350px;
+}
+.bg-right img:nth-child(6) {
+  bottom: 15vh;
+  right: 200px;
+}
+
+.container {
+  width: 1600px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+#header {
+  padding-top: 20px;
+}
+#header .header__wrapper {
+  display: flex;
+  justify-content: center;
+}
+#header .header__wrapper img {
+  margin-left: 43%;
+}
+#header .header__lang {
+  margin-left: auto;
+  cursor: default;
+  position: relative;
+  z-index: 2;
+}
+#header .header__lang_active {
+  color: #BE353C !important;
+}
+#header .header__lang a {
+  text-decoration: none;
+  font-family: "HelveticaNeueBoldCondensed";
+  font-size: 21px;
+  line-height: 25px;
+  color: #FFF;
+  margin-left: 5px;
+}
+#header .header__lang a:hover {
+  color: #BE353C !important;
+}
+
+#title h1 {
+  font-family: "HelveticaNeueBoldCondensed";
+  font-size: 12vh;
+  line-height: 14vh;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 32px 0 0;
+  text-align: center;
+}
+#title h2 {
+  font-family: "HelveticaNeueBoldCondensed";
+  font-size: 7vh;
+  line-height: 13vh;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+#social-mobile {
+  display: none;
+}
+
+#mobile {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#mobile .container {
+  position: relative;
+}
+#mobile .mobile__wrapper {
+  display: flex;
+  justify-content: center;
+}
+#mobile .mobile__phone {
+  height: 61.9vh;
+  padding-top: 20px;
+  bottom: 0px;
+}
+#mobile .mobile-sticker {
+  position: absolute;
+  width: 64vh;
+  z-index: 2;
+}
+#mobile .mobile-sticker .s-1 {
+  -webkit-animation-name: animate-stic-up;
+          animation-name: animate-stic-up;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+#mobile .mobile-sticker .s-2 {
+  -webkit-animation-name: animate-stic-down;
+          animation-name: animate-stic-down;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+#mobile .mobile-sticker .s-3 {
+  -webkit-animation-name: animate-stic-up;
+          animation-name: animate-stic-up;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+#mobile .mobile-sticker .s-4 {
+  -webkit-animation-name: animate-stic-down;
+          animation-name: animate-stic-down;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+#mobile .mobile-sticker .s-5 {
+  -webkit-animation-name: animate-stic-down;
+          animation-name: animate-stic-down;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+#mobile .mobile-sticker .s-6 {
+  -webkit-animation-name: animate-stic-up;
+          animation-name: animate-stic-up;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+#mobile .mobile-sticker__migel {
+  position: absolute;
+  height: 18vh;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+  transition: 1s;
+  top: 12px;
+}
+#mobile .mobile-sticker__migel:hover {
+  transform: translateX(-20px);
+  transition: 1s;
+}
+#mobile .mobile-sticker__mta {
+  position: absolute;
+  right: 0px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+  transition: 1s;
+  height: 18vh;
+  top: 2px;
+}
+#mobile .mobile-sticker__mta:hover {
+  transform: translateX(20px);
+  transition: 1s;
+}
+#mobile .mobile-sticker__quppy {
+  position: absolute;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+  transition: 1s;
+  height: 20vh;
+  left: 46px;
+  top: 18vh;
+}
+#mobile .mobile-sticker__quppy:hover {
+  transform: translateX(-20px);
+  transition: 1s;
+}
+#mobile .mobile-sticker__dance {
+  position: absolute;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
+  transition: 1s;
+  height: 24vh;
+  right: 38px;
+  top: 15vh;
+}
+#mobile .mobile-sticker__dance:hover {
+  transform: translateX(20px);
+  transition: 1s;
+}
+#mobile .mobile-sticker__dab {
+  position: absolute;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+  transition: 1s;
+  left: -10px;
+  top: 39vh;
+  height: 18vh;
+}
+#mobile .mobile-sticker__dab:hover {
+  transform: translateX(-20px);
+  transition: 1s;
+}
+#mobile .mobile-sticker__pizza {
+  position: absolute;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2700ms;
+          animation-delay: 2700ms;
+  transition: 1s;
+  right: -22px;
+  top: 38vh;
+  height: 18vh;
+}
+#mobile .mobile-sticker__pizza:hover {
+  transform: translateX(20px);
+  transition: 1s;
+}
+#mobile .mobile-download {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 54px;
+  z-index: 2;
+}
+#mobile .mobile-download a:first-child {
+  margin-bottom: 37px;
+}
+#mobile .mobile-download__appstore, #mobile .mobile-download__google {
+  transition: 1s;
+}
+#mobile .mobile-download__appstore:hover {
+  transform: scale(0.9);
+  transition-duration: 0.2s;
+  transition: 1s;
+}
+#mobile .mobile-download__google:hover {
+  transform: scale(0.9);
+  transition-duration: 0.2s;
+  transition: 1s;
+}
+#mobile .mobile-qr {
+  position: absolute;
+  bottom: 90px;
+  z-index: 2;
+  right: 20px;
+  background: #000;
+  padding: 14px;
+  border-radius: 15px;
+  border: 2px solid #A7A7A7;
+}
+
+#footer {
+  z-index: 3;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+}
+#footer .footer__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#footer .footer__copyright {
+  font-family: "Gilroy-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2vh;
+  line-height: 17px;
+  letter-spacing: 1.16667px;
+  color: #FFFFFF;
+  width: 68%;
+  text-align: center;
+}
+#footer .footer__link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 16%;
+}
+#footer .footer__link a {
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.6s;
+}
+#footer .footer__link a:hover {
+  transform: translateY(-8px);
+  transition: 0.6s;
+}
+
+.half {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100% + 38%);
+  z-index: 1;
+}
+.half div {
+  width: 100%;
+  opacity: 0;
+}
+
+@-webkit-keyframes animate-stic-up {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(6px);
+  }
+}
+
+@keyframes animate-stic-up {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(6px);
+  }
+}
+@-webkit-keyframes animate-stic-down {
+  from {
+    transform: translateY(6px);
+  }
+  to {
+    transform: translateY(-2px);
+  }
+}
+@keyframes animate-stic-down {
+  from {
+    transform: translateY(6px);
+  }
+  to {
+    transform: translateY(-2px);
+  }
+}/*# sourceMappingURL=t.css.map */
