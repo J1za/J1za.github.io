@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Site">
+	<meta name="keywords"
+				content="Gulp4, html, css, js">
+	<link rel="shortcut icon"
+				href="img/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<title>Site</title>
+</head>
+
+<body class="f-all">
+	<div class="wrapper">
+		<div class="content">
+	<header class="header">
+      <div class="container">
+            <div class="header__inner">
+                  <div class="logo">
+                        <a href="/">
+                              <img src="./img/logo.svg" alt="">
+                        </a>
+                  </div>
+                  <div class="header__menu">
+                        <nav class="menu">
+                              <ul>
+                                    <li class="active"><a href="/">Головна</a></li>
+                                    <div class="dropdown">
+                                          <li><a href="center-navigation.html">Центр навчання</a></li>
+                                          <div class="dropdown-menu">
+
+                                                <li>
+                                                      <div class="dropdown-menu__top">
+                                                            <a href="availableCoursesProtection.html">
+                                                                  <p>Курси з Охорони праці </p>
+                                                            </a>
+                                                            <span>
+                                                                  Контроль навчання, можливість створення заявок на
+                                                                  навчання, розрахунок бюджету навчання, нагадування про
+                                                                  закінчення термін навчання кожного співробітника
+                                                                  підприємства.
+                                                            </span>
+                                                      </div>
+                                                </li>
+                                                <li>
+                                                      <div class="dropdown-menu__top">
+                                                            <a href="availableCoursesPost.html">
+                                                                  <p>Курси з Технології робiт </p>
+                                                            </a>
+                                                            <span>
+                                                                  Організація навчання та тестування співробітників
+                                                                  підприємства, створення власних програм навчання та
+                                                                  тестування.
+                                                            </span>
+                                                      </div>
+                                                </li>
+                                                <li>
+                                                      <div class="dropdown-menu__top">
+                                                            <a href="#">
+                                                                  <p>Курси для робiтникiв </p>
+                                                            </a>
+                                                            <span>
+                                                                  Контроль проведення всіх видів інструктажів
+                                                                  співробітниками навчання, дистанційне проведення
+                                                                  інструктажів, завантаження та створення інструктажів
+                                                                  під кожне окреме підприємство.
+                                                            </span>
+                                                      </div>
+                                                </li>
+                                                <li>
+                                                      <a href="availableCourses.html" class="btn-p">
+                                                            Всі курси
+                                                      </a>
+                                                </li>
+                                          </div>
+                                    </div>
+
+                                    <div class="dropdown">
+                                          <li><a href="#">Продукти</a></li>
+
+                                          <div class="dropdown-menu">
+                                                <li>
+                                                      <div class="dropdown-menu__top">
+                                                            <a href="OblikTaNavchannya.html">
+                                                                  <p>Облік та навчання</p>
+                                                            </a>
+                                                            <span>
+                                                                  Контроль навчання, можливість створення заявок на
+                                                                  навчання,
+                                                                  розрахунок бюджету навчання, нагадування про
+                                                                  закінчення
+                                                                  термін навчання кожного співробітника підприємства.
+                                                            </span>
+                                                      </div>
+
+                                                </li>
+                                                <li>
+                                                      <div class="dropdown-menu__top">
+                                                            <a href="learning-center.html">
+                                                                  <p>Центр навчання</p>
+                                                            </a>
+                                                            <span>
+                                                                  Організація навчання та тестування співробітників
+                                                                  підприємства, створення власних програм навчання та
+                                                                  тестування.
+                                                            </span>
+                                                      </div>
+
+                                                </li>
+                                                <li>
+                                                      <div class="dropdown-menu__top">
+                                                            <a href="#">
+                                                                  <p>Інструктажі</p>
+                                                            </a>
+                                                            <span>
+                                                                  Контроль проведення всіх видів інструктажів
+                                                                  співробітниками
+                                                                  навчання, дистанційне проведення інструктажів,
+                                                                  завантаження
+                                                                  та створення інструктажів під кожне окреме
+                                                                  підприємство.
+                                                            </span>
+                                                      </div>
+
+                                                </li>
+                                                <li>
+                                                      <div class="dropdown-menu__top">
+                                                            <a href="#">
+                                                                  <p>Внутрішня документація</p>
+                                                            </a>
+                                                            <span>
+                                                                  База внутрішніх наказів, розпоряджень, інструкцій,
+                                                                  будь якої
+                                                                  корисної інформації, тощо. Зручний пошук документів та
+                                                                  фільтри по типу та даті документу, тощо.
+                                                            </span>
+                                                      </div>
+
+                                                </li>
+                                                <li>
+                                                      <div class="dropdown-menu__top">
+                                                            <a href="#">
+                                                                  <p>Обладнання та роботи</p>
+                                                            </a>
+                                                            <span>
+                                                                  Облік обладнання, нагадування про граничні терміни
+                                                                  експлуатації, нагадування про необхідність проведення
+                                                                  перевірок, тощо. Можливість розрахунку бюджету
+                                                                  вартості
+                                                                  перевірок, ремонтів (створення запиту на вартість)
+                                                                  обладнання. Можливість контролю, які роботи
+                                                                  виконуються на
+                                                                  яких об’єктах
+                                                            </span>
+                                                      </div>
+
+                                                </li>
+                                                <li>
+                                                      <div class="dropdown-menu__top">
+                                                            <a href="#">
+                                                                  <p> Засоби індивідуального захисту (ЗІЗ)</p>
+                                                            </a>
+                                                            <span>
+                                                                  Облік ЗІЗ, нагадування про граничні терміни
+                                                                  експлуатації,
+                                                                  нагадування про необхідність проведення перевірок,
+                                                                  тощо.
+                                                                  Можливість придбати необхідні ЗІЗ безпосередньо зі
+                                                                  свого
+                                                                  кабінету. Можливість розрахунок бюджету покупки та
+                                                                  перевірки
+                                                                  ЗІЗ.
+                                                            </span>
+                                                      </div>
+
+                                                </li>
+                                                <li>
+                                                      <div class="dropdown-menu__top">
+                                                            <a href="#">
+                                                                  <p>Дозвільна документація</p>
+                                                            </a>
+                                                            <span>
+                                                                  При внесенні обладнання та видів робіт, що виконує
+                                                                  підприємство, система пропонує необхідні дозвільні
+                                                                  документи, згідно діючого законодавства, а також його
+                                                                  специфіки. Облік діючої дозвільної документації,
+                                                                  контроль
+                                                                  терміну дії дозволів, контроль актуальності декларацій
+                                                                  (у
+                                                                  разі зміни/додавання адресу, нагадування про те які
+                                                                  необхідні документи).
+                                                            </span>
+                                                      </div>
+
+                                                </li>
+                                                <li>
+                                                      <div class="dropdown-menu__top">
+                                                            <a href="#">
+                                                                  <p>Розрахунок ризиків</p>
+                                                            </a>
+                                                            <span>
+                                                                  Моделювання ризиків на базі внесеної інформації, а
+                                                                  також
+                                                                  можливість використання можливостей розділу для
+                                                                  створення
+                                                                  інших моделей оцінки ризиків.
+                                                            </span>
+                                                      </div>
+
+                                                      <a href="#" class="btn-p">Всі продукти</a>
+                                                </li>
+                                          </div>
+                                    </div>
+
+                                    <li><a href="Price.html">Ціна</a></li>
+                                    <li><a href="aboutUs.html">Про нас</a></li>
+                                    <li><a href="contacts.html">Контакти</a></li>
+                              </ul>
+                        </nav>
+                        <div class="header__menu-button">
+                              <a href="loginDetails.html" class="btn-w">Кабінет</a>
+                              <a href="#" class="btn-p">Спробувати безкоштовно</a>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+
+
+
+
+      <svg class="burger-menu" viewBox="0 0 100 100" width="70">
+            <path class="line top"
+                  d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom"
+                  d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+      </svg>
+</header>
+	<section class="main">
+    <div class="container">
+        <div class="swiper-container main-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-slide__text">
+                        <h2>Систему онлайн управління охороною праці</h2>
+                        <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "</p>
+                        <div class="swiper-slide__form">
+                            <form>
+                                <input class="swiper-slide__form-email" type="email" placeholder="Введить свій e-mail">
+                                <input class="btn-p" type="submit" value="Спробувати безкоштовно">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="swiper-slide__img">
+                        <img src="./img/other/bc8f222b779208790c270aa74184c33cfsccs.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__text">
+                        <h2>Облiк та навчання</h2>
+                        <p>Контроль навчання, можливість створення заявок на навчання, розрахунок бюджету навчання, нагадування про закінчення термін навчання кожного співробітника підприємства.</p>
+                        <div class="swiper-slide__form">
+                            <form>
+                                <input class="swiper-slide__form-email" type="email" placeholder="Введить свій e-mail">
+                                <input class="btn-p" type="submit" value="Спробувати безкоштовно">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="swiper-slide__img">
+                        <img src="./img/other/bc8f222b779208790c270aa74.svg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__text">
+                        <h2>Центр навчання </h2>
+                        <p>Організація навчання та тестування співробітників підприємства, створення власних програм навчання та тестування.</p>
+                        <div class="swiper-slide__form">
+                            <form>
+                                <input class="swiper-slide__form-email" type="email" placeholder="Введить свій e-mail">
+                                <input class="btn-p" type="submit" value="Спробувати безкоштовно">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="swiper-slide__img">
+                        <img src="./img/other/bc8f222b779208a74.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="facilities">
+    <div class="container">
+        <div class="title">
+            Облік та навчання
+        </div>
+        <div class="facilities__tabs">
+            <ul class="facilities__tabs-buttons">
+                <li class="facilities__tabs-info facilities__tabs-info--active">
+                    <div class="facilities__tabs-title">
+                        <span class="facilities__tabs-title-number">01</span>
+                        <p>Облік та навчання</p>
+                    </div>
+                    <div class="facilities__tabs-text">
+                        <p>Контроль навчання, можливість створення заявок на навчання, розрахунок бюджету навчання, нагадування про закінчення термін навчання кожного співробітника підприємства.</p>
+                        <div class="facilities__tabs-btns">
+                            <a href="#" class="btn-w">Спробувати безкоштовно</a>
+                            <a href="#" class="btn-w">Детальнiше</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="facilities__tabs-info">
+                    <div class="facilities__tabs-title">
+                        <span class="facilities__tabs-title-number">02</span>
+                        <p>Центр навчання</p>
+                    </div>
+                    <div class="facilities__tabs-text">
+                        <p>Організація навчання та тестування співробітників підприємства, створення власних програм
+                            навчання та тестування.</p>
+                        <div class="facilities__tabs-btns">
+                            <a href="#" class="btn-w">Спробувати безкоштовно</a>
+                            <a href="#" class="btn-w">Детальнiше</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="facilities__tabs-info">
+                    <div class="facilities__tabs-title">
+                        <span class="facilities__tabs-title-number">03</span>
+                        <p>Інструктажі</p>
+                    </div>
+                    <div class="facilities__tabs-text">
+                        <p>Контроль проведення всіх видів інструктажів співробітниками навчання, дистанційне проведення інструктажів, завантаження та створення інструктажів під кожне окреме підприємство.</p>
+                        <div class="facilities__tabs-btns">
+                            <a href="#" class="btn-w">Спробувати безкоштовно</a>
+                            <a href="#" class="btn-w">Детальнiше</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="facilities__tabs-info">
+                    <div class="facilities__tabs-title">
+                        <span class="facilities__tabs-title-number">04</span>
+                        <p>Внутрішня документація</p>
+                    </div>
+                    <div class="facilities__tabs-text">
+                        <p>База внутрішніх наказів, розпоряджень, інструкцій, будь якої корисної інформації, тощо. Зручний пошук документів та фільтри по типу та даті документу, тощо.</p>
+                        <div class="facilities__tabs-btns">
+                            <a href="#" class="btn-w">Спробувати безкоштовно</a>
+                            <a href="#" class="btn-w">Детальнiше</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="facilities__tabs-info">
+                    <div class="facilities__tabs-title">
+                        <span class="facilities__tabs-title-number">05</span>
+                        <p>Обладнання та роботи</p>
+                    </div>
+                    <div class="facilities__tabs-text">
+                        <p>Облік обладнання, нагадування про граничні терміни експлуатації, нагадування про необхідність проведення перевірок, тощо. Можливість розрахунку бюджету вартості перевірок, ремонтів (створення запиту на вартість) обладнання. Можливість контролю, які роботи виконуються на яких об’єктах.</p>
+                        <div class="facilities__tabs-btns">
+                            <a href="#" class="btn-w">Спробувати безкоштовно</a>
+                            <a href="#" class="btn-w">Детальнiше</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="facilities__tabs-info">
+                    <div class="facilities__tabs-title">
+                        <span class="facilities__tabs-title-number">06</span>
+                        <p>Засоби індивідуального захисту (ЗІЗ)</p>
+                    </div>
+                    <div class="facilities__tabs-text">
+                        <p>Облік ЗІЗ, нагадування про граничні терміни експлуатації, нагадування про необхідність проведення перевірок, тощо. Можливість придбати необхідні ЗІЗ безпосередньо зі свого кабінету. Можливість розрахунок бюджету покупки та перевірки ЗІЗ.</p>
+                        <div class="facilities__tabs-btns">
+                            <a href="#" class="btn-w">Спробувати безкоштовно</a>
+                            <a href="#" class="btn-w">Детальнiше</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="facilities__tabs-info">
+                    <div class="facilities__tabs-title">
+                        <span class="facilities__tabs-title-number">07</span>
+                        <p>Дозвільна документація</p>
+                    </div>
+                    <div class="facilities__tabs-text">
+                        <p>При внесенні обладнання та видів робіт, що виконує підприємство, система пропонує необхідні дозвільні документи, згідно діючого законодавства, а також його специфіки. Облік діючої дозвільної документації, контроль терміну дії дозволів, контроль актуальності декларацій (у разі зміни/додавання адресу, нагадування про те які необхідні документи).</p>
+                        <div class="facilities__tabs-btns">
+                            <a href="#" class="btn-w">Спробувати безкоштовно</a>
+                            <a href="#" class="btn-w">Детальнiше</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="facilities__tabs-info">
+                    <div class="facilities__tabs-title">
+                        <span class="facilities__tabs-title-number">08</span>
+                        <p>Аудит</p>
+                    </div>
+                    <div class="facilities__tabs-text">
+                        <p>Моделювання ризиків на базі внесеної інформації, а також можливість використання можливостей розділу для створення інших моделей оцінки ризиків.</p>
+                        <div class="facilities__tabs-btns">
+                            <a href="#" class="btn-w">Спробувати безкоштовно</a>
+                            <a href="#" class="btn-w">Детальнiше</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="facilities__tabs-info">
+                    <div class="facilities__tabs-title">
+                        <span class="facilities__tabs-title-number">09</span>
+                        <p>Ризики</p>
+                    </div>
+                    <div class="facilities__tabs-text">
+                        <p>Моделювання ризиків на базі внесеної інформації, а також можливість використання можливостей розділу для створення інших моделей оцінки ризиків.</p>
+                        <div class="facilities__tabs-btns">
+                            <a href="#" class="btn-w">Спробувати безкоштовно</a>
+                            <a href="#" class="btn-w">Детальнiше</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="facilities__tabs-img acilities__tabs-img--active">
+                <img src="./img/tabs-main/Frame.svg" alt="">
+            </div>
+            <div class="facilities__tabs-img">
+                <img src="./img/tabs-main/Frame2.svg" alt="">
+            </div>
+            <div class="facilities__tabs-img">
+                <img src="./img/tabs-main/Frame3.svg" alt="">
+            </div>
+            <div class="facilities__tabs-img">
+                <img src="./img/tabs-main/Frame4.svg" alt="">
+            </div>
+            <div class="facilities__tabs-img">
+                <img src="./img/tabs-main/Frame5.svg" alt="">
+            </div>
+            <div class="facilities__tabs-img">
+                <img src="./img/tabs-main/Frame6.svg" alt="">
+            </div>
+            <div class="facilities__tabs-img">
+                <img src="./img/tabs-main/Frame7.svg" alt="">
+            </div>
+            <div class="facilities__tabs-img">
+                <img src="./img/tabs-main/Frame8.svg" alt="">
+            </div>
+            <div class="facilities__tabs-img">
+                <img src="./img/tabs-main/Frame9.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="begin">
+    <div class="container">
+        <div class="title">
+            З чого почати підприємству
+        </div>
+        <div class="begin__inner">
+            <div class="swiper-container begin__slider-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        Створiть аккаунт
+                    </div>
+                    <div class="swiper-slide">
+                        Оберіть тариф
+                    </div>
+                    <div class="swiper-slide">
+                        Налаштуйте підприємство
+                    </div>
+                    <div class="swiper-slide">
+                        Інше
+                    </div>
+                </div>
+                <div class="swiper-button">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+            <div class="swiper-container begin__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                            <div class="swiper-slide__img">
+                                <img src="./img/other/bc8f222b779208790c270aa74184c33c.png" alt="">
+                            </div>
+                            <div class="swiper-slide__text">
+                                <p>Надати зручний, сучасний механізм навчання, та перевірки знань з питань Охорони
+                                    Праці, пожежної безпеки, та Технології робіт. Для зручного забезпечення необхідними
+                                    знаннями, які допоможуть зберегти життя та здоров'я, а також мінімізувати витрати
+                                    часу на проходження такого навчання, як для працівників так і для підприємств.</p>
+                                <p>Надати зручний, сучасний механізм навчання, та перевірки знань з питань Охорони
+                                    Праці, пожежної безпеки, та Технології робіт. Для зручного забезпечення необхідними
+                                    знаннями, які допоможуть зберегти життя та здоров'я, а також мінімізувати витрати
+                                    часу на проходження такого навчання, як для працівників так і для підприємств.</p>
+                                <a href="#" class="btn-p">Спробувати зараз</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                            <div class="swiper-slide__img">
+                                <img src="./img/other/bc8f222b779208790c270aa74184c33c.png" alt="">
+                            </div>
+                            <div class="swiper-slide__text">
+                                <p>Надати зручний, сучасний механізм навчання, та перевірки знань з питань Охорони
+                                    Праці, пожежної безпеки, та Технології робіт. Для зручного забезпечення необхідними
+                                    знаннями, які допоможуть зберегти життя та здоров'я, а також мінімізувати витрати
+                                    часу на проходження такого навчання, як для працівників так і для підприємств.</p>
+                                <p>Надати зручний, сучасний механізм навчання, </p>
+                                <a href="#" class="btn-p">Спробувати зараз</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                            <div class="swiper-slide__img">
+                                <img src="./img/other/bc8f222b779208790c270aa74184c33c.png" alt="">
+                            </div>
+                            <div class="swiper-slide__text">
+                                <p>Надати зручний, сучасний механізм навчання, та перевірки знань з питань Охорони
+                                    Праці, пожежної безпеки, та Технології робіт. Для зручного забезпечення необхідними
+                                    знаннями, які допоможуть зберегти життя та здоров'я, а також мінімізувати витрати
+                                    часу на проходження такого навчання, як для працівників так і для підприємств.</p>
+                                <p>Надати зручний, сучасний механізм навчання, та перевірки знань з питань Охорони
+                                 .</p>
+                                <a href="#" class="btn-p">Спробувати зараз</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                            <div class="swiper-slide__img">
+                                <img src="./img/other/bc8f222b779208790c270aa74184c33c.png" alt="">
+                            </div>
+                            <div class="swiper-slide__text">
+                                <p>Надати зручний, сучасний механізм навчання, та перевірки знань з питань Охорони
+                                    Праці, пожежної безпеки, та Технології робіт. Для зручного забезпечення необхідними
+                                    знаннями, які допоможуть зберегти життя та здоров'я, а також мінімізувати витрати
+                                    часу на проходження такого навчання, як для працівників так і для підприємств.</p>
+                                <a href="#" class="btn-p">Спробувати зараз</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+	<section class="target">
+    <div class="container">
+        <div class="title">
+            Наша головна ціль
+        </div>
+        <div class="target__inner">
+            <div class="target__image">
+                <img src="./img/other/Frame.svg" alt="">
+            </div>
+            <div class="target__text">
+                <p>Надати зручний, сучасний механізм навчання, та перевірки знань з питань Охорони Праці, пожежної безпеки, та Технології робіт. Для зручного забезпечення необхідними знаннями, які допоможуть зберегти життя та здоров'я, а також мінімізувати витрати часу на проходження такого навчання, як для працівників так і для підприємств.</p>
+                <div class="target__blocks">
+                    <div class="box">
+                        <div class="box__number">
+                            102
+                        </div>
+                        <div class="box__text">
+                            <p>програма навчання</p>
+                            <p>з охорони праці, та технології робіт</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__number">
+                            30
+                        </div>
+                        <div class="box__text">
+                            <p>фахівців залучених</p>
+                            <p>до створення цієї програми</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__number">
+                            +5600
+                        </div>
+                        <div class="box__text">
+                            <p>фахівців залучених</p>
+                            <p>до створення цієї програми</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="systeml">
+    <div class="container">
+        <div class="title">Навчання та перевірка знань 
+            <br>
+            з питань Охорони Праці, та Технології робіт</div>
+        <div class="systeml__inner">
+            <div class="systeml__text">
+                <h2>Система дистанційного навчання</h2>
+                <p>Необхідно провести навчання співробітників з пожежної безпеки? Час оновити знання робітників з охорони праці? Прийшов час пройти атестацію? Чи додаткове навчання робочим професіям в масштабах колективу чи в приватному порядку? Яка б задача зі спеціалізованої підготовки та підвищення кваліфікації не стояла перед вами, оптимальне рішення надасть наша система дистанційного навчання</p>
+                <ul>
+                    <li>Необхідно провести навчання співробітників з пожежної безпеки?</li>
+                    <li>Час оновити знання робітників з охорони праці? Прийшов час пройти атестацію? </li>
+                    <li>Чи додаткове навчання робочим професіям в масштабах колективу чи в приватному порядку? </li>
+                    <li>Яка б задача зі спеціалізованої підготовки та підвищення кваліфікації не стояла перед вами, оптимальне рішення надасть наша система дистанційного навчання</li>
+                </ul>
+                <div class="btn-p">Пройти пробне тестування</div>
+            </div>
+            <div class="systeml__image">
+                <img src="./img/other/972.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="cookies">
+    <div class="container">
+        <div class="cookies__inner">
+            <div class="cookies__text">
+                <p><strong>Ми використовуємо кукі.</strong>
+                <span class="cookies__text-icon">
+                    <img src="./img/icons/cookie-ic.svg" alt="">
+                </span>
+                </p>
+                <p>Будь ласка, прийміть або відхиліть та насолоджуйтесь користанням сайту.</p>
+            </div>
+            <div class="cookies__btns">
+                <a class="btn-w" href="#">Відхилити</a>
+                <a class="btn-p" href="#">Прийняти</a>
+            </div>
+        </div>
+    </div>
+</section>
+	
+
+
+	</div>
+
+	<div class="footer">
+	<footer class="footer">
+    <div class="container"> 
+        <div class="footer__inner">
+            <div class="box">
+                <div class="box__logo">
+                    <a href="#">
+                        <img src="./img/logo-footer.svg" alt="">
+                    </a>
+                </div>
+                <div class="box__links">
+                    <a href="#">
+                        <img src="./img/icons/links/fb.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./img/icons/links/in.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./img/icons/links/inst.svg" alt="">
+                    </a>
+                </div>
+                <div class="box__text">
+                    <p>Курси © 2020-2021. <br>
+                        Усі права захищені
+                        
+                    </p>
+                    <p><a href="PrivacyPolicy.html">Політика конфеденційності</a></p>
+                </div>
+            </div>
+            <div class="box box__menu">
+                <div class="box__menu-title">
+                    <a href="#">Роздiли</a>
+                </div>
+                <div class="box__menu-body">
+                    <a href="#">Головна</a>
+                    <a href="#">Центр навчання</a>
+                    <a href="#">Продукти</a>
+                    <a href="#">Ціни</a>
+                    <a href="#">Про нас</a>
+                    <a href="#">Контакти</a>
+                </div>
+            </div>
+            <div class="box box__menu">
+                <div class="box__menu-title">
+                    <a href="#">Центр навчання</a>
+                </div>
+                <div class="box__menu-body">
+                    <a href="#">Курси з Охорони працi </a>
+                    <a href="#">Курси з Технології робіт </a>
+                    <a href="#">Курси для робітників</a>
+                </div>
+            </div>
+            <div class="box box__menu">
+                <div class="box__menu-title">
+                    <a href="#">Продукти</a>
+                </div>
+                <div class="box__menu-body">
+                    <a href="#">Облік та навчання </a>
+                    <a href="#">Центр навчання</a>
+                    <a href="#">Інструктажі</a>
+                    <a href="#">Внутрішня документація</a>
+                    <a href="#">Обладнання та роботи</a>
+                    <a href="#">Засоби індивідуального захисту (ЗІЗ)</a>
+                    <a href="#">Дозвільна документація</a>
+                    <a href="#">Аудит</a>
+                    <a href="#">Ризики</a>
+                </div>
+            </div>
+            <div class="box box__date">
+                <div class="box__form">
+                    <form>
+                        <input class="box__form-input" type="text" placeholder="Введить свій e-mail">
+                        <input class="box__form-submit" type="submit" value="Підписатись">
+                    </form>
+                </div>
+                <div class="box__text">
+                    <p>Кіїв, вул. Пушкіна, 23/5. оф. 803</p>
+                    <p><a href="mailto:kursy@gmail.com">kursy@gmail.com</a></p>
+                    <p><a href="tel:+380978882373">+380978882373</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	</div>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+
+</div>
+</body>
+
+</html>
