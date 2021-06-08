@@ -20,7 +20,7 @@
 	<title>Site</title>
 </head>
 
-<body >
+<body>
 	<div class="wrapper f-all">
 		<div class="content">
 	<header class="header">
@@ -42,7 +42,8 @@
                                           <!-- <img src="./img/logo.svg" alt=""> -->
                                           <div class="logo__name">
                                                 <div class="logo__name-top">СОУОП</div>
-                                                <div class="logo__name-bottom">Система онлайн управління охороною праці</div>
+                                                <div class="logo__name-bottom">Система онлайн управління охороною праці
+                                                </div>
                                           </div>
                                     </a>
                               </div>
@@ -278,9 +279,16 @@
                                           <li><a href="contacts.html">Контакти</a></li>
                                     </ul>
                               </nav>
-                              <div class="header__menu-button">
-                                    <a href="loginDetails.html" class="btn-w">Кабінет</a>
-                                    <a href="#" class="btn-p">Спробувати безкоштовно</a>
+                              <div class="header__menu-account">
+                                    <p>
+                                          Вітаю,
+                                          <a href="#">
+                                                Анатолію!
+                                          </a>
+                                    </p>
+                                    <div class="header__menu-account-logout">
+                                          <img src="./img/icons/logout-i.svg" alt="">
+                                    </div>
                               </div>
                         </div>
 
@@ -303,46 +311,220 @@
             <div class="header-progress__bar"></div>
       </div>
 </header>
-	<section class="contacts">
+	<section class="testing">
     <div class="container">
-        <!-- <div class="title">Контакти</div> -->
+        <!-- <div class="title">
+            Тестування
+        </div> -->
         <div class="breadcrumbs">
             <ul>
                 <li><a href="#">Головна</a></li>
-                <li class="breadcrumbs--active"><a href="#">Контакти</a></li>
+                <li><a href="#">Доступні курси</a></li>
+                <li class="breadcrumbs--active"><a href="#">НПАОП 0.00-1.71-13 Правила безпечної роботи з інструментом
+                        та пристроями</a></li>
             </ul>
         </div>
-        <div class="contacts__inner">
-            <div class="contacts__info">
-                <p>Адреса: <strong>Кіїв, вул. Пушкіна, 23/5. оф. 803</strong></p>
-                <p>Електронна адреса: <strong><a href="mailto:kursy@gmail.com">kursy@gmail.com</a></strong></p>
-                <p>Телефон: <strong><a href="tel:+380978882373">+380978882373</a></strong></p>
-            </div>
-            <div class="contacts__form">
-                <h3>Зв’язатись з нами</h3>
-                <form>
-                    <div class="contacts__form-input contacts__form-required">
-                        <input type="text" placeholder="Ім’я" required>
-                    </div>
-                    <div class="contacts__form-input">
-                        <input type="email" placeholder="Електронна пошта">
-                    </div>
-                    <div class="contacts__form-input contacts__form-required">
-                        <input type="text" placeholder="Телефон" required>
-                    </div>
-                    <div class="contacts__form-input">
-                        <textarea placeholder="Запитання"></textarea>
-                    </div>
-                    <div class="contacts__form-send">
-                        <input class="btn-p" type="submit" value="Відправити">
-                    </div>
+        <h2 class="testing__title">
+            НПАОП 0.00-1.71-13 Правила безпечної роботи з інструментом та пристроями
+        </h2>
 
-                </form>
+        <div class="testing__info">
+            <div class="testing__info-inner">
+                <div class="testing__info-attention">
+                    <p><strong>Увага:</strong> Прочитайте уважно текст запитання, та можливі варіанти відповідей,
+                        наведених нижче.
+                        Виберіть одну, на Вашу думку вірну відповідь, та натисніть курсором на кружечок біля відповіді.
+                    </p>
+                    <p><strong>ВАЖЛИВО:</strong> в межах одного запитання приймається тільки одна відповідь і тільки
+                        один раз, редагування відповіді не передбачена. Час складання тесту - 45 хвилин.</p>
+                </div>
+                <div class="testing__info-counts">
+                    <p>Кількість запитань: <span>30</span></p>
+                    <p>Можлива кількість спроб: <span>3</span></p>
+                </div>
             </div>
+            <div class="testing__info-photo">
+                <div class="testing__info-photo-icon">
+                    <img src="./img/icons/user-images.svg" alt="">
+                </div>
+                <div class="testing__info-photo-download">
+                    <label for="photo-dw">
+                        <input type="file" id="photo-dw">
+                        <p class="btn-p"> Зробити фото</p>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="testing__inner">
+            <div class="testing-questions">
+                <div class="testing-questions__title">
+                    Запитання 1
+                </div>
+                <div class="testing-questions__term">
+                    Електроінструмент класу ІІ. Визначення:
+                </div>
+                <div class="testing-questions__inner">
+                    <div class="box">
+                        <label  for="box__option">
+                            <div class="box__option-input box__option-input--active">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <label  for="box__option">
+                            <div class="box__option-input">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <label for="box__option">
+                            <div class="box__option-input">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <label for="box__option">
+                            <div class="box__option-input">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="testing-questions testing-questions--red">
+                <div class="testing-questions__title">
+                    Запитання 2
+                </div>
+                <div class="testing-questions__term">
+                    Електроінструмент класу ІІ. Визначення:
+                </div>
+                <div class="testing-questions__inner">
+                    <div class="box">
+                        <label  for="box__option">
+                            <div class="box__option-input box__option-input--active">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <label  for="box__option">
+                            <div class="box__option-input">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <label for="box__option">
+                            <div class="box__option-input">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <label for="box__option">
+                            <div class="box__option-input">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="testing-questions testing-questions--gray">
+                <div class="testing-questions__title">
+                    Запитання 3
+                </div>
+                <div class="testing-questions__term">
+                    Електроінструмент класу ІІ. Визначення:
+                </div>
+                <div class="testing-questions__inner">
+                    <div class="box">
+                        <label  for="box__option">
+                            <div class="box__option-input box__option-input--active">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <label  for="box__option">
+                            <div class="box__option-input">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <label for="box__option">
+                            <div class="box__option-input">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <label for="box__option">
+                            <div class="box__option-input">
+                                <input type="checkbox" id="box__option">
+                            </div>
+                            <p>
+                                електроінструмент класу II - електроінструмент, у якого деталі, що перебувають під напругою, мають подвійну або посилену ізоляцію. 
+                            </p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="testing__limit testing__limit--false">
+        <div class="testing__limit-box">
+            <div class="testing__limit-percent">
+                36.70%
+            </div>
+            <div class="testing__limit-text">
+                не прохідний бал
+            </div>
+        </div>
+        <div class="testing__limit-result">
+            <a class="btn-w" href="#">Усі результати</a>
         </div>
     </div>
 </section>
-	<section id="map"></section>
 
 
 
@@ -440,10 +622,7 @@
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
-	<script
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABLSPm0aIUvwQZKQNQs3E-zaUP6UICKyA&region=UK&language=uk&callback=initMap&libraries=&v=weekly"
-	async
-  ></script>
+
 </div>
 </body>
 
