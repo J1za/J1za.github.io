@@ -1,0 +1,125 @@
+.header {
+    background: #f9f6f2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: .4s ease-in;
+    &__top {
+        padding: 20px 0;
+        border-bottom: 1px solid #e9e2da;
+        transition: .4s ease-in;
+        &-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__main {
+        display: flex;
+        align-items: center;
+        grid-column-gap: 30px;
+        &-adress {
+            max-width: 142px;
+            font-size: 13px;
+            line-height: 17px;
+            color: #40052d;
+        }
+        &-phone {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            grid-column-gap: 20px;
+            a {
+                @include c700;
+            }
+            img {
+                width: 18px;
+                height: 17px;
+            }
+        }
+        &-shop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 6px 12px;
+            background: #a88a4c;
+            border-radius: 500px;
+            grid-column-gap: 10px;
+            p {
+                @include c700;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+        &-other{
+            display: flex;
+            grid-column-gap: 30px;
+        }
+    }
+    &__bottom{
+        padding: 20px 0;
+        transition: .4s ease-in;
+    }
+}
+.header--hide{
+    transform: translateY(-100%);
+    .header__bottom,
+    .header__top{
+        padding: 10px 0;
+    }
+}
+.lang {
+    display: flex;
+    align-content: center;
+    grid-column-gap: 27px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '/';
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: #7e766b;
+        font-size: 18px;
+    }
+    a {
+        text-transform: uppercase;
+        
+    }
+    &-btn{
+        color: #7e766b;
+        @include c700;
+        font-size: 18px;
+        transition: .3s;
+        &:hover{
+            color: #000;
+        }
+    }
+    &-active {
+        color: #000;
+    }
+}
+.links{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 30px;
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        img{
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.specoffers {
+    padding: 100px 0;
+    background-color: #fff;
+    &__inner{
+        position: relative;
+    }
+    &__title{
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .swiper-button-prev{
+        left: -100px;
+        top: 35%;
+    }
+    .swiper-button-next{
+        right: -100px;
+        top: 35%;
+    }
+}
+.specoffers__slider {
+    .swiper-slide {
+        width: 485px;
+        &__image {
+            width: 100%;
+            height: 350px;
+            border-radius: 30px;
+            position: relative;
+            background: #f9f6f2;
+            p {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+                top: 20px;
+                padding: 12px 14px 11px;
+                background: rgba(64, 5, 45, 0.7);
+                backdrop-filter: blur(14px);
+                border-radius: 10px;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 18px;
+            }
+            img {
+                border-radius: 30px;
+            }
+        }
+        &__text {
+            display: flex;
+            flex-direction: column;
+            grid-row-gap: 20px;
+            margin: 0 auto;
+            margin-top: -60px;
+            width: 485px;
+            padding: 50px 30px;
+            text-align: center;
+            background: rgba(241, 234, 228, .8);
+            backdrop-filter: blur(14px);
+            border-radius: 30px;
+            &-title {
+                @include c600;
+                font-size: 34px;
+                line-height: 30px;
+                letter-spacing: -1px;
+                color: #40052d;
+            }
+            p{
+                font-size: 14px;
+                color: #000;
+            }
+        }
+        &__more{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column-gap: 20px;
+            p{
+                font-size: 20px;
+                line-height: 20px;
+                @include c600;
+            }
+            img{
+                margin-top: 2px;
+                width: 20px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.swiper-slide{
+    opacity: 0;
+    transition: .3s linear;
+    &-next,
+    &-active{
+        opacity: 1;
+    }
+}

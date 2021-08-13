@@ -1,0 +1,18 @@
+.menu{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        grid-column-gap: 64px;
+        grid-row-gap: 25px;
+        li{
+            list-style: none;
+            a{
+                text-transform: uppercase;
+                @include c700;
+                font-size: 24px;
+                line-height: 29px;
+                letter-spacing: -1px;
+            }
+        }
+    }
+}

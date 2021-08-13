@@ -1,0 +1,52 @@
+.footer {
+    position: relative;
+    flex: 0 0 auto;
+    margin: 120px 0 53px;
+    &__menu {
+        padding: 40px 0 35px;
+        border-bottom: 1px solid #e9e2da;
+        .menu ul{
+            grid-column-gap: 44px;
+            li a{
+                letter-spacing: normal;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+    &__top{
+        padding: 35px 0;
+        border-bottom: 1px solid #e9e2da;
+        &-inner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__adress{
+        max-width: 390px;
+        &-title{
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            @include c700;
+            margin-bottom: 5px;
+        }
+        &-info{
+            display: flex;
+            flex-wrap: wrap;
+            grid-column-gap: 20px;
+            font-size: 14px;
+        }
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 0 40px;
+        p{
+            font-size: 13px;
+            line-height: 17px;
+            color: #777777;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+//  Базовые стили
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color:$bodyBg;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    color: $textColor;
+    line-height: 22px;
+    height: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    padding-top: 170px;
+}
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin:  0 auto;
+    padding: 0 20px;
+}
+a {
+    color: $linkColor;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+section {
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}

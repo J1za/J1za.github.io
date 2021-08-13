@@ -1,0 +1,117 @@
+//  Подключения шрифтов
+@font-face {
+    font-family: 'Manrope';
+    src: url('~@fonts/Manrope-Medium.eot');
+    src: url('~@fonts/Manrope-Medium.eot?#iefix') format('embedded-opentype'),
+        url('~@fonts/Manrope-Medium.woff2') format('woff2'),
+        url('~@fonts/Manrope-Medium.woff') format('woff'),
+        url('~@fonts/Manrope-Medium.ttf') format('truetype'),
+        url('~@fonts/Manrope-Medium.svg#Manrope-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('~@fonts/CormorantGaramond-SemiBold.eot');
+    src: url('~@fonts/CormorantGaramond-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('~@fonts/CormorantGaramond-SemiBold.woff2') format('woff2'),
+        url('~@fonts/CormorantGaramond-SemiBold.woff') format('woff'),
+        url('~@fonts/CormorantGaramond-SemiBold.ttf') format('truetype'),
+        url('~@fonts/CormorantGaramond-SemiBold.svg#CormorantGaramond-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond Italic';
+    src: url('~@fonts/CormorantGaramond-SemiBoldItalic.eot');
+    src: url('~@fonts/CormorantGaramond-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('~@fonts/CormorantGaramond-SemiBoldItalic.woff2') format('woff2'),
+        url('~@fonts/CormorantGaramond-SemiBoldItalic.woff') format('woff'),
+        url('~@fonts/CormorantGaramond-SemiBoldItalic.ttf') format('truetype'),
+        url('~@fonts/CormorantGaramond-SemiBoldItalic.svg#CormorantGaramond-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('~@fonts/CormorantGaramond-Bold.eot');
+    src: url('~@fonts/CormorantGaramond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('~@fonts/CormorantGaramond-Bold.woff2') format('woff2'),
+        url('~@fonts/CormorantGaramond-Bold.woff') format('woff'),
+        url('~@fonts/CormorantGaramond-Bold.ttf') format('truetype'),
+        url('~@fonts/CormorantGaramond-Bold.svg#CormorantGaramond-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('~@fonts/CormorantGaramond-Medium.eot');
+    src: url('~@fonts/CormorantGaramond-Medium.eot?#iefix') format('embedded-opentype'),
+        url('~@fonts/CormorantGaramond-Medium.woff2') format('woff2'),
+        url('~@fonts/CormorantGaramond-Medium.woff') format('woff'),
+        url('~@fonts/CormorantGaramond-Medium.ttf') format('truetype'),
+        url('~@fonts/CormorantGaramond-Medium.svg#CormorantGaramond-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+}
+// Заголовки
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $fontFamily;
+    margin: 0;
+}
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    @include c500;
+    color: #40052d;
+    em{
+        @include ci600;
+    }
+}
+h2 {
+    font-size: 60px;
+    line-height: 55px;
+    color: #40052d;
+    letter-spacing: -2px;
+    @include c600;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}

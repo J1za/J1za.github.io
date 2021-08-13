@@ -1,0 +1,30 @@
+.swiper-button-prev,
+.swiper-button-next {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e9e2da;
+    border-radius: 50%;
+    &::after{
+        content: url('~@icons/arrow-slider.svg');
+        font-family: inherit;
+        font-size: inherit;
+    }
+}
+.swiper-button-prev{
+    &::after{
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+}
+.swiper-slide{
+    img{
+        opacity: 0;
+        transition: .4s linear;
+        outline: none;
+    }
+    &-next,
+    &-active{
+        .swiper-lazy-loaded{
+            opacity: 1;
+        }
+    }
+}
